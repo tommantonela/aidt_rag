@@ -1,23 +1,14 @@
 import pandas as pd
-import json
-from io import StringIO
 from langchain.callbacks.manager import CallbackManager
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
-from langchain.retrievers.document_compressors import CohereRerank
 from langchain_community.chat_models import ChatOllama
 import os
-from dotenv import load_dotenv, find_dotenv
-from pathlib import Path
-import sys
 import pickle
-import time
-import re
 
-from rag import AIDTRag, STRetriever, AIDTEvaluator
+from rag import AIDTRag, STRetriever
 
-# In this experiment, we use GPT as a search engine (in the wild) that tries to retrieve
+# In this experiment, we use Llama2 (via Ollama) as a search engine (in the wild) that tries to retrieve
 # the different packages for a given need (i.e., query)
-# Note that the need is captures a a couple of kewords, rather than as a user story
 # ---------------------------------------------------------------------------------------------
 
 # Inputs
@@ -53,8 +44,6 @@ llm = ChatOllama(
     callback_manager=CallbackManager([StreamingStdOutCallbackHandler()])
 )
 rag.set_llm(llm)
-#ranker = CohereRerank()
-#rag.set_reranker(ranker)
 
 selector = 'ollama-'+my_model
 print(selector)
@@ -77,17 +66,12 @@ print(len(temporal_dict.keys()), "queries recovered")
 
 for index, row in userstories_df.iterrows():
     print(index, "-"*100)
-    #query = row['user_story']
     query = row['query']
     if query not in temporal_dict:
         print("Query:", query)
-        # Both retrieval and re-ranking are needed in this experiment
+        # Only retrieval is needed in this experiment
         reranking_json = rag.execute(query, rerank='cohere', explain=True)
-        #reranking_json = remove_backslash_and_newline(reranking_json)
-        # if not reranking_json.startswith("["):
-        #     reranking_json = "["+reranking_json+"]"
         print("Retrieval + cohere:", TOP_K)
-        #print(reranking_json)
         temporal_dict[query] = reranking_json
         print()
         if temporal_file is not None:

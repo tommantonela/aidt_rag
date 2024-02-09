@@ -1,26 +1,18 @@
 import pandas as pd
 from itertools import chain
-import json
 from io import StringIO
-#from langchain_community.chat_models import ChatOpenAI
 from langchain_openai import ChatOpenAI
-#from langchain.callbacks import get_openai_callback
 from langchain_community.callbacks import get_openai_callback
 import os
-from dotenv import load_dotenv, find_dotenv
-from pathlib import Path
-import sys
 
 from rag import AIDTRag, STRetriever, AIDTEvaluator
 
 # In this experiment, we take the results of the retrieval function (from the ICSA paper),
-# but instead of re-ranking them, we ask GPT to do so, and also provide justifications.
+# but instead of re-ranking them, we ask GPT to do so, and also provide justifications for the packages
 # ---------------------------------------------------------------------------------------------
 
 # Configuring OpenAI (GPT)
-ENV_PATH = sys.path[0]+'/andres.env'
-print("Reading OPENAI config:", ENV_PATH, load_dotenv(dotenv_path=Path(ENV_PATH)))
-# OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+OPENAI_API_KEY = "your OPENAI API KEY goes here"
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 print()
 
@@ -58,7 +50,7 @@ st_retriever = STRetriever.from_documents(documents, rankings_df, col=selector)
 
 rag = AIDTRag(technologies_df, k=TOP_K, retriever=st_retriever)
 llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0.0)
-# rag.set_llm(llm)
+rag.set_llm(llm)
 
 # These are the reference queries for the experiment
 userstories_df = pd.read_csv(QUERIES)
@@ -77,15 +69,12 @@ with get_openai_callback() as cb:
         # Both retrieval and re-ranking are needed in this experiment
         reranking_json = rag.execute(query, rerank='gpt-3.5', explain=True)
         print("Retrieval + gpt-3.5:", TOP_K)
-        #print(reranking_json)
         ranking_df = pd.read_json(StringIO(reranking_json))
         if ranking_df.shape[1] == 1: # It's a fake LLM (no responses)
             print(ranking_df)
             ignoreLLM = True
         elif ranking_df.shape[0] > 0:
             print(ranking_df)
-            #if 'adjectives' in ranking_df.columns:
-            #    ranking_df.rename(columns={"adjectives": "justification"}, inplace=True)
             print(ranking_df[filter_cols])
             ranking_df['query'] = str(query)
             ranking_df['who'] = selector
@@ -98,6 +87,7 @@ with get_openai_callback() as cb:
     print("-"*100)
 print(cb)
 print()
+
 if not ignoreLLM:
     results_df = pd.concat(list_dfs, ignore_index=True)
     results_df['package_name'] = results_df['package_name'].str.lower()
@@ -108,8 +98,6 @@ else:
     print("Reading the rankings from previously saved results:", OUTPUT_RANKINGS)
     results_df = pd.read_csv(OUTPUT_RANKINGS)
     results_df['package_name'] = results_df['package_name'].str.lower()
-    #retrieved_technologies = set(results_df['package_name'].tolist())
-    #print(len(retrieved_technologies), "technologies retrieved from the rankings (GPT)")
 
 output_rankings_df = results_df.groupby('query')['package_name'].apply(list).reset_index()
 output_rankings_df.columns = ['query', selector]
@@ -122,7 +110,6 @@ gt_df['hits'] = gt_df['hits'].apply(eval)
 evaluator = AIDTEvaluator(gt_df)
 query_metrics_dict = evaluator.get_metrics(output_rankings_df)
 metrics_dict = AIDTEvaluator.get_metrics_by_type(query_metrics_dict)
-# print(json.dumps(metrics_dict, indent=4))
 metrics_df = AIDTEvaluator.get_metrics_as_dataframe(query_metrics_dict, who=selector)
 print(metrics_df) # This dataframe is useful for generating the boxplots
 metrics_df.to_csv(OUTPUT_METRICS, index=False)

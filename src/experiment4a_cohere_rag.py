@@ -1,15 +1,7 @@
 import pandas as pd
-import json
 from io import StringIO
-from langchain.callbacks.manager import CallbackManager
-from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
-from langchain.retrievers.document_compressors import CohereRerank
-#from langchain_community.chat_models import ChatOllama
 from langchain_community.chat_models import ChatCohere
 import os
-from dotenv import load_dotenv, find_dotenv
-from pathlib import Path
-import sys
 import pickle
 import time
 
@@ -17,13 +9,10 @@ from rag import AIDTRag, STRetriever, AIDTEvaluator
 
 # In this experiment, we use GPT as a search engine (in the wild) that tries to retrieve
 # the different packages for a given need (i.e., query)
-# Note that the need is captures a a couple of kewords, rather than as a user story
 # ---------------------------------------------------------------------------------------------
 
-ENV_PATH = sys.path[0]+'/andres.env'
-print("Reading OPENAI config:", ENV_PATH, load_dotenv(dotenv_path=Path(ENV_PATH)))
-COHERE_API_KEY = os.getenv('COHERE_API_KEY')
-#print(COHERE_API_KEY)
+# Configuration of Cohere LLM
+COHERE_API_KEY = "your COHERE API KEY goes here"
 print()
 
 INVOCATIONS_PER_MINUTE = 5
@@ -57,8 +46,6 @@ st_retriever = STRetriever.from_documents(documents, rankings_df, col=selector)
 rag = AIDTRag(technologies_df, k=TOP_K, retriever=st_retriever)
 llm = ChatCohere(model="command", temperature=0.0) #, max_tokens=256)
 rag.set_llm(llm)
-ranker = CohereRerank()
-rag.set_reranker(ranker)
 
 selector = 'cohere'
 
@@ -83,25 +70,23 @@ print(len(temporal_dict.keys()), "queries recovered")
 
 for index, row in userstories_df.iterrows():
     print(index, "-"*100)
-    #query = row['user_story']
     query = row['query']
     if query not in temporal_dict:
         if (index+1) % INVOCATIONS_PER_MINUTE == 0:
             print("Waiting 1 minute (Cohere API restriction...)")
             time.sleep(60) # Delay for 1 minute (60 seconds)
         print("Query:", query)
-        # Both retrieval and re-ranking are needed in this experiment
+        # Only retrieval is needed in this experiment
         reranking_json = rag.execute(query, rerank='cohere', explain=True)
-        if not reranking_json.startswith("["):
-            reranking_json = "["+reranking_json+"]"
+        # if not reranking_json.startswith("["):
+        #     reranking_json = "["+reranking_json+"]"
         print("Retrieval + cohere:", TOP_K)
-        #print(reranking_json)
+
         ranking_df = pd.read_json(StringIO(reranking_json))
         if ranking_df.shape[1] == 1: # It's a fake LLM (no responses)
             print(ranking_df)
             ignoreLLM = True
         elif ranking_df.shape[0] > 0:
-            #print(ranking_df)
             ranking_df.rename(columns={"justification": "adjectives", "justifiers": "adjectives", "justify_adjectives": "adjectives", "qualities": "adjectives",
                                        "justify": "adjectives", "justify_choices": "adjectives", "justifications": "adjectives", "justification_adjectives": "adjectives",
                                        "package-name": "package_name", "package": "package_name", "qualifiers": "adjectives" }, inplace=True)
@@ -111,7 +96,6 @@ for index, row in userstories_df.iterrows():
             ranking_df['query'] = row['query'] #str(query)
             ranking_df['who'] = selector
             print("Grounding check:", rag.check_grounding(query, ranking_df['package_name'].tolist()))
-            #list_dfs.append(ranking_df)
         else:
             print("Ranking seems empty")
             print(ranking_df)
@@ -123,11 +107,7 @@ for index, row in userstories_df.iterrows():
                 pickle.dump(temporal_dict, output)
 
 print("-"*100)
-# schema_columns = ['package_name', 'description', 'url', 'year_of_release', 'adjectives','pros', 'cons', 'query', 'who']
-# list_dfs = [df.rename(columns={"year-released": "year_of_release"}) for df in temporal_dict.values() if (df.shape[0] > 0) and (df.shape[1] > 1)]
-# list_dfs = [df.loc[:,~df.columns.duplicated(keep='last')] for df in list_dfs] # To remove duplicate column "adjectives"
-# for df in list_dfs:
-#     print(df.columns)
+
 list_dfs = [df for df in temporal_dict.values() if (df.shape[0] > 0) and (df.shape[1] > 1)]
 print(len(list_dfs), "queries processed")
 print()
@@ -138,7 +118,6 @@ if not ignoreLLM:
     results_df.to_csv(OUTPUT_RANKINGS, index=False) # Save the rankings for further analysis
 else:
     output_rankings_df = pd.DataFrame(columns=['query', selector])
-    # TODO: Re-ingest the CSV (without running the LLM) in order to compute the metrics
     print("Reading the rankings from previously saved results:", OUTPUT_RANKINGS)
     results_df = pd.read_csv(OUTPUT_RANKINGS)
     results_df['package_name'] = results_df['package_name'].str.lower()
@@ -156,7 +135,6 @@ gt_df['hits'] = gt_df['hits'].apply(eval)
 evaluator = AIDTEvaluator(gt_df)
 query_metrics_dict = evaluator.get_metrics(output_rankings_df)
 metrics_dict = AIDTEvaluator.get_metrics_by_type(query_metrics_dict)
-# print(json.dumps(metrics_dict, indent=4))
 metrics_df = AIDTEvaluator.get_metrics_as_dataframe(query_metrics_dict, who=selector)
 print(metrics_df) # This dataframe is useful for generating the boxplots
 metrics_df.to_csv(OUTPUT_METRICS, index=False)
