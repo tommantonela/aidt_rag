@@ -1,27 +1,17 @@
 import pandas as pd
-import json
 from io import StringIO
-from langchain.callbacks.manager import CallbackManager
-from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
-#from langchain_community.chat_models import ChatOllama
 from langchain_community.chat_models import ChatCohere
 import os
-from dotenv import load_dotenv, find_dotenv
-from pathlib import Path
-import sys
 import pickle
 import time
 
-from rag import AIDTRag, STRetriever, AIDTEvaluator
+from rag import AIDTRag, AIDTEvaluator
 
-# In this experiment, we use GPT as a search engine (in the wild) that tries to retrieve
+# In this experiment, we use Cohere as a search engine (in the wild) that tries to retrieve
 # the different packages for a given need (i.e., query)
-# Note that the need is captures a a couple of kewords, rather than as a user story
 # ---------------------------------------------------------------------------------------------
 
-ENV_PATH = sys.path[0]+'/andres.env'
-print("Reading OPENAI config:", ENV_PATH, load_dotenv(dotenv_path=Path(ENV_PATH)))
-COHERE_API_KEY = os.getenv('COHERE_API_KEY')
+COHERE_API_KEY = "your COHERE API KEY goes here"
 print()
 
 INVOCATIONS_PER_MINUTE = 10
@@ -75,7 +65,6 @@ for index, row in userstories_df.iterrows():
         time.sleep(60) # Delay for 1 minute (60 seconds)
     
     print(index, "-"*100)
-    #query = row['user_story']
     query = row['query']
     if query not in temporal_dict:
         print("Query:", query)
@@ -83,13 +72,11 @@ for index, row in userstories_df.iterrows():
         # Prompting style is assumed to be zero-shot
         ranking_json = rag.search(query)
         print("Search (zero-shot):", TOP_K)
-        #print(ranking_json)
         ranking_df = pd.read_json(StringIO(ranking_json))
         if ranking_df.shape[1] == 1: # It's a fake LLM (no responses)
             print(ranking_df)
             ignoreLLM = True
         elif ranking_df.shape[0] > 0:
-            #print(ranking_df)
             ranking_df.rename(columns={"justification": "adjectives", "justifiers": "adjectives", "justify_adjectives": "adjectives", 
                                        "justify": "adjectives", "justify_choices": "adjectives", "package": "package_name"}, inplace=True)
             ranking_df.rename(columns={"year-of-release": "year_of_release", "year": "year_of_release", "release_year": "year_of_release",
@@ -98,7 +85,6 @@ for index, row in userstories_df.iterrows():
             print(ranking_df[colsfilter])
             ranking_df['query'] = str(query)
             ranking_df['who'] = selector
-            #list_dfs.append(ranking_df)
         else:
             print("Ranking seems empty")
             print(ranking_df)
@@ -119,7 +105,6 @@ if not ignoreLLM:
     results_df.to_csv(OUTPUT_RANKINGS, index=False) # Save the rankings for further analysis
 else:
     output_rankings_df = pd.DataFrame(columns=['query', selector])
-    # TODO: Re-ingest the CSV (without running the LLM) in order to compute the metrics
     print("Reading the rankings from previously saved results:", OUTPUT_RANKINGS)
     results_df = pd.read_csv(OUTPUT_RANKINGS)
     results_df['package_name'] = results_df['package_name'].str.lower()
@@ -137,7 +122,6 @@ gt_df['hits'] = gt_df['hits'].apply(eval)
 evaluator = AIDTEvaluator(gt_df)
 query_metrics_dict = evaluator.get_metrics(output_rankings_df)
 metrics_dict = AIDTEvaluator.get_metrics_by_type(query_metrics_dict)
-# print(json.dumps(metrics_dict, indent=4))
 metrics_df = AIDTEvaluator.get_metrics_as_dataframe(query_metrics_dict, who=selector)
 print(metrics_df) # This dataframe is useful for generating the boxplots
 metrics_df.to_csv(OUTPUT_METRICS, index=False)

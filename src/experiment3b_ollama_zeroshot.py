@@ -1,22 +1,14 @@
 import pandas as pd
-import json
-from io import StringIO
 from langchain.callbacks.manager import CallbackManager
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 from langchain_community.chat_models import ChatOllama
-from langchain_community.chat_models import ChatCohere
 import os
-from dotenv import load_dotenv, find_dotenv
-from pathlib import Path
-import sys
 import pickle
-import time
 
 from rag import AIDTRag, STRetriever, AIDTEvaluator
 
-# In this experiment, we use GPT as a search engine (in the wild) that tries to retrieve
+# In this experiment, we use Llama2 (via Ollama) as a search engine (in the wild) that tries to retrieve
 # the different packages for a given need (i.e., query)
-# Note that the need is captures a a couple of kewords, rather than as a user story
 # ---------------------------------------------------------------------------------------------
 
 # Inputs
@@ -37,15 +29,13 @@ technologies_df = pd.read_pickle(GITHUB_DATASET)
 # Ingestion of the technologies as documents for the database
 documents = AIDTRag.load_documents(technologies_df)
 
-my_model = "llama2:7b-chat" #"mistral:7b-instruct"
+my_model = "llama2:7b-chat"
 rag = AIDTRag(technologies_df, k=TOP_K)
 llm = ChatOllama(
     model=my_model, temperature=0.0, format="json",
     callback_manager=CallbackManager([StreamingStdOutCallbackHandler()])
 )
 rag.set_llm(llm)
-#ranker = CohereRerank()
-#rag.set_reranker(ranker)
 
 selector = 'ollama-'+my_model
 print(selector)
@@ -68,11 +58,11 @@ print(len(temporal_dict.keys()), "queries recovered")
 
 for index, row in userstories_df.iterrows():
     print(index, "-"*100)
-    #query = row['user_story']
     query = row['query']
     if query not in temporal_dict:
         print("Query:", query)
-        # Both retrieval and re-ranking are needed in this experiment
+        # Neither retrieval nor re-ranking are needed in this experiment, only search
+        # Prompting style is assumed to be zero-shot
         ranking_json = rag.search(query)
         print("Search (zero-shot):", TOP_K)
         temporal_dict[query] = ranking_json
