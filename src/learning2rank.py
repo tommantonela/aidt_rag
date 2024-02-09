@@ -3,19 +3,15 @@ import numpy as np
 import pandas as pd
 import time
 import pickle
-from sklearn.metrics import roc_curve, auc
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import classification_report
-from sklearn.metrics import roc_auc_score
-from sklearn.metrics import accuracy_score
-from sklearn.model_selection import train_test_split
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.preprocessing import MinMaxScaler
 
+'''This code is used to train a GradientBoosting model for a learning-to-rank task, based on the curated Github dataset'''
+
 L2RFILENAME = './models/gbrank.pkl'
 
-### GRADIENT BOOST ###
-### AKA GBRank ###
 np.random.seed(0)
 
 print("Loading datasets ...")
