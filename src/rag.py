@@ -1,29 +1,20 @@
 from langchain_core.retrievers import BaseRetriever
 from langchain_core.callbacks import CallbackManagerForRetrieverRun
 from langchain_core.documents import Document
-#from langchain.vectorstores import Chroma
 from langchain_community.vectorstores import Chroma
-#from langchain.embeddings import SentenceTransformerEmbeddings
 from langchain_community.embeddings import SentenceTransformerEmbeddings
 from langchain_community.llms import FakeListLLM
-from langchain_community.chat_models import ChatOpenAI
 from langchain_core.language_models import BaseChatModel
 from langchain.output_parsers.json import SimpleJsonOutputParser
 from langchain_core.output_parsers import StrOutputParser
 from langchain.retrievers import ContextualCompressionRetriever
-# from langchain.prompts import PromptTemplate
 from langchain.prompts import ChatPromptTemplate
-#from langchain.callbacks import get_openai_callback
-from langchain_community.callbacks import get_openai_callback
 
 import pandas as pd
 from pandas import DataFrame
 from typing import List
 import tiktoken
 import os
-from dotenv import load_dotenv, find_dotenv
-from pathlib import Path
-import sys
 import pickle
 from itertools import chain, tee
 from itertools import combinations
@@ -38,8 +29,11 @@ from sklearn.preprocessing import MinMaxScaler
 from ranx import Qrels, Run, evaluate
 from collections import defaultdict
 
-class AIDTRag:
 
+class AIDTRag:
+    ''' The main class to execute the RAG functions/pipeline for the JS package selection task'''
+
+    
     SYSTEM_TEMPLATE = """You are a helpful assistant to a Javascript developer. 
     Answer the QUESTION based on the CONTEXT below.     
     If the question cannot be answered using the information provided, simply return an empty list. 
@@ -102,24 +96,7 @@ class AIDTRag:
     QUESTION: How to {task}?
     """
 
-    # EXPLANATION_TEMPLATE = """CONTEXT: As a JavaScript developer, I want to perform the task: {task}. 
-    # To do so, I selected the following list of JavaScript packages: {packages},
-    # and I need to get additional data about them. 
-    # Please answer the QUESTION below and do not make up your answer.
-
-    # QUESTION: For each package in my list, can you provide the following data?: 
-    # - package name, 
-    # - a short description, 
-    # - its url, 
-    # - its year of release, 
-    # - {n} adjectives that justify the package choice, 
-    # - and pros and cons in a concise way; 
-    # all formatted as JSON objects?
-    # Note that some packages might be unrelated to the task. 
-    # Please use underscore and lowercase in the names of the JSON fields.
-    # """
-
-
+    # Constants
     CHROMA_DIRECTORY = "./chroma_db"
     EMBEDDINGS = "paraphrase-MiniLM-L6-v2"
     L2R_MODEL = './models/gbrank.pkl' #'./models/GBRank_models'
@@ -128,6 +105,7 @@ class AIDTRag:
     ENVIRONMENT_CONSTRAINT = "should be compatible with Node.js"
     YEAR_CONSTRAINT = "The packages must have been released before 2018."
     
+
     @staticmethod
     def load_documents(df, bm25=False):
         #nlp = spacy.load("en_core_web_sm")
@@ -143,57 +121,7 @@ class AIDTRag:
             doc_list.append(doc)
     
         return doc_list
-
-
-    def __init__(self, dataset: DataFrame, retriever: BaseRetriever =None, ranker=None, k: int=5, llm: BaseChatModel =None) -> None:
-        self.TOP_K = k
-        self.githubdb_df = dataset #pd.read_csv(dataset)
-        #print("Loading dataset ...", dataset, self.githubdb_df.shape)
-
-        if retriever is None:
-            if os.path.exists(self.CHROMA_DIRECTORY):
-                print("Loading chromadb from disk ...", self.CHROMA_DIRECTORY)
-                self.embeddings = SentenceTransformerEmbeddings(model_name=self.EMBEDDINGS)
-                db = Chroma(embedding_function=self.embeddings, persist_directory=self.CHROMA_DIRECTORY)
-                print(db._collection.count(), "documents")
-            else:
-                print("Creating chromadb and ingesting documents ...", self.CHROMA_DIRECTORY)
-                documents = AIDTRag.load_documents(self.githubdb_df)
-                self.embeddings = SentenceTransformerEmbeddings(model_name=self.EMBEDDINGS)
-                db = Chroma.from_documents(documents, self.embeddings, persist_directory=self.CHROMA_DIRECTORY)
-                print(len(documents), "documents")
-            self.retriever = db.as_retriever(search_kwargs={"k": self.TOP_K})
-        else:
-            print("Using a custom retriever ...", type(retriever))
-            retriever.k = k
-            self.retriever = retriever
-        
-        if ranker is None:
-            self.classifier = pickle.load(open(self.L2R_MODEL, 'rb')) #pickle.load(open(self.L2R_MODEL, 'rb'))[0]
-            print("Loading L2R classifier ...", self.L2R_MODEL)
-        else:
-            print("Using a custom ranker ...", type(ranker))
-            self.classifier = ranker
-        
-        self.set_llm(None)
     
-
-    def set_reranker(self, compressor):
-        compressor.top_n = self.TOP_K
-        compression_retriever = ContextualCompressionRetriever(
-            base_compressor=compressor, 
-            base_retriever=self.retriever, 
-            ) 
-        self.retriever = compression_retriever
-
-    def set_llm(self, llm: BaseChatModel) -> None:
-        if llm is None:
-            self.llm = FakeListLLM(responses=["Fake response", "Another fake response"])
-            self.output_parser =  StrOutputParser() 
-        else:
-            self.llm = llm
-            self.output_parser = SimpleJsonOutputParser()
-
     # pairwise recipe from the itertools docs.
     @staticmethod
     def pairwise(iterable):
@@ -228,13 +156,12 @@ class AIDTRag:
     
     @staticmethod
     def choix_ranking(ranking, input_pairs):
+        '''Choix ranking using the input pairs and the ranking as input.'''
+
         n_items = len(ranking)
         input_pairs_tuples = [(ranking.index(pair[0]), ranking.index(pair[1])) for pair in input_pairs]
-        #print(input_pairs_tuples)
         params = choix.ilsr_pairwise(n_items, input_pairs_tuples, alpha=0.01)
-        #params = choix.lsr_pairwise(n_items, input_pairs_tuples, alpha=0.01)
         my_order = np.argsort(-params)
-        #print("Re-ranking (best-to-worst) - choix:", my_order)
         return [ranking[i] for i in my_order]
 
     @staticmethod
@@ -247,12 +174,10 @@ class AIDTRag:
         second_elem = [pair[1] for pair in ranking_pairs]
         first_df = df.loc[first_elem].reset_index().drop("name", axis=1)
         second_df = df.loc[second_elem].reset_index().drop("name", axis=1)
-        #first_columns = first_df.columns
         second_columns = [str(col)[:-1]+'2' for col in second_df.columns]
         second_df.columns = second_columns
         concat_df = pd.concat([first_df, second_df], axis=1)
         concat_df = concat_df.fillna(0)
-        #print(concat_df.columns)
 
         # Loading the GBRank classifier and making predictions
         scaler = MinMaxScaler()
@@ -268,13 +193,71 @@ class AIDTRag:
                 input_pairs.append([pair[1], pair[0]])
         
         alternative_ranking =  AIDTRag.choix_ranking(ranking, input_pairs)
-        #print("Re-ranking (choix):", alternative_ranking)
         if use_choix:
             return alternative_ranking, results
         else:
             return AIDTRag.merge_ordering(input_pairs), results
 
+    @staticmethod
+    def num_tokens_from_string(string: str, encoding_name: str ="cl100k_base") -> int:
+        """Returns the number of tokens in a text string."""
+        encoding = tiktoken.get_encoding(encoding_name)
+        num_tokens = len(encoding.encode(string))
+        return num_tokens
+
+
+    # Constructor
+    def __init__(self, dataset: DataFrame, retriever: BaseRetriever =None, ranker=None, k: int=5, llm: BaseChatModel =None) -> None:
+        self.TOP_K = k
+        self.githubdb_df = dataset 
+
+        if retriever is None:
+            if os.path.exists(self.CHROMA_DIRECTORY):
+                print("Loading chromadb from disk ...", self.CHROMA_DIRECTORY)
+                self.embeddings = SentenceTransformerEmbeddings(model_name=self.EMBEDDINGS)
+                db = Chroma(embedding_function=self.embeddings, persist_directory=self.CHROMA_DIRECTORY)
+                print(db._collection.count(), "documents")
+            else:
+                print("Creating chromadb and ingesting documents ...", self.CHROMA_DIRECTORY)
+                documents = AIDTRag.load_documents(self.githubdb_df)
+                self.embeddings = SentenceTransformerEmbeddings(model_name=self.EMBEDDINGS)
+                db = Chroma.from_documents(documents, self.embeddings, persist_directory=self.CHROMA_DIRECTORY)
+                print(len(documents), "documents")
+            self.retriever = db.as_retriever(search_kwargs={"k": self.TOP_K})
+        else:
+            print("Using a custom retriever ...", type(retriever))
+            retriever.k = k
+            self.retriever = retriever
+        
+        if ranker is None:
+            self.classifier = pickle.load(open(self.L2R_MODEL, 'rb'))
+            print("Loading L2R classifier ...", self.L2R_MODEL)
+        else:
+            print("Using a custom ranker ...", type(ranker))
+            self.classifier = ranker
+        
+        self.set_llm(None)
+    
+
+    def set_reranker(self, compressor):
+        compressor.top_n = self.TOP_K
+        compression_retriever = ContextualCompressionRetriever(
+            base_compressor=compressor, 
+            base_retriever=self.retriever, 
+            ) 
+        self.retriever = compression_retriever
+
+    def set_llm(self, llm: BaseChatModel) -> None:
+        if llm is None:
+            self.llm = FakeListLLM(responses=["Fake response", "Another fake response"])
+            self.output_parser =  StrOutputParser() 
+        else:
+            self.llm = llm
+            self.output_parser = SimpleJsonOutputParser()
+
     def check_grounding(self, query: str, technologies: List[str]) -> bool:
+        '''Check if the LLM response is grounded in the technologies provided by the retriever.'''
+        
         results = set(self.retrieve(query))
         llm_technologies = set([t.lower() for t in technologies])
         if len(llm_technologies) < len(technologies):
@@ -286,14 +269,12 @@ class AIDTRag:
             diff = llm_technologies.difference(results)
             print("Warning: LLM added", len(diff), "additional technologies", diff)
             return False
-
-#[{'package name': 'quagga', 'description': 'An advanced barcode-reader written in JavaScript', 'url': 'https://serratus.github.io/quaggaJS/', 'year of release': '2014', 'justification': ['advanced', 'popular', 'well-documented'], 'pros': ['Advanced barcode reading capabilities', 'Popular and widely used', 'Well-documented'], 'cons': ['May require additional configuration for specific use cases']}, {'package name': 'dbr', 'description': 'A barcode reading library for Node.js', 'url': 'https://www.dynamsoft.com/Products/Dynamic-Barcode-Reader.aspx', 'year of release': '2013', 'justification': ['specifically designed for Node.js', 'powerful', 'supports various barcode types'], 'pros': ['Specifically designed for Node.js', 'Powerful barcode reading capabilities', 'Supports various barcode types'], 'cons': ['Not as widely used as some other packages']}, {'package name': 'barcode-scanner', 'description': 'A barcode scanner library for Node.js', 'url': 'https://www.npmjs.com/package/barcode-scanner', 'year of release': '2015', 'justification': ['specifically designed for Node.js', 'easy to use', 'supports multiple barcode formats'], 'pros': ['Specifically designed for Node.js', 'Easy to use', 'Supports multiple barcode formats'], 'cons': ['May not have as advanced features as other packages']}, {'package name': 'barcode-js', 'description': 'A JavaScript barcode generator and decoder', 'url': 'https://barcode-js.com/', 'year of release': '2012', 'justification': ['barcode generation and decoding', 'mature', 'supports various barcode types'], 'pros': ['Barcode generation and decoding capabilities', 'Mature package with long history', 'Supports various barcode types'], 'cons': ['May not have as advanced features as other packages']}, {'package name': 'datamatrix-decode', 'description': 'A JavaScript library for decoding Data Matrix barcodes', 'url': 'https://www.npmjs.com/package/datamatrix-decode', 'year of release': '2017', 'justification': ['specifically for Data Matrix barcodes', 'recent', 'lightweight'], 'pros': ['Specifically designed for decoding Data Matrix barcodes', 'Recent package', 'Lightweight'], 'cons': ['Limited to Data Matrix barcodes only']}]
-        
+       
     def retrieve(self, query: str, as_json=False) -> List[str] | str: # JSON
-        #print(type(self.retriever.vectorstore))
-        results = self.retriever.get_relevant_documents(query) #, search_kwargs={"k": k})
-        # for doc in results:
-        #     print(doc.metadata['source'], doc.metadata['justification']) #doc.page_content)
+        '''Retrieve the technologies according to the query'''
+
+        results = self.retriever.get_relevant_documents(query) 
+
         if not as_json:
             return [doc.metadata['source'] for doc in results]
         else:
@@ -311,6 +292,8 @@ class AIDTRag:
 
     
     def rank(self, technologies: List[str]) -> List[str]:
+        '''Rank the technologies according to the classifier model'''
+
         if len(technologies) == 0:
             return []
         
@@ -332,22 +315,15 @@ class AIDTRag:
         re_ranking = []
         if len(existing_technologies) > 1:
             features_df = features_df.loc[existing_technologies]
-            #print(features_df)
             re_ranking, _ = AIDTRag.predict_ranking(existing_technologies, features_df, model=self.classifier, use_choix=True)
         elif len(existing_technologies) == 1:
             re_ranking = existing_technologies
         
         return re_ranking + non_existing_technologies
     
-    @staticmethod
-    def num_tokens_from_string(string: str, encoding_name: str ="cl100k_base") -> int:
-        """Returns the number of tokens in a text string."""
-        encoding = tiktoken.get_encoding(encoding_name)
-        num_tokens = len(encoding.encode(string))
-        return num_tokens
-    
     def search(self, query: str, prompt: str=ZERO_SHOT_TEMPLATE) -> str: # JSON
-        """Search for the technologies (zero-shot) according to the query"""
+        '''Search for the technologies (zero-shot) according to the query'''
+
         try:
             response = self._generate(query, [], prompt)
             print(response)
@@ -357,6 +333,7 @@ class AIDTRag:
         return response
     
     def _generate(self, query: str, technologies: List[str], human_prompt: str) -> str: # JSON
+        '''Generate the response using the LLM model and the prompt provided'''
 
         model_prompt = ChatPromptTemplate.from_messages([
             ("system", self.SYSTEM_TEMPLATE), # system role
@@ -378,6 +355,8 @@ class AIDTRag:
             return json.dumps(response)
     
     def _get_descriptions(self, technologies: List[str]) -> List[str]:
+        '''Get the descriptions of the technologies'''
+
         descriptions = []
         all_tecnologies = self.githubdb_df['name'].tolist()
         for t in technologies:
@@ -389,7 +368,8 @@ class AIDTRag:
         return descriptions
     
     def execute(self, query: str, rerank: str=None, explain=False) -> str: # JSON
-        """The main function to execute the full RAG-LLM pipeline"""
+        '''Main function to execute the full RAG-LLM pipeline'''
+
         rerank_option = False
         prompt_option = None
         if rerank is None:
@@ -414,14 +394,14 @@ class AIDTRag:
         return response
     
     def _do_rag(self, query: str, rerank: bool=False, prompt: str=None) -> str: # JSON
-        """Internal execution of the full RAG-LLM pipeline. The prompt might be customized"""
+        '''Internal execution of the full RAG-LLM pipeline. The prompt might be customized'''
+
         technologies = self.retrieve(query)
         if len(technologies) == 0:
             return json.dumps(technologies)
         
         if rerank:
             technologies = self.rank(technologies)
-            #print(technologies)
 
         if prompt is not None: # Run the LLM with this prompt (as a chat model)
             return self._generate(query, technologies, prompt)
@@ -441,6 +421,8 @@ class AIDTRag:
 
 
 class STRetriever(BaseRetriever):
+    '''A custom retriever based on a ground truth file, provided externally. 
+    It uses a precomputed ranking file.'''
 
     query_dict: dict = {}
     docs_dict: dict = {}
@@ -472,6 +454,10 @@ class STRetriever(BaseRetriever):
         #print(self.docs_dict.keys())
 
     def _get_relevant_documents(self, query: str, *, run_manager: CallbackManagerForRetrieverRun) -> List[Document]:
+        '''Retrieve the documents for the query. It returns the top-k documents.
+        It overrides the method from the BaseRetriever class.
+        '''
+
         list_docs = []
         if query in self.query_dict.keys():
             docs = self.query_dict[query]
@@ -483,7 +469,7 @@ class STRetriever(BaseRetriever):
                     list_docs.append(self.docs_dict[name])
                 else:
                     list_docs.append(Document(page_content=name, metadata={"source": name, "id": -1, "justification": []}))
-        #print("STRetrieval:", list_docs)
+
         return list_docs
     
     def add_justifications(self, justifications: dict) -> None:
@@ -492,33 +478,57 @@ class STRetriever(BaseRetriever):
                 self.docs_dict[k].metadata['justification'] = justifications[k]
     
 
-# TODO: Implement here the metrics for ranking evaluation (e.g., using ranx)
 class AIDTEvaluator:
+    '''Utility class to evaluate the ranking metrics using Ranx'''
 
     METRICS: List[str] = ['map@3', 'mrr@3','ndcg@3','precision@3','recall@3','f1@3',
                           'map@5', 'mrr@5','ndcg@5','precision@5','recall@5','f1@5',
                           'map@7', 'mrr@7','ndcg@7','precision@7','recall@7','f1@7'
                           ]
 
+
+    @staticmethod
+    def get_metrics_by_type(results: defaultdict) -> defaultdict:
+        '''Get the metrics by type (e.g., map@3, mrr@3, etc.) from the results.'''
+
+        metrics_dict = defaultdict(list).copy()
+        for m in AIDTEvaluator.METRICS:
+            for k in results.keys():
+                metrics_dict[m].extend(results[k][m])
+        return metrics_dict
+
+    @staticmethod
+    def get_metrics_as_dataframe(results: defaultdict, who: str=None) -> DataFrame:
+        '''Get the metrics as a dataframe from the results. It includes the 'who' column.'''
+        
+        results_metrics = []
+        for q,v in results.items():
+            for k,m in v.items():
+                results_metrics.extend([{'query':q,'metric': k,'value':mm, 'who':'humanito'} for mm in m])
+        df = pd.DataFrame(results_metrics)
+        if who is not None:
+            df['who'] = who
+        return df
+    
+
     def __init__(self, queries_hits: DataFrame, q: int=0) -> None:
         self.ground_truth = {} # construimos el ground truth, todos tienen el mismo valor (no hay ranking)
         q_col = queries_hits.columns[q]
         for i in range(0,len(queries_hits)):
             if len(queries_hits['hits'].values[i]) > 0:
-                #self.ground_truth[queries_hits.index[i]] = {x:1 for x in queries_hits['hits'].values[i]}
                 self.ground_truth[queries_hits.at[i,q_col]] = {x:1 for x in queries_hits['hits'].values[i]}
             else:
                 print('-- Warning: skipping', queries_hits.at[i,q_col], "/ 0 hits")
 
 
     def get_metrics(self, query_rankings_df: DataFrame) -> defaultdict:
+        '''Get the metrics from the query rankings dataframe. It returns a dictionary of lists.'''
 
         df = query_rankings_df
         column = df.columns[1]
         results = defaultdict(defaultdict(list).copy) # {query : {metric : list}}
 
-        for i in tqdm(range(0,len(df)), "queries"): # por cada uno hay que hacer el run porque no se pueden combinar múltiples
-            # habría que agregar a alguna lista o algo
+        for i in tqdm(range(0,len(df)), "queries"): 
             query = df.at[i, 'query'] # df.index[i]
             if query not in self.ground_truth:
                 print('-- Warning: not in ground truth:', df.index[i], query)
@@ -557,24 +567,6 @@ class AIDTEvaluator:
 
         return results
     
-    @staticmethod
-    def get_metrics_by_type(results: defaultdict) -> defaultdict:
-        metrics_dict = defaultdict(list).copy()
-        for m in AIDTEvaluator.METRICS:
-            for k in results.keys():
-                metrics_dict[m].extend(results[k][m])
-        return metrics_dict
-
-    @staticmethod
-    def get_metrics_as_dataframe(results: defaultdict, who: str=None) -> DataFrame:
-        results_metrics = []
-        for q,v in results.items():
-            for k,m in v.items():
-                results_metrics.extend([{'query':q,'metric': k,'value':mm, 'who':'humanito'} for mm in m])
-        df = pd.DataFrame(results_metrics)
-        if who is not None:
-            df['who'] = who
-        return df
     
     
     
