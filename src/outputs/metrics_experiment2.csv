@@ -1,0 +1,343 @@
+query,metric,value,who
+DOM manipulation utils,map@3,0.17647058823529413,borda_fuse
+DOM manipulation utils,mrr@3,1.0,borda_fuse
+DOM manipulation utils,ndcg@3,1.0,borda_fuse
+DOM manipulation utils,precision@3,1.0,borda_fuse
+DOM manipulation utils,recall@3,0.17647058823529413,borda_fuse
+DOM manipulation utils,f1@3,0.3,borda_fuse
+DOM manipulation utils,map@5,0.29411764705882354,borda_fuse
+DOM manipulation utils,mrr@5,1.0,borda_fuse
+DOM manipulation utils,ndcg@5,1.0,borda_fuse
+DOM manipulation utils,precision@5,1.0,borda_fuse
+DOM manipulation utils,recall@5,0.29411764705882354,borda_fuse
+DOM manipulation utils,f1@5,0.45454545454545453,borda_fuse
+DOM manipulation utils,map@7,0.4117647058823529,borda_fuse
+DOM manipulation utils,mrr@7,1.0,borda_fuse
+DOM manipulation utils,ndcg@7,1.0,borda_fuse
+DOM manipulation utils,precision@7,1.0,borda_fuse
+DOM manipulation utils,recall@7,0.4117647058823529,borda_fuse
+DOM manipulation utils,f1@7,0.5833333333333334,borda_fuse
+captcha authentication,map@3,0.29166666666666663,borda_fuse
+captcha authentication,mrr@3,0.5,borda_fuse
+captcha authentication,ndcg@3,0.5307212739772434,borda_fuse
+captcha authentication,precision@3,0.6666666666666666,borda_fuse
+captcha authentication,recall@3,0.5,borda_fuse
+captcha authentication,f1@3,0.5714285714285715,borda_fuse
+captcha authentication,map@5,0.29166666666666663,borda_fuse
+captcha authentication,mrr@5,0.5,borda_fuse
+captcha authentication,ndcg@5,0.44149241373678083,borda_fuse
+captcha authentication,precision@5,0.4,borda_fuse
+captcha authentication,recall@5,0.5,borda_fuse
+captcha authentication,f1@5,0.4444444444444445,borda_fuse
+captcha authentication,map@7,0.29166666666666663,borda_fuse
+captcha authentication,mrr@7,0.5,borda_fuse
+captcha authentication,ndcg@7,0.44149241373678083,borda_fuse
+captcha authentication,precision@7,0.2857142857142857,borda_fuse
+captcha authentication,recall@7,0.5,borda_fuse
+captcha authentication,f1@7,0.36363636363636365,borda_fuse
+check valid email address,map@3,0.0303030303030303,borda_fuse
+check valid email address,mrr@3,1.0,borda_fuse
+check valid email address,ndcg@3,0.7039180890341347,borda_fuse
+check valid email address,precision@3,0.6666666666666666,borda_fuse
+check valid email address,recall@3,0.03636363636363636,borda_fuse
+check valid email address,f1@3,0.06896551724137931,borda_fuse
+check valid email address,map@5,0.04393939393939394,borda_fuse
+check valid email address,mrr@5,1.0,borda_fuse
+check valid email address,ndcg@5,0.6548086577531307,borda_fuse
+check valid email address,precision@5,0.6,borda_fuse
+check valid email address,recall@5,0.05454545454545454,borda_fuse
+check valid email address,f1@5,0.09999999999999999,borda_fuse
+check valid email address,map@7,0.06904761904761904,borda_fuse
+check valid email address,mrr@7,1.0,borda_fuse
+check valid email address,ndcg@7,0.7202356619815307,borda_fuse
+check valid email address,precision@7,0.7142857142857143,borda_fuse
+check valid email address,recall@7,0.09090909090909091,borda_fuse
+check valid email address,f1@7,0.16129032258064518,borda_fuse
+convert data formats,map@3,0.03488372093023256,borda_fuse
+convert data formats,mrr@3,1.0,borda_fuse
+convert data formats,ndcg@3,1.0,borda_fuse
+convert data formats,precision@3,1.0,borda_fuse
+convert data formats,recall@3,0.03488372093023256,borda_fuse
+convert data formats,f1@3,0.06741573033707865,borda_fuse
+convert data formats,map@5,0.05813953488372093,borda_fuse
+convert data formats,mrr@5,1.0,borda_fuse
+convert data formats,ndcg@5,1.0,borda_fuse
+convert data formats,precision@5,1.0,borda_fuse
+convert data formats,recall@5,0.05813953488372093,borda_fuse
+convert data formats,f1@5,0.10989010989010987,borda_fuse
+convert data formats,map@7,0.0681063122923588,borda_fuse
+convert data formats,mrr@7,1.0,borda_fuse
+convert data formats,ndcg@7,0.9020870746500321,borda_fuse
+convert data formats,precision@7,0.8571428571428571,borda_fuse
+convert data formats,recall@7,0.06976744186046512,borda_fuse
+convert data formats,f1@7,0.12903225806451613,borda_fuse
+convert text to speech,map@3,0.08974358974358973,borda_fuse
+convert text to speech,mrr@3,0.5,borda_fuse
+convert text to speech,ndcg@3,0.5307212739772434,borda_fuse
+convert text to speech,precision@3,0.6666666666666666,borda_fuse
+convert text to speech,recall@3,0.15384615384615385,borda_fuse
+convert text to speech,f1@3,0.25,borda_fuse
+convert text to speech,map@5,0.1358974358974359,borda_fuse
+convert text to speech,mrr@5,0.5,borda_fuse
+convert text to speech,ndcg@5,0.5147714448836774,borda_fuse
+convert text to speech,precision@5,0.6,borda_fuse
+convert text to speech,recall@5,0.23076923076923078,borda_fuse
+convert text to speech,f1@5,0.33333333333333337,borda_fuse
+convert text to speech,map@7,0.18717948717948715,borda_fuse
+convert text to speech,mrr@7,0.5,borda_fuse
+convert text to speech,ndcg@7,0.5151154298255826,borda_fuse
+convert text to speech,precision@7,0.5714285714285714,borda_fuse
+convert text to speech,recall@7,0.3076923076923077,borda_fuse
+convert text to speech,f1@7,0.4,borda_fuse
+credit card validation,map@3,0.08333333333333333,borda_fuse
+credit card validation,mrr@3,1.0,borda_fuse
+credit card validation,ndcg@3,1.0,borda_fuse
+credit card validation,precision@3,1.0,borda_fuse
+credit card validation,recall@3,0.08333333333333333,borda_fuse
+credit card validation,f1@3,0.15384615384615385,borda_fuse
+credit card validation,map@5,0.1388888888888889,borda_fuse
+credit card validation,mrr@5,1.0,borda_fuse
+credit card validation,ndcg@5,1.0,borda_fuse
+credit card validation,precision@5,1.0,borda_fuse
+credit card validation,recall@5,0.1388888888888889,borda_fuse
+credit card validation,f1@5,0.24390243902439027,borda_fuse
+credit card validation,map@7,0.19444444444444445,borda_fuse
+credit card validation,mrr@7,1.0,borda_fuse
+credit card validation,ndcg@7,1.0,borda_fuse
+credit card validation,precision@7,1.0,borda_fuse
+credit card validation,recall@7,0.19444444444444445,borda_fuse
+credit card validation,f1@7,0.32558139534883723,borda_fuse
+detect text language,map@3,0.16666666666666666,borda_fuse
+detect text language,mrr@3,1.0,borda_fuse
+detect text language,ndcg@3,0.7039180890341347,borda_fuse
+detect text language,precision@3,0.6666666666666666,borda_fuse
+detect text language,recall@3,0.2,borda_fuse
+detect text language,f1@3,0.30769230769230765,borda_fuse
+detect text language,map@5,0.32166666666666666,borda_fuse
+detect text language,mrr@5,1.0,borda_fuse
+detect text language,ndcg@5,0.7860137352654724,borda_fuse
+detect text language,precision@5,0.8,borda_fuse
+detect text language,recall@5,0.4,borda_fuse
+detect text language,f1@5,0.5333333333333333,borda_fuse
+detect text language,map@7,0.49071428571428566,borda_fuse
+detect text language,mrr@7,1.0,borda_fuse
+detect text language,ndcg@7,0.8265723430117605,borda_fuse
+detect text language,precision@7,0.8571428571428571,borda_fuse
+detect text language,recall@7,0.6,borda_fuse
+detect text language,f1@7,0.7058823529411764,borda_fuse
+download free music,map@3,0.053030303030303025,borda_fuse
+download free music,mrr@3,0.5,borda_fuse
+download free music,ndcg@3,0.5307212739772434,borda_fuse
+download free music,precision@3,0.6666666666666666,borda_fuse
+download free music,recall@3,0.09090909090909091,borda_fuse
+download free music,f1@3,0.16,borda_fuse
+download free music,map@5,0.053030303030303025,borda_fuse
+download free music,mrr@5,0.5,borda_fuse
+download free music,ndcg@5,0.38356636737133565,borda_fuse
+download free music,precision@5,0.4,borda_fuse
+download free music,recall@5,0.09090909090909091,borda_fuse
+download free music,f1@5,0.14814814814814814,borda_fuse
+download free music,map@7,0.053030303030303025,borda_fuse
+download free music,mrr@7,0.5,borda_fuse
+download free music,ndcg@7,0.3108658234453849,borda_fuse
+download free music,precision@7,0.2857142857142857,borda_fuse
+download free music,recall@7,0.09090909090909091,borda_fuse
+download free music,f1@7,0.13793103448275862,borda_fuse
+download web videos,map@3,0.05208333333333333,borda_fuse
+download web videos,mrr@3,1.0,borda_fuse
+download web videos,ndcg@3,0.7039180890341347,borda_fuse
+download web videos,precision@3,0.6666666666666666,borda_fuse
+download web videos,recall@3,0.0625,borda_fuse
+download web videos,f1@3,0.11428571428571428,borda_fuse
+download web videos,map@5,0.07552083333333333,borda_fuse
+download web videos,mrr@5,1.0,borda_fuse
+download web videos,ndcg@5,0.6548086577531307,borda_fuse
+download web videos,precision@5,0.6,borda_fuse
+download web videos,recall@5,0.09375,borda_fuse
+download web videos,f1@5,0.16216216216216214,borda_fuse
+download web videos,map@7,0.07552083333333333,borda_fuse
+download web videos,mrr@7,1.0,borda_fuse
+download web videos,ndcg@7,0.5306972923267992,borda_fuse
+download web videos,precision@7,0.42857142857142855,borda_fuse
+download web videos,recall@7,0.09375,borda_fuse
+download web videos,f1@7,0.15384615384615383,borda_fuse
+extract barcode from image,map@3,0.0625,borda_fuse
+extract barcode from image,mrr@3,1.0,borda_fuse
+extract barcode from image,ndcg@3,0.46927872602275644,borda_fuse
+extract barcode from image,precision@3,0.3333333333333333,borda_fuse
+extract barcode from image,recall@3,0.0625,borda_fuse
+extract barcode from image,f1@3,0.10526315789473684,borda_fuse
+extract barcode from image,map@5,0.0625,borda_fuse
+extract barcode from image,mrr@5,1.0,borda_fuse
+extract barcode from image,ndcg@5,0.3391602052736161,borda_fuse
+extract barcode from image,precision@5,0.2,borda_fuse
+extract barcode from image,recall@5,0.0625,borda_fuse
+extract barcode from image,f1@5,0.09523809523809523,borda_fuse
+extract barcode from image,map@7,0.0625,borda_fuse
+extract barcode from image,mrr@7,1.0,borda_fuse
+extract barcode from image,ndcg@7,0.27487633291429087,borda_fuse
+extract barcode from image,precision@7,0.14285714285714285,borda_fuse
+extract barcode from image,recall@7,0.0625,borda_fuse
+extract barcode from image,f1@7,0.08695652173913043,borda_fuse
+health tracker,map@3,0.16666666666666666,borda_fuse
+health tracker,mrr@3,0.3333333333333333,borda_fuse
+health tracker,ndcg@3,0.3065735963827292,borda_fuse
+health tracker,precision@3,0.3333333333333333,borda_fuse
+health tracker,recall@3,0.5,borda_fuse
+health tracker,f1@3,0.4,borda_fuse
+health tracker,map@5,0.16666666666666666,borda_fuse
+health tracker,mrr@5,0.3333333333333333,borda_fuse
+health tracker,ndcg@5,0.3065735963827292,borda_fuse
+health tracker,precision@5,0.2,borda_fuse
+health tracker,recall@5,0.5,borda_fuse
+health tracker,f1@5,0.28571428571428575,borda_fuse
+health tracker,map@7,0.3333333333333333,borda_fuse
+health tracker,mrr@7,0.3333333333333333,borda_fuse
+health tracker,ndcg@7,0.5249810332008933,borda_fuse
+health tracker,precision@7,0.2857142857142857,borda_fuse
+health tracker,recall@7,1.0,borda_fuse
+health tracker,f1@7,0.4444444444444445,borda_fuse
+mathematical functions,map@3,0.08333333333333333,borda_fuse
+mathematical functions,mrr@3,1.0,borda_fuse
+mathematical functions,ndcg@3,1.0,borda_fuse
+mathematical functions,precision@3,1.0,borda_fuse
+mathematical functions,recall@3,0.08333333333333333,borda_fuse
+mathematical functions,f1@3,0.15384615384615385,borda_fuse
+mathematical functions,map@5,0.08333333333333333,borda_fuse
+mathematical functions,mrr@5,1.0,borda_fuse
+mathematical functions,ndcg@5,0.7227265726449519,borda_fuse
+mathematical functions,precision@5,0.6,borda_fuse
+mathematical functions,recall@5,0.08333333333333333,borda_fuse
+mathematical functions,f1@5,0.14634146341463414,borda_fuse
+mathematical functions,map@7,0.10185185185185185,borda_fuse
+mathematical functions,mrr@7,1.0,borda_fuse
+mathematical functions,ndcg@7,0.6836550817096436,borda_fuse
+mathematical functions,precision@7,0.5714285714285714,borda_fuse
+mathematical functions,recall@7,0.1111111111111111,borda_fuse
+mathematical functions,f1@7,0.18604651162790697,borda_fuse
+quick sort algorithm,map@3,0.05357142857142857,borda_fuse
+quick sort algorithm,mrr@3,1.0,borda_fuse
+quick sort algorithm,ndcg@3,1.0,borda_fuse
+quick sort algorithm,precision@3,1.0,borda_fuse
+quick sort algorithm,recall@3,0.05357142857142857,borda_fuse
+quick sort algorithm,f1@3,0.10169491525423728,borda_fuse
+quick sort algorithm,map@5,0.06785714285714285,borda_fuse
+quick sort algorithm,mrr@5,1.0,borda_fuse
+quick sort algorithm,ndcg@5,0.8539316501572937,borda_fuse
+quick sort algorithm,precision@5,0.8,borda_fuse
+quick sort algorithm,recall@5,0.07142857142857142,borda_fuse
+quick sort algorithm,f1@5,0.13114754098360656,borda_fuse
+quick sort algorithm,map@7,0.09804421768707482,borda_fuse
+quick sort algorithm,mrr@7,1.0,borda_fuse
+quick sort algorithm,ndcg@7,0.8816172070446371,borda_fuse
+quick sort algorithm,precision@7,0.8571428571428571,borda_fuse
+quick sort algorithm,recall@7,0.10714285714285714,borda_fuse
+quick sort algorithm,f1@7,0.19047619047619047,borda_fuse
+scraper,map@3,0.043478260869565216,borda_fuse
+scraper,mrr@3,1.0,borda_fuse
+scraper,ndcg@3,1.0,borda_fuse
+scraper,precision@3,1.0,borda_fuse
+scraper,recall@3,0.043478260869565216,borda_fuse
+scraper,f1@3,0.08333333333333333,borda_fuse
+scraper,map@5,0.07246376811594203,borda_fuse
+scraper,mrr@5,1.0,borda_fuse
+scraper,ndcg@5,1.0,borda_fuse
+scraper,precision@5,1.0,borda_fuse
+scraper,recall@5,0.07246376811594203,borda_fuse
+scraper,f1@5,0.13513513513513511,borda_fuse
+scraper,map@7,0.10144927536231885,borda_fuse
+scraper,mrr@7,1.0,borda_fuse
+scraper,ndcg@7,1.0,borda_fuse
+scraper,precision@7,1.0,borda_fuse
+scraper,recall@7,0.10144927536231885,borda_fuse
+scraper,f1@7,0.1842105263157895,borda_fuse
+send sms,map@3,0.01652892561983471,borda_fuse
+send sms,mrr@3,1.0,borda_fuse
+send sms,ndcg@3,0.7653606369886217,borda_fuse
+send sms,precision@3,0.6666666666666666,borda_fuse
+send sms,recall@3,0.01652892561983471,borda_fuse
+send sms,f1@3,0.03225806451612903,borda_fuse
+send sms,map@5,0.02933884297520661,borda_fuse
+send sms,mrr@5,1.0,borda_fuse
+send sms,ndcg@5,0.830419897363192,borda_fuse
+send sms,precision@5,0.8,borda_fuse
+send sms,recall@5,0.03305785123966942,borda_fuse
+send sms,f1@5,0.06349206349206349,borda_fuse
+send sms,map@7,0.04330972058244785,borda_fuse
+send sms,mrr@7,1.0,borda_fuse
+send sms,ndcg@7,0.8625618335428545,borda_fuse
+send sms,precision@7,0.8571428571428571,borda_fuse
+send sms,recall@7,0.049586776859504134,borda_fuse
+send sms,f1@7,0.09375000000000001,borda_fuse
+sentiment analysis,map@3,0.06521739130434782,borda_fuse
+sentiment analysis,mrr@3,1.0,borda_fuse
+sentiment analysis,ndcg@3,1.0,borda_fuse
+sentiment analysis,precision@3,1.0,borda_fuse
+sentiment analysis,recall@3,0.06521739130434782,borda_fuse
+sentiment analysis,f1@3,0.12244897959183672,borda_fuse
+sentiment analysis,map@5,0.10869565217391304,borda_fuse
+sentiment analysis,mrr@5,1.0,borda_fuse
+sentiment analysis,ndcg@5,1.0,borda_fuse
+sentiment analysis,precision@5,1.0,borda_fuse
+sentiment analysis,recall@5,0.10869565217391304,borda_fuse
+sentiment analysis,f1@5,0.19607843137254902,borda_fuse
+sentiment analysis,map@7,0.15217391304347827,borda_fuse
+sentiment analysis,mrr@7,1.0,borda_fuse
+sentiment analysis,ndcg@7,1.0,borda_fuse
+sentiment analysis,precision@7,1.0,borda_fuse
+sentiment analysis,recall@7,0.15217391304347827,borda_fuse
+sentiment analysis,f1@7,0.2641509433962264,borda_fuse
+third party authentication,map@3,0.16666666666666666,borda_fuse
+third party authentication,mrr@3,1.0,borda_fuse
+third party authentication,ndcg@3,1.0,borda_fuse
+third party authentication,precision@3,1.0,borda_fuse
+third party authentication,recall@3,0.16666666666666666,borda_fuse
+third party authentication,f1@3,0.2857142857142857,borda_fuse
+third party authentication,map@5,0.2777777777777778,borda_fuse
+third party authentication,mrr@5,1.0,borda_fuse
+third party authentication,ndcg@5,1.0,borda_fuse
+third party authentication,precision@5,1.0,borda_fuse
+third party authentication,recall@5,0.2777777777777778,borda_fuse
+third party authentication,f1@5,0.4347826086956522,borda_fuse
+third party authentication,map@7,0.3888888888888889,borda_fuse
+third party authentication,mrr@7,1.0,borda_fuse
+third party authentication,ndcg@7,1.0,borda_fuse
+third party authentication,precision@7,1.0,borda_fuse
+third party authentication,recall@7,0.3888888888888889,borda_fuse
+third party authentication,f1@7,0.56,borda_fuse
+translate english to spanish,map@3,0.0,borda_fuse
+translate english to spanish,mrr@3,0.0,borda_fuse
+translate english to spanish,ndcg@3,0.0,borda_fuse
+translate english to spanish,precision@3,0.0,borda_fuse
+translate english to spanish,recall@3,0.0,borda_fuse
+translate english to spanish,f1@3,0.0,borda_fuse
+translate english to spanish,map@5,0.0,borda_fuse
+translate english to spanish,mrr@5,0.0,borda_fuse
+translate english to spanish,ndcg@5,0.0,borda_fuse
+translate english to spanish,precision@5,0.0,borda_fuse
+translate english to spanish,recall@5,0.0,borda_fuse
+translate english to spanish,f1@5,0.0,borda_fuse
+translate english to spanish,map@7,0.0,borda_fuse
+translate english to spanish,mrr@7,0.0,borda_fuse
+translate english to spanish,ndcg@7,0.0,borda_fuse
+translate english to spanish,precision@7,0.0,borda_fuse
+translate english to spanish,recall@7,0.0,borda_fuse
+translate english to spanish,f1@7,0.0,borda_fuse
+user authentication,map@3,0.014285714285714285,borda_fuse
+user authentication,mrr@3,1.0,borda_fuse
+user authentication,ndcg@3,0.7653606369886217,borda_fuse
+user authentication,precision@3,0.6666666666666666,borda_fuse
+user authentication,recall@3,0.014285714285714285,borda_fuse
+user authentication,f1@3,0.027972027972027972,borda_fuse
+user authentication,map@5,0.025357142857142856,borda_fuse
+user authentication,mrr@5,1.0,borda_fuse
+user authentication,ndcg@5,0.830419897363192,borda_fuse
+user authentication,precision@5,0.8,borda_fuse
+user authentication,recall@5,0.02857142857142857,borda_fuse
+user authentication,f1@5,0.05517241379310345,borda_fuse
+user authentication,map@7,0.03130952380952381,borda_fuse
+user authentication,mrr@7,1.0,borda_fuse
+user authentication,ndcg@7,0.7709363892380909,borda_fuse
+user authentication,precision@7,0.7142857142857143,borda_fuse
+user authentication,recall@7,0.03571428571428571,borda_fuse
+user authentication,f1@7,0.06802721088435375,borda_fuse

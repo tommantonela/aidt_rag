@@ -1,0 +1,26 @@
+query,user_story
+download free music,how to be able to download free music so that I can extend the features of my app
+download web videos,how to support video downloading from the web so that I can integrate this feature in my app
+check valid email address,how to check whether an email address is valid so that I can add this functionality in a user account registration form
+send sms,how to send SMS messages as part of the communication channels available to my clients
+quick sort algorithm,how to implement the quick sort algorithm so that I can improve the sorting features of my app
+filter adult content images,how to filter images regarding adult content so that I can use it to differentiate between images that contain adult content and images that do not
+user authentication,how to implement authentication functions to decrease the amount of work needed when coding my app
+extract barcode from image,how to extract a barcode from an image so that I can use it to read barcodes from files
+convert data formats,how to support conversions between different data formats so that I can use it in online document editor
+convert typewritten image to text,how to convert a scanned image to a digital text so that I can digitize typewritten documents
+sentiment analysis,how to analyze text sentiments so that I can know the emotions of user reviews
+third party authentication,how to incorporate third party authentication mechanisms so that to improve the interoperability of my app
+convert text to speech,how to implement text-to-speech to be able to provide voice reading on my website
+calculate word similarity,how to compute the similarity between a pair of words so that I can then compute the similarity between two texts
+translate english to spanish,how to translate English text to Spanish so that I can translate documents written in English
+credit card validation,how to check whether a credit card is valid so that I can add this functionality in a user account registration form
+health tracker,how to support health tracking mechanisms so that I can monitor health information from users
+captcha authentication,how to enable captcha verification so that I can verify that a user is not a robot
+detect text language,how to detect the language of a given text so that I can recognize in which language an article was written
+rank aggregation algorithms,how to employ rank aggregation algorithms so that I can improve my recommendation app
+mobile app framework,how to selec a mobile app framework so that I can develop mobile apps quickly
+DOM manipulation utils,how to perform DOM manipulation so that I can use it to modify website structures
+lightweight 3D graphic library,how to implement lightweight 3D graphics so that I can create 3D graphics online for different websites
+mathematical functions,how to support basic arithmetic operations so I can write a calculator-like program
+scraper,how to integrate a web scraping functionality in my app so that I can crawl web sites and get commercial information

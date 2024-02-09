@@ -1,0 +1,433 @@
+query,metric,value,who
+DOM manipulation utils,map@3,0.11764705882352941,humans
+DOM manipulation utils,mrr@3,1.0,humans
+DOM manipulation utils,ndcg@3,0.7653606369886217,humans
+DOM manipulation utils,precision@3,0.6666666666666666,humans
+DOM manipulation utils,recall@3,0.11764705882352941,humans
+DOM manipulation utils,f1@3,0.2,humans
+DOM manipulation utils,map@5,0.15294117647058825,humans
+DOM manipulation utils,mrr@5,1.0,humans
+DOM manipulation utils,ndcg@5,0.6843515475204855,humans
+DOM manipulation utils,precision@5,0.6,humans
+DOM manipulation utils,recall@5,0.17647058823529413,humans
+DOM manipulation utils,f1@5,0.2727272727272727,humans
+DOM manipulation utils,map@7,0.15294117647058825,humans
+DOM manipulation utils,mrr@7,1.0,humans
+DOM manipulation utils,ndcg@7,0.5546406709327603,humans
+DOM manipulation utils,precision@7,0.42857142857142855,humans
+DOM manipulation utils,recall@7,0.17647058823529413,humans
+DOM manipulation utils,f1@7,0.25,humans
+calculate word similarity,map@3,0.2,humans
+calculate word similarity,mrr@3,1.0,humans
+calculate word similarity,ndcg@3,0.7653606369886217,humans
+calculate word similarity,precision@3,0.6666666666666666,humans
+calculate word similarity,recall@3,0.2,humans
+calculate word similarity,f1@3,0.30769230769230765,humans
+calculate word similarity,map@5,0.2,humans
+calculate word similarity,mrr@5,1.0,humans
+calculate word similarity,ndcg@5,0.5531464700081437,humans
+calculate word similarity,precision@5,0.4,humans
+calculate word similarity,recall@5,0.2,humans
+calculate word similarity,f1@5,0.26666666666666666,humans
+calculate word similarity,map@7,0.2,humans
+calculate word similarity,mrr@7,1.0,humans
+calculate word similarity,ndcg@7,0.4483039899025303,humans
+calculate word similarity,precision@7,0.2857142857142857,humans
+calculate word similarity,recall@7,0.2,humans
+calculate word similarity,f1@7,0.23529411764705882,humans
+captcha authentication,map@3,0.0,humans
+captcha authentication,mrr@3,0.0,humans
+captcha authentication,ndcg@3,0.0,humans
+captcha authentication,precision@3,0.0,humans
+captcha authentication,recall@3,0.0,humans
+captcha authentication,f1@3,0.0,humans
+captcha authentication,map@5,0.05,humans
+captcha authentication,mrr@5,0.2,humans
+captcha authentication,ndcg@5,0.15101961822780524,humans
+captcha authentication,precision@5,0.2,humans
+captcha authentication,recall@5,0.25,humans
+captcha authentication,f1@5,0.22222222222222224,humans
+captcha authentication,map@7,0.05,humans
+captcha authentication,mrr@7,0.2,humans
+captcha authentication,ndcg@7,0.15101961822780524,humans
+captcha authentication,precision@7,0.14285714285714285,humans
+captcha authentication,recall@7,0.25,humans
+captcha authentication,f1@7,0.18181818181818182,humans
+check valid email address,map@3,0.0303030303030303,humans
+check valid email address,mrr@3,1.0,humans
+check valid email address,ndcg@3,0.7039180890341347,humans
+check valid email address,precision@3,0.6666666666666666,humans
+check valid email address,recall@3,0.03636363636363636,humans
+check valid email address,f1@3,0.06896551724137931,humans
+check valid email address,map@5,0.041212121212121214,humans
+check valid email address,mrr@5,1.0,humans
+check valid email address,ndcg@5,0.639945385422766,humans
+check valid email address,precision@5,0.6,humans
+check valid email address,recall@5,0.05454545454545454,humans
+check valid email address,f1@5,0.09999999999999999,humans
+check valid email address,map@7,0.041212121212121214,humans
+check valid email address,mrr@7,1.0,humans
+check valid email address,ndcg@7,0.5186511804016661,humans
+check valid email address,precision@7,0.42857142857142855,humans
+check valid email address,recall@7,0.05454545454545454,humans
+check valid email address,f1@7,0.09677419354838708,humans
+convert data formats,map@3,0.023255813953488372,humans
+convert data formats,mrr@3,1.0,humans
+convert data formats,ndcg@3,0.7653606369886217,humans
+convert data formats,precision@3,0.6666666666666666,humans
+convert data formats,recall@3,0.023255813953488372,humans
+convert data formats,f1@3,0.0449438202247191,humans
+convert data formats,map@5,0.03197674418604651,humans
+convert data formats,mrr@5,1.0,humans
+convert data formats,ndcg@5,0.6992148198508501,humans
+convert data formats,precision@5,0.6,humans
+convert data formats,recall@5,0.03488372093023256,humans
+convert data formats,f1@5,0.06593406593406594,humans
+convert data formats,map@7,0.03197674418604651,humans
+convert data formats,mrr@7,1.0,humans
+convert data formats,ndcg@7,0.5666867828578932,humans
+convert data formats,precision@7,0.42857142857142855,humans
+convert data formats,recall@7,0.03488372093023256,humans
+convert data formats,f1@7,0.06451612903225806,humans
+convert text to speech,map@3,0.038461538461538464,humans
+convert text to speech,mrr@3,0.5,humans
+convert text to speech,ndcg@3,0.2960819109658652,humans
+convert text to speech,precision@3,0.3333333333333333,humans
+convert text to speech,recall@3,0.07692307692307693,humans
+convert text to speech,f1@3,0.125,humans
+convert text to speech,map@5,0.038461538461538464,humans
+convert text to speech,mrr@5,0.5,humans
+convert text to speech,ndcg@5,0.21398626473452756,humans
+convert text to speech,precision@5,0.2,humans
+convert text to speech,recall@5,0.07692307692307693,humans
+convert text to speech,f1@5,0.1111111111111111,humans
+convert text to speech,map@7,0.038461538461538464,humans
+convert text to speech,mrr@7,0.5,humans
+convert text to speech,ndcg@7,0.17342765698823945,humans
+convert text to speech,precision@7,0.14285714285714285,humans
+convert text to speech,recall@7,0.07692307692307693,humans
+convert text to speech,f1@7,0.1,humans
+convert typewritten image to text,map@3,0.3333333333333333,humans
+convert typewritten image to text,mrr@3,1.0,humans
+convert typewritten image to text,ndcg@3,0.7653606369886217,humans
+convert typewritten image to text,precision@3,0.6666666666666666,humans
+convert typewritten image to text,recall@3,0.3333333333333333,humans
+convert typewritten image to text,f1@3,0.4444444444444444,humans
+convert typewritten image to text,map@5,0.3333333333333333,humans
+convert typewritten image to text,mrr@5,1.0,humans
+convert typewritten image to text,ndcg@5,0.5531464700081437,humans
+convert typewritten image to text,precision@5,0.4,humans
+convert typewritten image to text,recall@5,0.3333333333333333,humans
+convert typewritten image to text,f1@5,0.3636363636363636,humans
+convert typewritten image to text,map@7,0.3333333333333333,humans
+convert typewritten image to text,mrr@7,1.0,humans
+convert typewritten image to text,ndcg@7,0.4935232796777481,humans
+convert typewritten image to text,precision@7,0.2857142857142857,humans
+convert typewritten image to text,recall@7,0.3333333333333333,humans
+convert typewritten image to text,f1@7,0.30769230769230765,humans
+credit card validation,map@3,0.05555555555555555,humans
+credit card validation,mrr@3,1.0,humans
+credit card validation,ndcg@3,0.7653606369886217,humans
+credit card validation,precision@3,0.6666666666666666,humans
+credit card validation,recall@3,0.05555555555555555,humans
+credit card validation,f1@3,0.10256410256410256,humans
+credit card validation,map@5,0.09861111111111111,humans
+credit card validation,mrr@5,1.0,humans
+credit card validation,ndcg@5,0.830419897363192,humans
+credit card validation,precision@5,0.8,humans
+credit card validation,recall@5,0.1111111111111111,humans
+credit card validation,f1@5,0.19512195121951217,humans
+credit card validation,map@7,0.09861111111111111,humans
+credit card validation,mrr@7,1.0,humans
+credit card validation,ndcg@7,0.6730234638881231,humans
+credit card validation,precision@7,0.5714285714285714,humans
+credit card validation,recall@7,0.1111111111111111,humans
+credit card validation,f1@7,0.18604651162790697,humans
+detect text language,map@3,0.16666666666666666,humans
+detect text language,mrr@3,1.0,humans
+detect text language,ndcg@3,0.7039180890341347,humans
+detect text language,precision@3,0.6666666666666666,humans
+detect text language,recall@3,0.2,humans
+detect text language,f1@3,0.30769230769230765,humans
+detect text language,map@5,0.24166666666666664,humans
+detect text language,mrr@5,1.0,humans
+detect text language,ndcg@5,0.6548086577531307,humans
+detect text language,precision@5,0.6,humans
+detect text language,recall@5,0.3,humans
+detect text language,f1@5,0.4,humans
+detect text language,map@7,0.24166666666666664,humans
+detect text language,mrr@7,1.0,humans
+detect text language,ndcg@7,0.5306972923267992,humans
+detect text language,precision@7,0.42857142857142855,humans
+detect text language,recall@7,0.3,humans
+detect text language,f1@7,0.3529411764705882,humans
+download free music,map@3,0.053030303030303025,humans
+download free music,mrr@3,0.5,humans
+download free music,ndcg@3,0.5307212739772434,humans
+download free music,precision@3,0.6666666666666666,humans
+download free music,recall@3,0.09090909090909091,humans
+download free music,f1@3,0.16,humans
+download free music,map@5,0.053030303030303025,humans
+download free music,mrr@5,0.5,humans
+download free music,ndcg@5,0.38356636737133565,humans
+download free music,precision@5,0.4,humans
+download free music,recall@5,0.09090909090909091,humans
+download free music,f1@5,0.14814814814814814,humans
+download free music,map@7,0.053030303030303025,humans
+download free music,mrr@7,0.5,humans
+download free music,ndcg@7,0.3108658234453849,humans
+download free music,precision@7,0.2857142857142857,humans
+download free music,recall@7,0.09090909090909091,humans
+download free music,f1@7,0.13793103448275862,humans
+download web videos,map@3,0.0625,humans
+download web videos,mrr@3,1.0,humans
+download web videos,ndcg@3,0.7653606369886217,humans
+download web videos,precision@3,0.6666666666666666,humans
+download web videos,recall@3,0.0625,humans
+download web videos,f1@3,0.11428571428571428,humans
+download web videos,map@5,0.0859375,humans
+download web videos,mrr@5,1.0,humans
+download web videos,ndcg@5,0.6992148198508501,humans
+download web videos,precision@5,0.6,humans
+download web videos,recall@5,0.09375,humans
+download web videos,f1@5,0.16216216216216214,humans
+download web videos,map@7,0.0859375,humans
+download web videos,mrr@7,1.0,humans
+download web videos,ndcg@7,0.5666867828578932,humans
+download web videos,precision@7,0.42857142857142855,humans
+download web videos,recall@7,0.09375,humans
+download web videos,f1@7,0.15384615384615383,humans
+extract barcode from image,map@3,0.0,humans
+extract barcode from image,mrr@3,0.0,humans
+extract barcode from image,ndcg@3,0.0,humans
+extract barcode from image,precision@3,0.0,humans
+extract barcode from image,recall@3,0.0,humans
+extract barcode from image,f1@3,0.0,humans
+extract barcode from image,map@5,0.0,humans
+extract barcode from image,mrr@5,0.0,humans
+extract barcode from image,ndcg@5,0.0,humans
+extract barcode from image,precision@5,0.0,humans
+extract barcode from image,recall@5,0.0,humans
+extract barcode from image,f1@5,0.0,humans
+extract barcode from image,map@7,0.0,humans
+extract barcode from image,mrr@7,0.0,humans
+extract barcode from image,ndcg@7,0.0,humans
+extract barcode from image,precision@7,0.0,humans
+extract barcode from image,recall@7,0.0,humans
+extract barcode from image,f1@7,0.0,humans
+filter adult content images,map@3,0.1111111111111111,humans
+filter adult content images,mrr@3,1.0,humans
+filter adult content images,ndcg@3,0.46927872602275644,humans
+filter adult content images,precision@3,0.3333333333333333,humans
+filter adult content images,recall@3,0.1111111111111111,humans
+filter adult content images,f1@3,0.16666666666666666,humans
+filter adult content images,map@5,0.1111111111111111,humans
+filter adult content images,mrr@5,1.0,humans
+filter adult content images,ndcg@5,0.3391602052736161,humans
+filter adult content images,precision@5,0.2,humans
+filter adult content images,recall@5,0.1111111111111111,humans
+filter adult content images,f1@5,0.14285714285714285,humans
+filter adult content images,map@7,0.1111111111111111,humans
+filter adult content images,mrr@7,1.0,humans
+filter adult content images,ndcg@7,0.27487633291429087,humans
+filter adult content images,precision@7,0.14285714285714285,humans
+filter adult content images,recall@7,0.1111111111111111,humans
+filter adult content images,f1@7,0.125,humans
+health tracker,map@3,0.0,humans
+health tracker,mrr@3,0.0,humans
+health tracker,ndcg@3,0.0,humans
+health tracker,precision@3,0.0,humans
+health tracker,recall@3,0.0,humans
+health tracker,f1@3,0.0,humans
+health tracker,map@5,0.0,humans
+health tracker,mrr@5,0.0,humans
+health tracker,ndcg@5,0.0,humans
+health tracker,precision@5,0.0,humans
+health tracker,recall@5,0.0,humans
+health tracker,f1@5,0.0,humans
+health tracker,map@7,0.0,humans
+health tracker,mrr@7,0.0,humans
+health tracker,ndcg@7,0.0,humans
+health tracker,precision@7,0.0,humans
+health tracker,recall@7,0.0,humans
+health tracker,f1@7,0.0,humans
+lightweight 3D graphic library,map@3,0.0,humans
+lightweight 3D graphic library,mrr@3,0.0,humans
+lightweight 3D graphic library,ndcg@3,0.0,humans
+lightweight 3D graphic library,precision@3,0.0,humans
+lightweight 3D graphic library,recall@3,0.0,humans
+lightweight 3D graphic library,f1@3,0.0,humans
+lightweight 3D graphic library,map@5,0.0,humans
+lightweight 3D graphic library,mrr@5,0.0,humans
+lightweight 3D graphic library,ndcg@5,0.0,humans
+lightweight 3D graphic library,precision@5,0.0,humans
+lightweight 3D graphic library,recall@5,0.0,humans
+lightweight 3D graphic library,f1@5,0.0,humans
+lightweight 3D graphic library,map@7,0.0,humans
+lightweight 3D graphic library,mrr@7,0.0,humans
+lightweight 3D graphic library,ndcg@7,0.0,humans
+lightweight 3D graphic library,precision@7,0.0,humans
+lightweight 3D graphic library,recall@7,0.0,humans
+lightweight 3D graphic library,f1@7,0.0,humans
+mathematical functions,map@3,0.08333333333333333,humans
+mathematical functions,mrr@3,1.0,humans
+mathematical functions,ndcg@3,1.0,humans
+mathematical functions,precision@3,1.0,humans
+mathematical functions,recall@3,0.08333333333333333,humans
+mathematical functions,f1@3,0.15384615384615385,humans
+mathematical functions,map@5,0.1111111111111111,humans
+mathematical functions,mrr@5,1.0,humans
+mathematical functions,ndcg@5,0.8687949224876582,humans
+mathematical functions,precision@5,0.8,humans
+mathematical functions,recall@5,0.1111111111111111,humans
+mathematical functions,f1@5,0.19512195121951217,humans
+mathematical functions,map@7,0.1111111111111111,humans
+mathematical functions,mrr@7,1.0,humans
+mathematical functions,ndcg@7,0.7041249493150387,humans
+mathematical functions,precision@7,0.5714285714285714,humans
+mathematical functions,recall@7,0.1111111111111111,humans
+mathematical functions,f1@7,0.18604651162790697,humans
+quick sort algorithm,map@3,0.02976190476190476,humans
+quick sort algorithm,mrr@3,1.0,humans
+quick sort algorithm,ndcg@3,0.7039180890341347,humans
+quick sort algorithm,precision@3,0.6666666666666666,humans
+quick sort algorithm,recall@3,0.03571428571428571,humans
+quick sort algorithm,f1@3,0.06779661016949153,humans
+quick sort algorithm,map@5,0.02976190476190476,humans
+quick sort algorithm,mrr@5,1.0,humans
+quick sort algorithm,ndcg@5,0.5087403079104241,humans
+quick sort algorithm,precision@5,0.4,humans
+quick sort algorithm,recall@5,0.03571428571428571,humans
+quick sort algorithm,f1@5,0.06557377049180328,humans
+quick sort algorithm,map@7,0.02976190476190476,humans
+quick sort algorithm,mrr@7,1.0,humans
+quick sort algorithm,ndcg@7,0.41231449937143627,humans
+quick sort algorithm,precision@7,0.2857142857142857,humans
+quick sort algorithm,recall@7,0.03571428571428571,humans
+quick sort algorithm,f1@7,0.06349206349206349,humans
+rank aggregation algorithms,map@3,0.0,humans
+rank aggregation algorithms,mrr@3,0.0,humans
+rank aggregation algorithms,ndcg@3,0.0,humans
+rank aggregation algorithms,precision@3,0.0,humans
+rank aggregation algorithms,recall@3,0.0,humans
+rank aggregation algorithms,f1@3,0.0,humans
+rank aggregation algorithms,map@5,0.125,humans
+rank aggregation algorithms,mrr@5,0.25,humans
+rank aggregation algorithms,ndcg@5,0.2640681225725909,humans
+rank aggregation algorithms,precision@5,0.2,humans
+rank aggregation algorithms,recall@5,0.5,humans
+rank aggregation algorithms,f1@5,0.28571428571428575,humans
+rank aggregation algorithms,map@7,0.125,humans
+rank aggregation algorithms,mrr@7,0.25,humans
+rank aggregation algorithms,ndcg@7,0.2640681225725909,humans
+rank aggregation algorithms,precision@7,0.14285714285714285,humans
+rank aggregation algorithms,recall@7,0.5,humans
+rank aggregation algorithms,f1@7,0.22222222222222224,humans
+scraper,map@3,0.043478260869565216,humans
+scraper,mrr@3,1.0,humans
+scraper,ndcg@3,1.0,humans
+scraper,precision@3,1.0,humans
+scraper,recall@3,0.043478260869565216,humans
+scraper,f1@3,0.08333333333333333,humans
+scraper,map@5,0.07246376811594203,humans
+scraper,mrr@5,1.0,humans
+scraper,ndcg@5,1.0,humans
+scraper,precision@5,1.0,humans
+scraper,recall@5,0.07246376811594203,humans
+scraper,f1@5,0.13513513513513511,humans
+scraper,map@7,0.07246376811594203,humans
+scraper,mrr@7,1.0,humans
+scraper,ndcg@7,0.8104616303452685,humans
+scraper,precision@7,0.7142857142857143,humans
+scraper,recall@7,0.07246376811594203,humans
+scraper,f1@7,0.13157894736842105,humans
+send sms,map@3,0.013774104683195591,humans
+send sms,mrr@3,1.0,humans
+send sms,ndcg@3,0.7039180890341347,humans
+send sms,precision@3,0.6666666666666666,humans
+send sms,recall@3,0.01652892561983471,humans
+send sms,f1@3,0.03225806451612903,humans
+send sms,map@5,0.026584022038567495,humans
+send sms,mrr@5,1.0,humans
+send sms,ndcg@5,0.7860137352654724,humans
+send sms,precision@5,0.8,humans
+send sms,recall@5,0.03305785123966942,humans
+send sms,f1@5,0.06349206349206349,humans
+send sms,map@7,0.026584022038567495,humans
+send sms,mrr@7,1.0,humans
+send sms,ndcg@7,0.6370339733570289,humans
+send sms,precision@7,0.5714285714285714,humans
+send sms,recall@7,0.03305785123966942,humans
+send sms,f1@7,0.0625,humans
+sentiment analysis,map@3,0.03623188405797101,humans
+sentiment analysis,mrr@3,1.0,humans
+sentiment analysis,ndcg@3,0.7039180890341347,humans
+sentiment analysis,precision@3,0.6666666666666666,humans
+sentiment analysis,recall@3,0.043478260869565216,humans
+sentiment analysis,f1@3,0.08163265306122448,humans
+sentiment analysis,map@5,0.06992753623188407,humans
+sentiment analysis,mrr@5,1.0,humans
+sentiment analysis,ndcg@5,0.7860137352654724,humans
+sentiment analysis,precision@5,0.8,humans
+sentiment analysis,recall@5,0.08695652173913043,humans
+sentiment analysis,f1@5,0.1568627450980392,humans
+sentiment analysis,map@7,0.06992753623188407,humans
+sentiment analysis,mrr@7,1.0,humans
+sentiment analysis,ndcg@7,0.6370339733570289,humans
+sentiment analysis,precision@7,0.5714285714285714,humans
+sentiment analysis,recall@7,0.08695652173913043,humans
+sentiment analysis,f1@7,0.15094339622641512,humans
+third party authentication,map@3,0.0,humans
+third party authentication,mrr@3,0.0,humans
+third party authentication,ndcg@3,0.0,humans
+third party authentication,precision@3,0.0,humans
+third party authentication,recall@3,0.0,humans
+third party authentication,f1@3,0.0,humans
+third party authentication,map@5,0.0,humans
+third party authentication,mrr@5,0.0,humans
+third party authentication,ndcg@5,0.0,humans
+third party authentication,precision@5,0.0,humans
+third party authentication,recall@5,0.0,humans
+third party authentication,f1@5,0.0,humans
+third party authentication,map@7,0.0,humans
+third party authentication,mrr@7,0.0,humans
+third party authentication,ndcg@7,0.0,humans
+third party authentication,precision@7,0.0,humans
+third party authentication,recall@7,0.0,humans
+third party authentication,f1@7,0.0,humans
+translate english to spanish,map@3,1.0,humans
+translate english to spanish,mrr@3,1.0,humans
+translate english to spanish,ndcg@3,1.0,humans
+translate english to spanish,precision@3,0.3333333333333333,humans
+translate english to spanish,recall@3,1.0,humans
+translate english to spanish,f1@3,0.5,humans
+translate english to spanish,map@5,1.0,humans
+translate english to spanish,mrr@5,1.0,humans
+translate english to spanish,ndcg@5,1.0,humans
+translate english to spanish,precision@5,0.2,humans
+translate english to spanish,recall@5,1.0,humans
+translate english to spanish,f1@5,0.33333333333333337,humans
+translate english to spanish,map@7,1.0,humans
+translate english to spanish,mrr@7,1.0,humans
+translate english to spanish,ndcg@7,1.0,humans
+translate english to spanish,precision@7,0.14285714285714285,humans
+translate english to spanish,recall@7,1.0,humans
+translate english to spanish,f1@7,0.25,humans
+user authentication,map@3,0.011904761904761904,humans
+user authentication,mrr@3,1.0,humans
+user authentication,ndcg@3,0.7039180890341347,humans
+user authentication,precision@3,0.6666666666666666,humans
+user authentication,recall@3,0.014285714285714285,humans
+user authentication,f1@3,0.027972027972027972,humans
+user authentication,map@5,0.022976190476190476,humans
+user authentication,mrr@5,1.0,humans
+user authentication,ndcg@5,0.7860137352654724,humans
+user authentication,precision@5,0.8,humans
+user authentication,recall@5,0.02857142857142857,humans
+user authentication,f1@5,0.05517241379310345,humans
+user authentication,map@7,0.022976190476190476,humans
+user authentication,mrr@7,1.0,humans
+user authentication,ndcg@7,0.6370339733570289,humans
+user authentication,precision@7,0.5714285714285714,humans
+user authentication,recall@7,0.02857142857142857,humans
+user authentication,f1@7,0.05442176870748299,humans

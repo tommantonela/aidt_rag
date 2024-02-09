@@ -1,0 +1,325 @@
+query,metric,value,who
+DOM manipulation utils,map@3,0.0,gpt_zeroshot
+DOM manipulation utils,mrr@3,0.0,gpt_zeroshot
+DOM manipulation utils,ndcg@3,0.0,gpt_zeroshot
+DOM manipulation utils,precision@3,0.0,gpt_zeroshot
+DOM manipulation utils,recall@3,0.0,gpt_zeroshot
+DOM manipulation utils,f1@3,0.0,gpt_zeroshot
+DOM manipulation utils,map@5,0.0,gpt_zeroshot
+DOM manipulation utils,mrr@5,0.0,gpt_zeroshot
+DOM manipulation utils,ndcg@5,0.0,gpt_zeroshot
+DOM manipulation utils,precision@5,0.0,gpt_zeroshot
+DOM manipulation utils,recall@5,0.0,gpt_zeroshot
+DOM manipulation utils,f1@5,0.0,gpt_zeroshot
+DOM manipulation utils,map@7,0.0,gpt_zeroshot
+DOM manipulation utils,mrr@7,0.0,gpt_zeroshot
+DOM manipulation utils,ndcg@7,0.0,gpt_zeroshot
+DOM manipulation utils,precision@7,0.0,gpt_zeroshot
+DOM manipulation utils,recall@7,0.0,gpt_zeroshot
+DOM manipulation utils,f1@7,0.0,gpt_zeroshot
+calculate word similarity,map@3,0.05,gpt_zeroshot
+calculate word similarity,mrr@3,0.5,gpt_zeroshot
+calculate word similarity,ndcg@3,0.2960819109658652,gpt_zeroshot
+calculate word similarity,precision@3,0.3333333333333333,gpt_zeroshot
+calculate word similarity,recall@3,0.1,gpt_zeroshot
+calculate word similarity,f1@3,0.15384615384615383,gpt_zeroshot
+calculate word similarity,map@5,0.05,gpt_zeroshot
+calculate word similarity,mrr@5,0.5,gpt_zeroshot
+calculate word similarity,ndcg@5,0.21398626473452756,gpt_zeroshot
+calculate word similarity,precision@5,0.2,gpt_zeroshot
+calculate word similarity,recall@5,0.1,gpt_zeroshot
+calculate word similarity,f1@5,0.13333333333333333,gpt_zeroshot
+calculate word similarity,map@7,0.08333333333333333,gpt_zeroshot
+calculate word similarity,mrr@7,0.5,gpt_zeroshot
+calculate word similarity,ndcg@7,0.27134058233820724,gpt_zeroshot
+calculate word similarity,precision@7,0.2857142857142857,gpt_zeroshot
+calculate word similarity,recall@7,0.2,gpt_zeroshot
+calculate word similarity,f1@7,0.23529411764705882,gpt_zeroshot
+check valid email address,map@3,0.05454545454545454,gpt_zeroshot
+check valid email address,mrr@3,1.0,gpt_zeroshot
+check valid email address,ndcg@3,1.0,gpt_zeroshot
+check valid email address,precision@3,1.0,gpt_zeroshot
+check valid email address,recall@3,0.05454545454545454,gpt_zeroshot
+check valid email address,f1@3,0.10344827586206896,gpt_zeroshot
+check valid email address,map@5,0.07272727272727272,gpt_zeroshot
+check valid email address,mrr@5,1.0,gpt_zeroshot
+check valid email address,ndcg@5,0.8687949224876582,gpt_zeroshot
+check valid email address,precision@5,0.8,gpt_zeroshot
+check valid email address,recall@5,0.07272727272727272,gpt_zeroshot
+check valid email address,f1@5,0.13333333333333333,gpt_zeroshot
+check valid email address,map@7,0.07272727272727272,gpt_zeroshot
+check valid email address,mrr@7,1.0,gpt_zeroshot
+check valid email address,ndcg@7,0.7041249493150387,gpt_zeroshot
+check valid email address,precision@7,0.5714285714285714,gpt_zeroshot
+check valid email address,recall@7,0.07272727272727272,gpt_zeroshot
+check valid email address,f1@7,0.1290322580645161,gpt_zeroshot
+convert data formats,map@3,0.0,gpt_zeroshot
+convert data formats,mrr@3,0.0,gpt_zeroshot
+convert data formats,ndcg@3,0.0,gpt_zeroshot
+convert data formats,precision@3,0.0,gpt_zeroshot
+convert data formats,recall@3,0.0,gpt_zeroshot
+convert data formats,f1@3,0.0,gpt_zeroshot
+convert data formats,map@5,0.0029069767441860465,gpt_zeroshot
+convert data formats,mrr@5,0.25,gpt_zeroshot
+convert data formats,ndcg@5,0.14606834984270645,gpt_zeroshot
+convert data formats,precision@5,0.2,gpt_zeroshot
+convert data formats,recall@5,0.011627906976744186,gpt_zeroshot
+convert data formats,f1@5,0.021978021978021976,gpt_zeroshot
+convert data formats,map@7,0.0029069767441860465,gpt_zeroshot
+convert data formats,mrr@7,0.25,gpt_zeroshot
+convert data formats,ndcg@7,0.11838279295536291,gpt_zeroshot
+convert data formats,precision@7,0.14285714285714285,gpt_zeroshot
+convert data formats,recall@7,0.011627906976744186,gpt_zeroshot
+convert data formats,f1@7,0.02150537634408602,gpt_zeroshot
+convert text to speech,map@3,0.0,gpt_zeroshot
+convert text to speech,mrr@3,0.0,gpt_zeroshot
+convert text to speech,ndcg@3,0.0,gpt_zeroshot
+convert text to speech,precision@3,0.0,gpt_zeroshot
+convert text to speech,recall@3,0.0,gpt_zeroshot
+convert text to speech,f1@3,0.0,gpt_zeroshot
+convert text to speech,map@5,0.0,gpt_zeroshot
+convert text to speech,mrr@5,0.0,gpt_zeroshot
+convert text to speech,ndcg@5,0.0,gpt_zeroshot
+convert text to speech,precision@5,0.0,gpt_zeroshot
+convert text to speech,recall@5,0.0,gpt_zeroshot
+convert text to speech,f1@5,0.0,gpt_zeroshot
+convert text to speech,map@7,0.0,gpt_zeroshot
+convert text to speech,mrr@7,0.0,gpt_zeroshot
+convert text to speech,ndcg@7,0.0,gpt_zeroshot
+convert text to speech,precision@7,0.0,gpt_zeroshot
+convert text to speech,recall@7,0.0,gpt_zeroshot
+convert text to speech,f1@7,0.0,gpt_zeroshot
+convert typewritten image to text,map@3,0.0,gpt_zeroshot
+convert typewritten image to text,mrr@3,0.0,gpt_zeroshot
+convert typewritten image to text,ndcg@3,0.0,gpt_zeroshot
+convert typewritten image to text,precision@3,0.0,gpt_zeroshot
+convert typewritten image to text,recall@3,0.0,gpt_zeroshot
+convert typewritten image to text,f1@3,0.0,gpt_zeroshot
+convert typewritten image to text,map@5,0.0,gpt_zeroshot
+convert typewritten image to text,mrr@5,0.0,gpt_zeroshot
+convert typewritten image to text,ndcg@5,0.0,gpt_zeroshot
+convert typewritten image to text,precision@5,0.0,gpt_zeroshot
+convert typewritten image to text,recall@5,0.0,gpt_zeroshot
+convert typewritten image to text,f1@5,0.0,gpt_zeroshot
+convert typewritten image to text,map@7,0.0,gpt_zeroshot
+convert typewritten image to text,mrr@7,0.0,gpt_zeroshot
+convert typewritten image to text,ndcg@7,0.0,gpt_zeroshot
+convert typewritten image to text,precision@7,0.0,gpt_zeroshot
+convert typewritten image to text,recall@7,0.0,gpt_zeroshot
+convert typewritten image to text,f1@7,0.0,gpt_zeroshot
+credit card validation,map@3,0.046296296296296294,gpt_zeroshot
+credit card validation,mrr@3,1.0,gpt_zeroshot
+credit card validation,ndcg@3,0.7039180890341347,gpt_zeroshot
+credit card validation,precision@3,0.6666666666666666,gpt_zeroshot
+credit card validation,recall@3,0.05555555555555555,gpt_zeroshot
+credit card validation,f1@3,0.10256410256410256,gpt_zeroshot
+credit card validation,map@5,0.046296296296296294,gpt_zeroshot
+credit card validation,mrr@5,1.0,gpt_zeroshot
+credit card validation,ndcg@5,0.5087403079104241,gpt_zeroshot
+credit card validation,precision@5,0.4,gpt_zeroshot
+credit card validation,recall@5,0.05555555555555555,gpt_zeroshot
+credit card validation,f1@5,0.09756097560975609,gpt_zeroshot
+credit card validation,map@7,0.046296296296296294,gpt_zeroshot
+credit card validation,mrr@7,1.0,gpt_zeroshot
+credit card validation,ndcg@7,0.41231449937143627,gpt_zeroshot
+credit card validation,precision@7,0.2857142857142857,gpt_zeroshot
+credit card validation,recall@7,0.05555555555555555,gpt_zeroshot
+credit card validation,f1@7,0.09302325581395349,gpt_zeroshot
+detect text language,map@3,0.05,gpt_zeroshot
+detect text language,mrr@3,0.5,gpt_zeroshot
+detect text language,ndcg@3,0.2960819109658652,gpt_zeroshot
+detect text language,precision@3,0.3333333333333333,gpt_zeroshot
+detect text language,recall@3,0.1,gpt_zeroshot
+detect text language,f1@3,0.15384615384615383,gpt_zeroshot
+detect text language,map@5,0.16,gpt_zeroshot
+detect text language,mrr@5,0.5,gpt_zeroshot
+detect text language,ndcg@5,0.4912596920895758,gpt_zeroshot
+detect text language,precision@5,0.6,gpt_zeroshot
+detect text language,recall@5,0.3,gpt_zeroshot
+detect text language,f1@5,0.4,gpt_zeroshot
+detect text language,map@7,0.16,gpt_zeroshot
+detect text language,mrr@7,0.5,gpt_zeroshot
+detect text language,ndcg@7,0.3981471309738322,gpt_zeroshot
+detect text language,precision@7,0.42857142857142855,gpt_zeroshot
+detect text language,recall@7,0.3,gpt_zeroshot
+detect text language,f1@7,0.3529411764705882,gpt_zeroshot
+download web videos,map@3,0.03125,gpt_zeroshot
+download web videos,mrr@3,1.0,gpt_zeroshot
+download web videos,ndcg@3,0.46927872602275644,gpt_zeroshot
+download web videos,precision@3,0.3333333333333333,gpt_zeroshot
+download web videos,recall@3,0.03125,gpt_zeroshot
+download web videos,f1@3,0.05714285714285714,gpt_zeroshot
+download web videos,map@5,0.03125,gpt_zeroshot
+download web videos,mrr@5,1.0,gpt_zeroshot
+download web videos,ndcg@5,0.3391602052736161,gpt_zeroshot
+download web videos,precision@5,0.2,gpt_zeroshot
+download web videos,recall@5,0.03125,gpt_zeroshot
+download web videos,f1@5,0.05405405405405406,gpt_zeroshot
+download web videos,map@7,0.03125,gpt_zeroshot
+download web videos,mrr@7,1.0,gpt_zeroshot
+download web videos,ndcg@7,0.27487633291429087,gpt_zeroshot
+download web videos,precision@7,0.14285714285714285,gpt_zeroshot
+download web videos,recall@7,0.03125,gpt_zeroshot
+download web videos,f1@7,0.05128205128205128,gpt_zeroshot
+extract barcode from image,map@3,0.07291666666666666,gpt_zeroshot
+extract barcode from image,mrr@3,0.5,gpt_zeroshot
+extract barcode from image,ndcg@3,0.5307212739772434,gpt_zeroshot
+extract barcode from image,precision@3,0.6666666666666666,gpt_zeroshot
+extract barcode from image,recall@3,0.125,gpt_zeroshot
+extract barcode from image,f1@3,0.21052631578947367,gpt_zeroshot
+extract barcode from image,map@5,0.11979166666666666,gpt_zeroshot
+extract barcode from image,mrr@5,0.5,gpt_zeroshot
+extract barcode from image,ndcg@5,0.5296347172140421,gpt_zeroshot
+extract barcode from image,precision@5,0.6,gpt_zeroshot
+extract barcode from image,recall@5,0.1875,gpt_zeroshot
+extract barcode from image,f1@5,0.2857142857142857,gpt_zeroshot
+extract barcode from image,map@7,0.11979166666666666,gpt_zeroshot
+extract barcode from image,mrr@7,0.5,gpt_zeroshot
+extract barcode from image,ndcg@7,0.4292486164007478,gpt_zeroshot
+extract barcode from image,precision@7,0.42857142857142855,gpt_zeroshot
+extract barcode from image,recall@7,0.1875,gpt_zeroshot
+extract barcode from image,f1@7,0.26086956521739124,gpt_zeroshot
+lightweight 3D graphic library,map@3,0.0,gpt_zeroshot
+lightweight 3D graphic library,mrr@3,0.0,gpt_zeroshot
+lightweight 3D graphic library,ndcg@3,0.0,gpt_zeroshot
+lightweight 3D graphic library,precision@3,0.0,gpt_zeroshot
+lightweight 3D graphic library,recall@3,0.0,gpt_zeroshot
+lightweight 3D graphic library,f1@3,0.0,gpt_zeroshot
+lightweight 3D graphic library,map@5,0.0,gpt_zeroshot
+lightweight 3D graphic library,mrr@5,0.0,gpt_zeroshot
+lightweight 3D graphic library,ndcg@5,0.0,gpt_zeroshot
+lightweight 3D graphic library,precision@5,0.0,gpt_zeroshot
+lightweight 3D graphic library,recall@5,0.0,gpt_zeroshot
+lightweight 3D graphic library,f1@5,0.0,gpt_zeroshot
+lightweight 3D graphic library,map@7,0.0,gpt_zeroshot
+lightweight 3D graphic library,mrr@7,0.0,gpt_zeroshot
+lightweight 3D graphic library,ndcg@7,0.0,gpt_zeroshot
+lightweight 3D graphic library,precision@7,0.0,gpt_zeroshot
+lightweight 3D graphic library,recall@7,0.0,gpt_zeroshot
+lightweight 3D graphic library,f1@7,0.0,gpt_zeroshot
+mathematical functions,map@3,0.027777777777777776,gpt_zeroshot
+mathematical functions,mrr@3,1.0,gpt_zeroshot
+mathematical functions,ndcg@3,0.46927872602275644,gpt_zeroshot
+mathematical functions,precision@3,0.3333333333333333,gpt_zeroshot
+mathematical functions,recall@3,0.027777777777777776,gpt_zeroshot
+mathematical functions,f1@3,0.05128205128205128,gpt_zeroshot
+mathematical functions,map@5,0.027777777777777776,gpt_zeroshot
+mathematical functions,mrr@5,1.0,gpt_zeroshot
+mathematical functions,ndcg@5,0.3391602052736161,gpt_zeroshot
+mathematical functions,precision@5,0.2,gpt_zeroshot
+mathematical functions,recall@5,0.027777777777777776,gpt_zeroshot
+mathematical functions,f1@5,0.048780487804878044,gpt_zeroshot
+mathematical functions,map@7,0.027777777777777776,gpt_zeroshot
+mathematical functions,mrr@7,1.0,gpt_zeroshot
+mathematical functions,ndcg@7,0.27487633291429087,gpt_zeroshot
+mathematical functions,precision@7,0.14285714285714285,gpt_zeroshot
+mathematical functions,recall@7,0.027777777777777776,gpt_zeroshot
+mathematical functions,f1@7,0.046511627906976744,gpt_zeroshot
+quick sort algorithm,map@3,0.0,gpt_zeroshot
+quick sort algorithm,mrr@3,0.0,gpt_zeroshot
+quick sort algorithm,ndcg@3,0.0,gpt_zeroshot
+quick sort algorithm,precision@3,0.0,gpt_zeroshot
+quick sort algorithm,recall@3,0.0,gpt_zeroshot
+quick sort algorithm,f1@3,0.0,gpt_zeroshot
+quick sort algorithm,map@5,0.0,gpt_zeroshot
+quick sort algorithm,mrr@5,0.0,gpt_zeroshot
+quick sort algorithm,ndcg@5,0.0,gpt_zeroshot
+quick sort algorithm,precision@5,0.0,gpt_zeroshot
+quick sort algorithm,recall@5,0.0,gpt_zeroshot
+quick sort algorithm,f1@5,0.0,gpt_zeroshot
+quick sort algorithm,map@7,0.0,gpt_zeroshot
+quick sort algorithm,mrr@7,0.0,gpt_zeroshot
+quick sort algorithm,ndcg@7,0.0,gpt_zeroshot
+quick sort algorithm,precision@7,0.0,gpt_zeroshot
+quick sort algorithm,recall@7,0.0,gpt_zeroshot
+quick sort algorithm,f1@7,0.0,gpt_zeroshot
+scraper,map@3,0.014492753623188406,gpt_zeroshot
+scraper,mrr@3,1.0,gpt_zeroshot
+scraper,ndcg@3,0.46927872602275644,gpt_zeroshot
+scraper,precision@3,0.3333333333333333,gpt_zeroshot
+scraper,recall@3,0.014492753623188406,gpt_zeroshot
+scraper,f1@3,0.027777777777777776,gpt_zeroshot
+scraper,map@5,0.014492753623188406,gpt_zeroshot
+scraper,mrr@5,1.0,gpt_zeroshot
+scraper,ndcg@5,0.3391602052736161,gpt_zeroshot
+scraper,precision@5,0.2,gpt_zeroshot
+scraper,recall@5,0.014492753623188406,gpt_zeroshot
+scraper,f1@5,0.027027027027027025,gpt_zeroshot
+scraper,map@7,0.014492753623188406,gpt_zeroshot
+scraper,mrr@7,1.0,gpt_zeroshot
+scraper,ndcg@7,0.27487633291429087,gpt_zeroshot
+scraper,precision@7,0.14285714285714285,gpt_zeroshot
+scraper,recall@7,0.014492753623188406,gpt_zeroshot
+scraper,f1@7,0.026315789473684206,gpt_zeroshot
+send sms,map@3,0.008264462809917356,gpt_zeroshot
+send sms,mrr@3,1.0,gpt_zeroshot
+send sms,ndcg@3,0.46927872602275644,gpt_zeroshot
+send sms,precision@3,0.3333333333333333,gpt_zeroshot
+send sms,recall@3,0.008264462809917356,gpt_zeroshot
+send sms,f1@3,0.016129032258064516,gpt_zeroshot
+send sms,map@5,0.008264462809917356,gpt_zeroshot
+send sms,mrr@5,1.0,gpt_zeroshot
+send sms,ndcg@5,0.3391602052736161,gpt_zeroshot
+send sms,precision@5,0.2,gpt_zeroshot
+send sms,recall@5,0.008264462809917356,gpt_zeroshot
+send sms,f1@5,0.015873015873015872,gpt_zeroshot
+send sms,map@7,0.008264462809917356,gpt_zeroshot
+send sms,mrr@7,1.0,gpt_zeroshot
+send sms,ndcg@7,0.27487633291429087,gpt_zeroshot
+send sms,precision@7,0.14285714285714285,gpt_zeroshot
+send sms,recall@7,0.008264462809917356,gpt_zeroshot
+send sms,f1@7,0.015625,gpt_zeroshot
+sentiment analysis,map@3,0.010869565217391304,gpt_zeroshot
+sentiment analysis,mrr@3,0.5,gpt_zeroshot
+sentiment analysis,ndcg@3,0.2960819109658652,gpt_zeroshot
+sentiment analysis,precision@3,0.3333333333333333,gpt_zeroshot
+sentiment analysis,recall@3,0.021739130434782608,gpt_zeroshot
+sentiment analysis,f1@3,0.04081632653061224,gpt_zeroshot
+sentiment analysis,map@5,0.010869565217391304,gpt_zeroshot
+sentiment analysis,mrr@5,0.5,gpt_zeroshot
+sentiment analysis,ndcg@5,0.21398626473452756,gpt_zeroshot
+sentiment analysis,precision@5,0.2,gpt_zeroshot
+sentiment analysis,recall@5,0.021739130434782608,gpt_zeroshot
+sentiment analysis,f1@5,0.0392156862745098,gpt_zeroshot
+sentiment analysis,map@7,0.010869565217391304,gpt_zeroshot
+sentiment analysis,mrr@7,0.5,gpt_zeroshot
+sentiment analysis,ndcg@7,0.17342765698823945,gpt_zeroshot
+sentiment analysis,precision@7,0.14285714285714285,gpt_zeroshot
+sentiment analysis,recall@7,0.021739130434782608,gpt_zeroshot
+sentiment analysis,f1@7,0.03773584905660378,gpt_zeroshot
+third party authentication,map@3,0.0,gpt_zeroshot
+third party authentication,mrr@3,0.0,gpt_zeroshot
+third party authentication,ndcg@3,0.0,gpt_zeroshot
+third party authentication,precision@3,0.0,gpt_zeroshot
+third party authentication,recall@3,0.0,gpt_zeroshot
+third party authentication,f1@3,0.0,gpt_zeroshot
+third party authentication,map@5,0.0,gpt_zeroshot
+third party authentication,mrr@5,0.0,gpt_zeroshot
+third party authentication,ndcg@5,0.0,gpt_zeroshot
+third party authentication,precision@5,0.0,gpt_zeroshot
+third party authentication,recall@5,0.0,gpt_zeroshot
+third party authentication,f1@5,0.0,gpt_zeroshot
+third party authentication,map@7,0.0,gpt_zeroshot
+third party authentication,mrr@7,0.0,gpt_zeroshot
+third party authentication,ndcg@7,0.0,gpt_zeroshot
+third party authentication,precision@7,0.0,gpt_zeroshot
+third party authentication,recall@7,0.0,gpt_zeroshot
+third party authentication,f1@7,0.0,gpt_zeroshot
+user authentication,map@3,0.007142857142857143,gpt_zeroshot
+user authentication,mrr@3,1.0,gpt_zeroshot
+user authentication,ndcg@3,0.46927872602275644,gpt_zeroshot
+user authentication,precision@3,0.3333333333333333,gpt_zeroshot
+user authentication,recall@3,0.007142857142857143,gpt_zeroshot
+user authentication,f1@3,0.013986013986013986,gpt_zeroshot
+user authentication,map@5,0.007142857142857143,gpt_zeroshot
+user authentication,mrr@5,1.0,gpt_zeroshot
+user authentication,ndcg@5,0.3391602052736161,gpt_zeroshot
+user authentication,precision@5,0.2,gpt_zeroshot
+user authentication,recall@5,0.007142857142857143,gpt_zeroshot
+user authentication,f1@5,0.013793103448275862,gpt_zeroshot
+user authentication,map@7,0.007142857142857143,gpt_zeroshot
+user authentication,mrr@7,1.0,gpt_zeroshot
+user authentication,ndcg@7,0.27487633291429087,gpt_zeroshot
+user authentication,precision@7,0.14285714285714285,gpt_zeroshot
+user authentication,recall@7,0.007142857142857143,gpt_zeroshot
+user authentication,f1@7,0.013605442176870748,gpt_zeroshot

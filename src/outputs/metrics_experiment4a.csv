@@ -1,0 +1,325 @@
+query,metric,value,who
+DOM manipulation utils,map@3,0.17647058823529413,cohere
+DOM manipulation utils,mrr@3,1.0,cohere
+DOM manipulation utils,ndcg@3,1.0,cohere
+DOM manipulation utils,precision@3,1.0,cohere
+DOM manipulation utils,recall@3,0.17647058823529413,cohere
+DOM manipulation utils,f1@3,0.3,cohere
+DOM manipulation utils,map@5,0.23529411764705882,cohere
+DOM manipulation utils,mrr@5,1.0,cohere
+DOM manipulation utils,ndcg@5,0.8687949224876582,cohere
+DOM manipulation utils,precision@5,0.8,cohere
+DOM manipulation utils,recall@5,0.23529411764705882,cohere
+DOM manipulation utils,f1@5,0.3636363636363636,cohere
+DOM manipulation utils,map@7,0.33473389355742295,cohere
+DOM manipulation utils,mrr@7,1.0,cohere
+DOM manipulation utils,ndcg@7,0.8936633189697701,cohere
+DOM manipulation utils,precision@7,0.8571428571428571,cohere
+DOM manipulation utils,recall@7,0.35294117647058826,cohere
+DOM manipulation utils,f1@7,0.5,cohere
+captcha authentication,map@3,0.29166666666666663,cohere
+captcha authentication,mrr@3,0.5,cohere
+captcha authentication,ndcg@3,0.5307212739772434,cohere
+captcha authentication,precision@3,0.6666666666666666,cohere
+captcha authentication,recall@3,0.5,cohere
+captcha authentication,f1@3,0.5714285714285715,cohere
+captcha authentication,map@5,0.29166666666666663,cohere
+captcha authentication,mrr@5,0.5,cohere
+captcha authentication,ndcg@5,0.44149241373678083,cohere
+captcha authentication,precision@5,0.4,cohere
+captcha authentication,recall@5,0.5,cohere
+captcha authentication,f1@5,0.4444444444444445,cohere
+captcha authentication,map@7,0.29166666666666663,cohere
+captcha authentication,mrr@7,0.5,cohere
+captcha authentication,ndcg@7,0.44149241373678083,cohere
+captcha authentication,precision@7,0.2857142857142857,cohere
+captcha authentication,recall@7,0.5,cohere
+captcha authentication,f1@7,0.36363636363636365,cohere
+check valid email address,map@3,0.05454545454545454,cohere
+check valid email address,mrr@3,1.0,cohere
+check valid email address,ndcg@3,1.0,cohere
+check valid email address,precision@3,1.0,cohere
+check valid email address,recall@3,0.05454545454545454,cohere
+check valid email address,f1@3,0.10344827586206896,cohere
+check valid email address,map@5,0.07272727272727272,cohere
+check valid email address,mrr@5,1.0,cohere
+check valid email address,ndcg@5,0.8687949224876582,cohere
+check valid email address,precision@5,0.8,cohere
+check valid email address,recall@5,0.07272727272727272,cohere
+check valid email address,f1@5,0.13333333333333333,cohere
+check valid email address,map@7,0.10346320346320345,cohere
+check valid email address,mrr@7,1.0,cohere
+check valid email address,ndcg@7,0.8936633189697701,cohere
+check valid email address,precision@7,0.8571428571428571,cohere
+check valid email address,recall@7,0.10909090909090909,cohere
+check valid email address,f1@7,0.19354838709677416,cohere
+convert data formats,map@3,0.023255813953488372,cohere
+convert data formats,mrr@3,1.0,cohere
+convert data formats,ndcg@3,0.7653606369886217,cohere
+convert data formats,precision@3,0.6666666666666666,cohere
+convert data formats,recall@3,0.023255813953488372,cohere
+convert data formats,f1@3,0.0449438202247191,cohere
+convert data formats,map@5,0.04127906976744186,cohere
+convert data formats,mrr@5,1.0,cohere
+convert data formats,ndcg@5,0.830419897363192,cohere
+convert data formats,precision@5,0.8,cohere
+convert data formats,recall@5,0.046511627906976744,cohere
+convert data formats,f1@5,0.0879120879120879,cohere
+convert data formats,map@7,0.04958471760797342,cohere
+convert data formats,mrr@7,1.0,cohere
+convert data formats,ndcg@7,0.7646489081928868,cohere
+convert data formats,precision@7,0.7142857142857143,cohere
+convert data formats,recall@7,0.05813953488372093,cohere
+convert data formats,f1@7,0.10752688172043011,cohere
+convert text to speech,map@3,0.23076923076923078,cohere
+convert text to speech,mrr@3,1.0,cohere
+convert text to speech,ndcg@3,1.0,cohere
+convert text to speech,precision@3,1.0,cohere
+convert text to speech,recall@3,0.23076923076923078,cohere
+convert text to speech,f1@3,0.375,cohere
+convert text to speech,map@5,0.3076923076923077,cohere
+convert text to speech,mrr@5,1.0,cohere
+convert text to speech,ndcg@5,0.8687949224876582,cohere
+convert text to speech,precision@5,0.8,cohere
+convert text to speech,recall@5,0.3076923076923077,cohere
+convert text to speech,f1@5,0.4444444444444444,cohere
+convert text to speech,map@7,0.3076923076923077,cohere
+convert text to speech,mrr@7,1.0,cohere
+convert text to speech,ndcg@7,0.7041249493150387,cohere
+convert text to speech,precision@7,0.5714285714285714,cohere
+convert text to speech,recall@7,0.3076923076923077,cohere
+convert text to speech,f1@7,0.4,cohere
+credit card validation,map@3,0.08333333333333333,cohere
+credit card validation,mrr@3,1.0,cohere
+credit card validation,ndcg@3,1.0,cohere
+credit card validation,precision@3,1.0,cohere
+credit card validation,recall@3,0.08333333333333333,cohere
+credit card validation,f1@3,0.15384615384615385,cohere
+credit card validation,map@5,0.1388888888888889,cohere
+credit card validation,mrr@5,1.0,cohere
+credit card validation,ndcg@5,1.0,cohere
+credit card validation,precision@5,1.0,cohere
+credit card validation,recall@5,0.1388888888888889,cohere
+credit card validation,f1@5,0.24390243902439027,cohere
+credit card validation,map@7,0.19444444444444445,cohere
+credit card validation,mrr@7,1.0,cohere
+credit card validation,ndcg@7,1.0,cohere
+credit card validation,precision@7,1.0,cohere
+credit card validation,recall@7,0.19444444444444445,cohere
+credit card validation,f1@7,0.32558139534883723,cohere
+detect text language,map@3,0.2,cohere
+detect text language,mrr@3,1.0,cohere
+detect text language,ndcg@3,0.7653606369886217,cohere
+detect text language,precision@3,0.6666666666666666,cohere
+detect text language,recall@3,0.2,cohere
+detect text language,f1@3,0.30769230769230765,cohere
+detect text language,map@5,0.2,cohere
+detect text language,mrr@5,1.0,cohere
+detect text language,ndcg@5,0.5531464700081437,cohere
+detect text language,precision@5,0.4,cohere
+detect text language,recall@5,0.2,cohere
+detect text language,f1@5,0.26666666666666666,cohere
+detect text language,map@7,0.2,cohere
+detect text language,mrr@7,1.0,cohere
+detect text language,ndcg@7,0.4483039899025303,cohere
+detect text language,precision@7,0.2857142857142857,cohere
+detect text language,recall@7,0.2,cohere
+detect text language,f1@7,0.23529411764705882,cohere
+download free music,map@3,0.09090909090909091,cohere
+download free music,mrr@3,1.0,cohere
+download free music,ndcg@3,0.7653606369886217,cohere
+download free music,precision@3,0.6666666666666666,cohere
+download free music,recall@3,0.09090909090909091,cohere
+download free music,f1@3,0.16,cohere
+download free music,map@5,0.09090909090909091,cohere
+download free music,mrr@5,1.0,cohere
+download free music,ndcg@5,0.5531464700081437,cohere
+download free music,precision@5,0.4,cohere
+download free music,recall@5,0.09090909090909091,cohere
+download free music,f1@5,0.14814814814814814,cohere
+download free music,map@7,0.09090909090909091,cohere
+download free music,mrr@7,1.0,cohere
+download free music,ndcg@7,0.4483039899025303,cohere
+download free music,precision@7,0.2857142857142857,cohere
+download free music,recall@7,0.09090909090909091,cohere
+download free music,f1@7,0.13793103448275862,cohere
+download web videos,map@3,0.015625,cohere
+download web videos,mrr@3,0.5,cohere
+download web videos,ndcg@3,0.2960819109658652,cohere
+download web videos,precision@3,0.3333333333333333,cohere
+download web videos,recall@3,0.03125,cohere
+download web videos,f1@3,0.05714285714285714,cohere
+download web videos,map@5,0.03125,cohere
+download web videos,mrr@5,0.5,cohere
+download web videos,ndcg@5,0.36005461457723403,cohere
+download web videos,precision@5,0.4,cohere
+download web videos,recall@5,0.0625,cohere
+download web videos,f1@5,0.10810810810810811,cohere
+download web videos,map@7,0.03125,cohere
+download web videos,mrr@7,0.5,cohere
+download web videos,ndcg@7,0.2918104499436024,cohere
+download web videos,precision@7,0.2857142857142857,cohere
+download web videos,recall@7,0.0625,cohere
+download web videos,f1@7,0.10256410256410256,cohere
+extract barcode from image,map@3,0.0625,cohere
+extract barcode from image,mrr@3,1.0,cohere
+extract barcode from image,ndcg@3,0.46927872602275644,cohere
+extract barcode from image,precision@3,0.3333333333333333,cohere
+extract barcode from image,recall@3,0.0625,cohere
+extract barcode from image,f1@3,0.10526315789473684,cohere
+extract barcode from image,map@5,0.0625,cohere
+extract barcode from image,mrr@5,1.0,cohere
+extract barcode from image,ndcg@5,0.3391602052736161,cohere
+extract barcode from image,precision@5,0.2,cohere
+extract barcode from image,recall@5,0.0625,cohere
+extract barcode from image,f1@5,0.09523809523809523,cohere
+extract barcode from image,map@7,0.0625,cohere
+extract barcode from image,mrr@7,1.0,cohere
+extract barcode from image,ndcg@7,0.27487633291429087,cohere
+extract barcode from image,precision@7,0.14285714285714285,cohere
+extract barcode from image,recall@7,0.0625,cohere
+extract barcode from image,f1@7,0.08695652173913043,cohere
+health tracker,map@3,0.5,cohere
+health tracker,mrr@3,1.0,cohere
+health tracker,ndcg@3,0.6131471927654584,cohere
+health tracker,precision@3,0.3333333333333333,cohere
+health tracker,recall@3,0.5,cohere
+health tracker,f1@3,0.4,cohere
+health tracker,map@5,0.5,cohere
+health tracker,mrr@5,1.0,cohere
+health tracker,ndcg@5,0.6131471927654584,cohere
+health tracker,precision@5,0.2,cohere
+health tracker,recall@5,0.5,cohere
+health tracker,f1@5,0.28571428571428575,cohere
+health tracker,map@7,0.5,cohere
+health tracker,mrr@7,1.0,cohere
+health tracker,ndcg@7,0.6131471927654584,cohere
+health tracker,precision@7,0.14285714285714285,cohere
+health tracker,recall@7,0.5,cohere
+health tracker,f1@7,0.22222222222222224,cohere
+mathematical functions,map@3,0.08333333333333333,cohere
+mathematical functions,mrr@3,1.0,cohere
+mathematical functions,ndcg@3,1.0,cohere
+mathematical functions,precision@3,1.0,cohere
+mathematical functions,recall@3,0.08333333333333333,cohere
+mathematical functions,f1@3,0.15384615384615385,cohere
+mathematical functions,map@5,0.08333333333333333,cohere
+mathematical functions,mrr@5,1.0,cohere
+mathematical functions,ndcg@5,0.7227265726449519,cohere
+mathematical functions,precision@5,0.6,cohere
+mathematical functions,recall@5,0.08333333333333333,cohere
+mathematical functions,f1@5,0.14634146341463414,cohere
+mathematical functions,map@7,0.08333333333333333,cohere
+mathematical functions,mrr@7,1.0,cohere
+mathematical functions,ndcg@7,0.5857421563596757,cohere
+mathematical functions,precision@7,0.42857142857142855,cohere
+mathematical functions,recall@7,0.08333333333333333,cohere
+mathematical functions,f1@7,0.13953488372093023,cohere
+quick sort algorithm,map@3,0.05357142857142857,cohere
+quick sort algorithm,mrr@3,1.0,cohere
+quick sort algorithm,ndcg@3,1.0,cohere
+quick sort algorithm,precision@3,1.0,cohere
+quick sort algorithm,recall@3,0.05357142857142857,cohere
+quick sort algorithm,f1@3,0.10169491525423728,cohere
+quick sort algorithm,map@5,0.07142857142857142,cohere
+quick sort algorithm,mrr@5,1.0,cohere
+quick sort algorithm,ndcg@5,0.8687949224876582,cohere
+quick sort algorithm,precision@5,0.8,cohere
+quick sort algorithm,recall@5,0.07142857142857142,cohere
+quick sort algorithm,f1@5,0.13114754098360656,cohere
+quick sort algorithm,map@7,0.07142857142857142,cohere
+quick sort algorithm,mrr@7,1.0,cohere
+quick sort algorithm,ndcg@7,0.7041249493150387,cohere
+quick sort algorithm,precision@7,0.5714285714285714,cohere
+quick sort algorithm,recall@7,0.07142857142857142,cohere
+quick sort algorithm,f1@7,0.12698412698412698,cohere
+scraper,map@3,0.043478260869565216,cohere
+scraper,mrr@3,1.0,cohere
+scraper,ndcg@3,1.0,cohere
+scraper,precision@3,1.0,cohere
+scraper,recall@3,0.043478260869565216,cohere
+scraper,f1@3,0.08333333333333333,cohere
+scraper,map@5,0.07246376811594203,cohere
+scraper,mrr@5,1.0,cohere
+scraper,ndcg@5,1.0,cohere
+scraper,precision@5,1.0,cohere
+scraper,recall@5,0.07246376811594203,cohere
+scraper,f1@5,0.13513513513513511,cohere
+scraper,map@7,0.08488612836438923,cohere
+scraper,mrr@7,1.0,cohere
+scraper,ndcg@7,0.9020870746500321,cohere
+scraper,precision@7,0.8571428571428571,cohere
+scraper,recall@7,0.08695652173913043,cohere
+scraper,f1@7,0.15789473684210523,cohere
+sentiment analysis,map@3,0.06521739130434782,cohere
+sentiment analysis,mrr@3,1.0,cohere
+sentiment analysis,ndcg@3,1.0,cohere
+sentiment analysis,precision@3,1.0,cohere
+sentiment analysis,recall@3,0.06521739130434782,cohere
+sentiment analysis,f1@3,0.12244897959183672,cohere
+sentiment analysis,map@5,0.08695652173913043,cohere
+sentiment analysis,mrr@5,1.0,cohere
+sentiment analysis,ndcg@5,0.8687949224876582,cohere
+sentiment analysis,precision@5,0.8,cohere
+sentiment analysis,recall@5,0.08695652173913043,cohere
+sentiment analysis,f1@5,0.1568627450980392,cohere
+sentiment analysis,map@7,0.08695652173913043,cohere
+sentiment analysis,mrr@7,1.0,cohere
+sentiment analysis,ndcg@7,0.7041249493150387,cohere
+sentiment analysis,precision@7,0.5714285714285714,cohere
+sentiment analysis,recall@7,0.08695652173913043,cohere
+sentiment analysis,f1@7,0.15094339622641512,cohere
+third party authentication,map@3,0.16666666666666666,cohere
+third party authentication,mrr@3,1.0,cohere
+third party authentication,ndcg@3,1.0,cohere
+third party authentication,precision@3,1.0,cohere
+third party authentication,recall@3,0.16666666666666666,cohere
+third party authentication,f1@3,0.2857142857142857,cohere
+third party authentication,map@5,0.2777777777777778,cohere
+third party authentication,mrr@5,1.0,cohere
+third party authentication,ndcg@5,1.0,cohere
+third party authentication,precision@5,1.0,cohere
+third party authentication,recall@5,0.2777777777777778,cohere
+third party authentication,f1@5,0.4347826086956522,cohere
+third party authentication,map@7,0.3333333333333333,cohere
+third party authentication,mrr@7,1.0,cohere
+third party authentication,ndcg@7,0.9083745556952364,cohere
+third party authentication,precision@7,0.8571428571428571,cohere
+third party authentication,recall@7,0.3333333333333333,cohere
+third party authentication,f1@7,0.48,cohere
+translate english to spanish,map@3,0.0,cohere
+translate english to spanish,mrr@3,0.0,cohere
+translate english to spanish,ndcg@3,0.0,cohere
+translate english to spanish,precision@3,0.0,cohere
+translate english to spanish,recall@3,0.0,cohere
+translate english to spanish,f1@3,0.0,cohere
+translate english to spanish,map@5,0.0,cohere
+translate english to spanish,mrr@5,0.0,cohere
+translate english to spanish,ndcg@5,0.0,cohere
+translate english to spanish,precision@5,0.0,cohere
+translate english to spanish,recall@5,0.0,cohere
+translate english to spanish,f1@5,0.0,cohere
+translate english to spanish,map@7,0.0,cohere
+translate english to spanish,mrr@7,0.0,cohere
+translate english to spanish,ndcg@7,0.0,cohere
+translate english to spanish,precision@7,0.0,cohere
+translate english to spanish,recall@7,0.0,cohere
+translate english to spanish,f1@7,0.0,cohere
+user authentication,map@3,0.02142857142857143,cohere
+user authentication,mrr@3,1.0,cohere
+user authentication,ndcg@3,1.0,cohere
+user authentication,precision@3,1.0,cohere
+user authentication,recall@3,0.02142857142857143,cohere
+user authentication,f1@3,0.04195804195804196,cohere
+user authentication,map@5,0.02857142857142857,cohere
+user authentication,mrr@5,1.0,cohere
+user authentication,ndcg@5,0.8687949224876582,cohere
+user authentication,precision@5,0.8,cohere
+user authentication,recall@5,0.02857142857142857,cohere
+user authentication,f1@5,0.05517241379310345,cohere
+user authentication,map@7,0.04064625850340135,cohere
+user authentication,mrr@7,1.0,cohere
+user authentication,ndcg@7,0.8936633189697701,cohere
+user authentication,precision@7,0.8571428571428571,cohere
+user authentication,recall@7,0.04285714285714286,cohere
+user authentication,f1@7,0.08163265306122448,cohere

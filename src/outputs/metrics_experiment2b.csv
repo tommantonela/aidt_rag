@@ -1,0 +1,127 @@
+query,metric,value,who
+check valid email address,map@3,0.0303030303030303,borda_fuse
+check valid email address,mrr@3,1.0,borda_fuse
+check valid email address,ndcg@3,0.7039180890341347,borda_fuse
+check valid email address,precision@3,0.6666666666666666,borda_fuse
+check valid email address,recall@3,0.03636363636363636,borda_fuse
+check valid email address,f1@3,0.06896551724137931,borda_fuse
+check valid email address,map@5,0.04393939393939394,borda_fuse
+check valid email address,mrr@5,1.0,borda_fuse
+check valid email address,ndcg@5,0.6548086577531307,borda_fuse
+check valid email address,precision@5,0.6,borda_fuse
+check valid email address,recall@5,0.05454545454545454,borda_fuse
+check valid email address,f1@5,0.09999999999999999,borda_fuse
+check valid email address,map@7,0.06904761904761904,borda_fuse
+check valid email address,mrr@7,1.0,borda_fuse
+check valid email address,ndcg@7,0.7202356619815307,borda_fuse
+check valid email address,precision@7,0.7142857142857143,borda_fuse
+check valid email address,recall@7,0.09090909090909091,borda_fuse
+check valid email address,f1@7,0.16129032258064518,borda_fuse
+convert data formats,map@3,0.03488372093023256,borda_fuse
+convert data formats,mrr@3,1.0,borda_fuse
+convert data formats,ndcg@3,1.0,borda_fuse
+convert data formats,precision@3,1.0,borda_fuse
+convert data formats,recall@3,0.03488372093023256,borda_fuse
+convert data formats,f1@3,0.06741573033707865,borda_fuse
+convert data formats,map@5,0.05813953488372093,borda_fuse
+convert data formats,mrr@5,1.0,borda_fuse
+convert data formats,ndcg@5,1.0,borda_fuse
+convert data formats,precision@5,1.0,borda_fuse
+convert data formats,recall@5,0.05813953488372093,borda_fuse
+convert data formats,f1@5,0.10989010989010987,borda_fuse
+convert data formats,map@7,0.0681063122923588,borda_fuse
+convert data formats,mrr@7,1.0,borda_fuse
+convert data formats,ndcg@7,0.9020870746500321,borda_fuse
+convert data formats,precision@7,0.8571428571428571,borda_fuse
+convert data formats,recall@7,0.06976744186046512,borda_fuse
+convert data formats,f1@7,0.12903225806451613,borda_fuse
+convert text to speech,map@3,0.23076923076923078,borda_fuse
+convert text to speech,mrr@3,1.0,borda_fuse
+convert text to speech,ndcg@3,1.0,borda_fuse
+convert text to speech,precision@3,1.0,borda_fuse
+convert text to speech,recall@3,0.23076923076923078,borda_fuse
+convert text to speech,f1@3,0.375,borda_fuse
+convert text to speech,map@5,0.3076923076923077,borda_fuse
+convert text to speech,mrr@5,1.0,borda_fuse
+convert text to speech,ndcg@5,0.8687949224876582,borda_fuse
+convert text to speech,precision@5,0.8,borda_fuse
+convert text to speech,recall@5,0.3076923076923077,borda_fuse
+convert text to speech,f1@5,0.4444444444444444,borda_fuse
+convert text to speech,map@7,0.3076923076923077,borda_fuse
+convert text to speech,mrr@7,1.0,borda_fuse
+convert text to speech,ndcg@7,0.7041249493150387,borda_fuse
+convert text to speech,precision@7,0.5714285714285714,borda_fuse
+convert text to speech,recall@7,0.3076923076923077,borda_fuse
+convert text to speech,f1@7,0.4,borda_fuse
+detect text language,map@3,0.3,borda_fuse
+detect text language,mrr@3,1.0,borda_fuse
+detect text language,ndcg@3,1.0,borda_fuse
+detect text language,precision@3,1.0,borda_fuse
+detect text language,recall@3,0.3,borda_fuse
+detect text language,f1@3,0.4615384615384615,borda_fuse
+detect text language,map@5,0.4,borda_fuse
+detect text language,mrr@5,1.0,borda_fuse
+detect text language,ndcg@5,0.8687949224876582,borda_fuse
+detect text language,precision@5,0.8,borda_fuse
+detect text language,recall@5,0.4,borda_fuse
+detect text language,f1@5,0.5333333333333333,borda_fuse
+detect text language,map@7,0.4,borda_fuse
+detect text language,mrr@7,1.0,borda_fuse
+detect text language,ndcg@7,0.7041249493150387,borda_fuse
+detect text language,precision@7,0.5714285714285714,borda_fuse
+detect text language,recall@7,0.4,borda_fuse
+detect text language,f1@7,0.47058823529411764,borda_fuse
+download web videos,map@3,0.05208333333333333,borda_fuse
+download web videos,mrr@3,1.0,borda_fuse
+download web videos,ndcg@3,0.7039180890341347,borda_fuse
+download web videos,precision@3,0.6666666666666666,borda_fuse
+download web videos,recall@3,0.0625,borda_fuse
+download web videos,f1@3,0.11428571428571428,borda_fuse
+download web videos,map@5,0.07552083333333333,borda_fuse
+download web videos,mrr@5,1.0,borda_fuse
+download web videos,ndcg@5,0.6548086577531307,borda_fuse
+download web videos,precision@5,0.6,borda_fuse
+download web videos,recall@5,0.09375,borda_fuse
+download web videos,f1@5,0.16216216216216214,borda_fuse
+download web videos,map@7,0.07552083333333333,borda_fuse
+download web videos,mrr@7,1.0,borda_fuse
+download web videos,ndcg@7,0.5306972923267992,borda_fuse
+download web videos,precision@7,0.42857142857142855,borda_fuse
+download web videos,recall@7,0.09375,borda_fuse
+download web videos,f1@7,0.15384615384615383,borda_fuse
+send sms,map@3,0.01652892561983471,borda_fuse
+send sms,mrr@3,1.0,borda_fuse
+send sms,ndcg@3,0.7653606369886217,borda_fuse
+send sms,precision@3,0.6666666666666666,borda_fuse
+send sms,recall@3,0.01652892561983471,borda_fuse
+send sms,f1@3,0.03225806451612903,borda_fuse
+send sms,map@5,0.02933884297520661,borda_fuse
+send sms,mrr@5,1.0,borda_fuse
+send sms,ndcg@5,0.830419897363192,borda_fuse
+send sms,precision@5,0.8,borda_fuse
+send sms,recall@5,0.03305785123966942,borda_fuse
+send sms,f1@5,0.06349206349206349,borda_fuse
+send sms,map@7,0.04330972058244785,borda_fuse
+send sms,mrr@7,1.0,borda_fuse
+send sms,ndcg@7,0.8625618335428545,borda_fuse
+send sms,precision@7,0.8571428571428571,borda_fuse
+send sms,recall@7,0.049586776859504134,borda_fuse
+send sms,f1@7,0.09375000000000001,borda_fuse
+sentiment analysis,map@3,0.06521739130434782,borda_fuse
+sentiment analysis,mrr@3,1.0,borda_fuse
+sentiment analysis,ndcg@3,1.0,borda_fuse
+sentiment analysis,precision@3,1.0,borda_fuse
+sentiment analysis,recall@3,0.06521739130434782,borda_fuse
+sentiment analysis,f1@3,0.12244897959183672,borda_fuse
+sentiment analysis,map@5,0.10869565217391304,borda_fuse
+sentiment analysis,mrr@5,1.0,borda_fuse
+sentiment analysis,ndcg@5,1.0,borda_fuse
+sentiment analysis,precision@5,1.0,borda_fuse
+sentiment analysis,recall@5,0.10869565217391304,borda_fuse
+sentiment analysis,f1@5,0.19607843137254902,borda_fuse
+sentiment analysis,map@7,0.15217391304347827,borda_fuse
+sentiment analysis,mrr@7,1.0,borda_fuse
+sentiment analysis,ndcg@7,1.0,borda_fuse
+sentiment analysis,precision@7,1.0,borda_fuse
+sentiment analysis,recall@7,0.15217391304347827,borda_fuse
+sentiment analysis,f1@7,0.2641509433962264,borda_fuse

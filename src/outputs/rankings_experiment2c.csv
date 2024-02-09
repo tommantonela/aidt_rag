@@ -1,0 +1,158 @@
+package_name,description,url,year_of_release,justification,pros,cons,query,who
+grooveshark-streaming,Log usage of deprecated methods,null,null,[],[],[],download free music,aidt
+eat-daily-jam,"React and redux based, lightweight and elm-style framework.",null,null,[],[],[],download free music,aidt
+grooveshark-downloader,The [Calypso](https://github.com/Automattic/wp-calypso/) / [WordPress.com](https://wordpress.com) official icon set.,null,null,[],[],[],download free music,aidt
+snape,A web application to search and stream torrents.,null,null,[],[],[],download web videos,aidt
+webvd,a video downloader that crawls the web,null,null,[],[],[],download web videos,aidt
+peardownloader,An open-source standards-friendly JavaScript utility for embedding PDF files into HTML documents,null,null,[],[],[],download web videos,aidt
+jul11co-webdl,Inlines css into html source,null,null,[],[],[],download web videos,aidt
+evdh,Checks for valid structure of ethereum web3-secret-storage/presale keyfiles,null,null,[],[],[],download web videos,aidt
+isemail,Check if the current session runs XFCE desktop,null,null,[],[],[],check valid email address,aidt
+nice-is-email,nice-is-email,null,null,[],[],[],check valid email address,aidt
+validate.io,Validation utilities.,null,null,[],[],[],check valid email address,aidt
+testdata-invalid-email,testdata-invalid-email,null,null,[],[],[],check valid email address,aidt
+email-deep-validator,email-deep-validator,null,null,[],[],[],check valid email address,aidt
+is-email-node,is-email-node,null,null,[],[],[],check valid email address,aidt
+testdata-valid-email,"A list of valid, frequently ugly email addresses for use in automated testing",null,null,[],[],[],check valid email address,aidt
+is-email-like,is-email-like,null,null,[],[],[],check valid email address,aidt
+email-address-check,email-address-check,null,null,[],[],[],check valid email address,aidt
+enhanced-email-deep-validator,enhanced-email-deep-validator,null,null,[],[],[],check valid email address,aidt
+pswincom-gateway,pswincom-gateway,null,null,[],[],[],send sms,aidt
+thehelp-last-ditch,thehelp-last-ditch,null,null,[],[],[],send sms,aidt
+react-native-send-intent,The native search bar for react native.,null,null,[],[],[],send sms,aidt
+nimbow-client,nimbow-client,null,null,[],[],[],send sms,aidt
+weimi,weimi,null,null,[],[],[],send sms,aidt
+send-sms,Better streaming static file server with Range and conditional-GET support,null,null,[],[],[],send sms,aidt
+thehelp-messaging,thehelp-messaging,null,null,[],[],[],send sms,aidt
+cordova-sms-all-devices-plugin,cordova-sms-all-devices-plugin,null,null,[],[],[],send sms,aidt
+sms-by-luosima,sms-by-luosima,null,null,[],[],[],send sms,aidt
+smsblackberry-plugbunch-cordova-plugin,smsblackberry-plugbunch-cordova-plugin,null,null,[],[],[],send sms,aidt
+js-sorting-algorithms,Generates UML sequence diagrams from simple text,null,null,[],[],[],quick sort algorithm,aidt
+ndarray-select,ndarray-select,null,null,[],[],[],quick sort algorithm,aidt
+ds.algo,ds.algo,null,null,[],[],[],quick sort algorithm,aidt
+js-quicksort,js-quicksort,null,null,[],[],[],quick sort algorithm,aidt
+via-sort,via-sort,null,null,[],[],[],quick sort algorithm,aidt
+qsort.js,qsort.js,null,null,[],[],[],quick sort algorithm,aidt
+sort-algorithms,Sorting algorithms written in and made for Python lists and tuples,null,null,[],[],[],quick sort algorithm,aidt
+jsonfp,jsonfp,null,null,[],[],[],quick sort algorithm,aidt
+quick-sort,quick-sort,null,null,[],[],[],quick sort algorithm,aidt
+sort-algorithms-js,production-ready sort algorithms implementation in javascript.,null,null,[],[],[],quick sort algorithm,aidt
+entryway,entryway,null,null,[],[],[],user authentication,aidt
+dnt-connect,dnt-connect,null,null,[],[],[],user authentication,aidt
+entryway-dynamodb,entryway-dynamodb,null,null,[],[],[],user authentication,aidt
+autobackend,autobackend,null,null,[],[],[],user authentication,aidt
+cansecurity,cansecurity,null,null,[],[],[],user authentication,aidt
+authjet,authjet,null,null,[],[],[],user authentication,aidt
+norman-auth-client,norman-auth-client,null,null,[],[],[],user authentication,aidt
+norman-auth-server,norman-auth-server,null,null,[],[],[],user authentication,aidt
+user-management,user-management,null,null,[],[],[],user authentication,aidt
+seneca-auth,seneca-auth,null,null,[],[],[],user authentication,aidt
+bytescout,A Butter provider for Archive.org,null,null,[],[],[],extract barcode from image,aidt
+spritesheet-templates,spritesheet-templates,null,null,[],[],[],convert data formats,aidt
+write-yaml,Write YAML. Converts JSON to YAML writes it to the specified file.,null,null,[],[],[],convert data formats,aidt
+pcm-convert,"Easy salt/password creation for Node.js, extracted from Mosca",null,null,[],[],[],convert data formats,aidt
+csf-convert,Fast multidimensional filtering for coordinated views.,null,null,[],[],[],convert data formats,aidt
+spritesheet-templates-steamer,spritesheet-templates-steamer,null,null,[],[],[],convert data formats,aidt
+nodejs-jekyll-to-ghost,nodejs-jekyll-to-ghost,null,null,[],[],[],convert data formats,aidt
+json-transmute,json-transmute,null,null,[],[],[],convert data formats,aidt
+fhir-converter,fhir-converter,null,null,[],[],[],convert data formats,aidt
+insightly-to-vcard,insightly-to-vcard,null,null,[],[],[],convert data formats,aidt
+pdf-extract,pdf-extract,null,null,[],[],[],convert data formats,aidt
+personify,personify,null,null,[],[],[],sentiment analysis,aidt
+afinn-111,afinn-111,null,null,[],[],[],sentiment analysis,aidt
+sentiment-swedish,sentiment-swedish,null,null,[],[],[],sentiment analysis,aidt
+emoji-emotion,emoji-emotion,null,null,[],[],[],sentiment analysis,aidt
+afinn-165,afinn-165,null,null,[],[],[],sentiment analysis,aidt
+sentiment-v2,sentiment-v2,null,null,[],[],[],sentiment analysis,aidt
+sentiment,Seneca transport,null,null,[],[],[],sentiment analysis,aidt
+afinn-96,afinn-96,null,null,[],[],[],sentiment analysis,aidt
+empath-sentiment-analysis,empath-sentiment-analysis,null,null,[],[],[],sentiment analysis,aidt
+sentiment-ptbr,sentiment-ptbr,null,null,[],[],[],sentiment analysis,aidt
+bell-oidc,bell-oidc,null,null,[],[],[],third party authentication,aidt
+bell,A bcrypt library for NodeJS.,null,null,[],[],[],third party authentication,aidt
+plug-auth-client,Apple's property list parser/builder for Node.js and browsers,null,null,[],[],[],third party authentication,aidt
+plug-auth-server,plug-auth-server,null,null,[],[],[],third party authentication,aidt
+ember-cli-cordova-auth,ember-cli-cordova-auth,null,null,[],[],[],third party authentication,aidt
+retsly-js-auth,Retry a failed promise,null,null,[],[],[],third party authentication,aidt
+aurelia-authentication,"JavaScript implementation of the ""accept"" attribute for HTML5 <input type=""file"">",null,null,[],[],[],third party authentication,aidt
+fireauth,Walk up ancester's dir up to root,null,null,[],[],[],third party authentication,aidt
+protoculture-hapi,protoculture-hapi,null,null,[],[],[],third party authentication,aidt
+travelogue-resurrected,travelogue-resurrected,null,null,[],[],[],third party authentication,aidt
+aws-tts,Asynchronous bootstrapping of Node applications,null,null,[],[],[],convert text to speech,aidt
+vui-ad-hoc-alexa-recognizer,"Provides natural language understanding/processing to enable easy implementation of chat bots and voice services. High performance run time in only 2 lines of code - 'require' to include it, and the call to process the text. These can run anywhere Node.js",null,null,[],[],[],convert text to speech,aidt
+node-red-contrib-voicerss-tts,node-red-contrib-voicerss-tts,null,null,[],[],[],convert text to speech,aidt
+react-speech-recognition,react-speech-recognition,null,null,[],[],[],convert text to speech,aidt
+iobroker.sayit,iobroker.sayit,null,null,[],[],[],convert text to speech,aidt
+festival,festival,null,null,[],[],[],convert text to speech,aidt
+bingspeechrecognition-api,bingspeechrecognition-api,null,null,[],[],[],convert text to speech,aidt
+entongue,entongue,null,null,[],[],[],translate english to spanish,aidt
+credit-card,node style hmacs in the browser,null,null,[],[],[],credit card validation,aidt
+creditcard.js,Polyfill for the proposed React context API,null,null,[],[],[],credit card validation,aidt
+luhn-alg,luhn-alg,null,null,[],[],[],credit card validation,aidt
+credit-card-validation,Legacy API for creating React components.,null,null,[],[],[],credit card validation,aidt
+luhn,luhn,null,null,[],[],[],credit card validation,aidt
+card-js,card-js,null,null,[],[],[],credit card validation,aidt
+react-card-input,react-card-input,null,null,[],[],[],credit card validation,aidt
+card-validator,Lightweight logger with a simple pass-through configuration for use with fancier logging libraries,null,null,[],[],[],credit card validation,aidt
+mod10,mod10,null,null,[],[],[],credit card validation,aidt
+joi-creditcard-extension,joi-creditcard-extension,null,null,[],[],[],credit card validation,aidt
+webtorrent-health,Get health info about a webtorrent file or magnet link,null,null,[],[],[],health tracker,aidt
+lifetracker,lifetracker,null,null,[],[],[],health tracker,aidt
+torrent-tracker-health,Get health info about a torrent file or magnet link,null,null,[],[],[],health tracker,aidt
+carotte-dashboard,Captcha generator,null,null,[],[],[],health tracker,aidt
+torrent-tracker-health-ce,Get health info about a torrent file or magnet link,null,null,[],[],[],health tracker,aidt
+quantified,An advanced barcode-scanner written in JavaScript,null,null,[],[],[],health tracker,aidt
+windows.devices.pointofservice,windows.devices.pointofservice,null,null,[],[],[],health tracker,aidt
+jacket-captcha,Minimal zero-dependency utilities for using JavaScript Iterables in all environments.,null,null,[],[],[],captcha authentication,aidt
+googleclientlogin,Google Translate API for Node.js,null,null,[],[],[],captcha authentication,aidt
+homosapien,General purpose node utilities,null,null,[],[],[],captcha authentication,aidt
+franc,A rational number library,null,null,[],[],[],detect text language,aidt
+franc-min,franc-min,null,null,[],[],[],detect text language,aidt
+franc-all,franc-all,null,null,[],[],[],detect text language,aidt
+retext-language,retext-language,null,null,[],[],[],detect text language,aidt
+franc-cli,franc-cli,null,null,[],[],[],detect text language,aidt
+retext-sentiment,a through stream that starts paused and resumes on the next tick,null,null,[],[],[],detect text language,aidt
+polarity,polarity,null,null,[],[],[],detect text language,aidt
+tika,Apache Tika Python library,null,null,[],[],[],detect text language,aidt
+detect-lang,Add HTML template parsing to Derby,null,null,[],[],[],detect text language,aidt
+speak-tts,speak-tts,null,null,[],[],[],detect text language,aidt
+samson.js,samson.js,null,null,[],[],[],mobile app framework,aidt
+thf-mobile-cli,A tool for creating and developing THF mobile apps.,null,null,[],[],[],mobile app framework,aidt
+ionic-logging-service,ionic-logging-service,null,null,[],[],[],mobile app framework,aidt
+librestapi,librestapi,null,null,[],[],[],mobile app framework,aidt
+islider.js,islider.js,null,null,[],[],[],mobile app framework,aidt
+generator-adaptiveme,generator-adaptiveme,null,null,[],[],[],mobile app framework,aidt
+generator-angular-pro,generator-angular-pro,null,null,[],[],[],mobile app framework,aidt
+generator-m-ionic,generator-m-ionic,null,null,[],[],[],mobile app framework,aidt
+sabertooth,sabertooth,null,null,[],[],[],mobile app framework,aidt
+catjs,catjs,null,null,[],[],[],mobile app framework,aidt
+realdom,mixin to add one-time ready event callback handler,null,null,[],[],[],DOM manipulation utils,aidt
+tsdom,tsdom,null,null,[],[],[],DOM manipulation utils,aidt
+ng-html-util,ng-html-util,null,null,[],[],[],DOM manipulation utils,aidt
+dom101,render domhandler DOM nodes to a string,null,null,[],[],[],DOM manipulation utils,aidt
+tagbuildr,tagbuildr,null,null,[],[],[],DOM manipulation utils,aidt
+react-classset,react-classset,null,null,[],[],[],DOM manipulation utils,aidt
+domanip,domanip,null,null,[],[],[],DOM manipulation utils,aidt
+css-util,css-util,null,null,[],[],[],DOM manipulation utils,aidt
+elementsJS,elementsJS,null,null,[],[],[],DOM manipulation utils,aidt
+tnt-dom,tnt-dom,null,null,[],[],[],DOM manipulation utils,aidt
+es6-math,Development-only error handler middleware,null,null,[],[],[],mathematical functions,aidt
+random-pro,random-pro,null,null,[],[],[],mathematical functions,aidt
+mathsass,mathsass,null,null,[],[],[],mathematical functions,aidt
+coffeelint-config-groupon,coffeelint-config-groupon,null,null,[],[],[],mathematical functions,aidt
+keen-query,keen-query,null,null,[],[],[],mathematical functions,aidt
+graphy-js,graphy-js,null,null,[],[],[],mathematical functions,aidt
+eslint-config-groupon-react,eslint-config-groupon-react,null,null,[],[],[],mathematical functions,aidt
+insect,insect,null,null,[],[],[],mathematical functions,aidt
+simple-math,simple-math,null,null,[],[],[],mathematical functions,aidt
+rational-number,rational-number,null,null,[],[],[],mathematical functions,aidt
+thepiratebay,thepiratebay,null,null,[],[],[],scraper,aidt
+cheerio,Simple HTML5 charts using the canvas element.,null,null,[],[],[],scraper,aidt
+onroto-standings-scraper,onroto-standings-scraper,null,null,[],[],[],scraper,aidt
+meta-scraper,meta-scraper,null,null,[],[],[],scraper,aidt
+html-miner,html-miner,null,null,[],[],[],scraper,aidt
+hquery.php,hquery.php,null,null,[],[],[],scraper,aidt
+htmlmetaparser,htmlmetaparser,null,null,[],[],[],scraper,aidt
+linkscrape,linkscrape,null,null,[],[],[],scraper,aidt
+github-scraper,Github builds/checks for CI,null,null,[],[],[],scraper,aidt
+cheerio-advanced-selectors,cheerio-advanced-selectors,null,null,[],[],[],scraper,aidt

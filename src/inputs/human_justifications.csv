@@ -1,0 +1,109 @@
+technology,justification
+accountdown,['dependencies']
+accountdown-basic,['full documentation']
+angular-translate,"['popularity', 'usability']"
+angular-visor,[]
+aurelia-auth,"['dependencies', 'downloads']"
+axis3d,['size']
+barcodereader,['issues']
+bittorrent-tracker,['maintenance']
+captcha,['full documentation']
+captchagen,['full documentation']
+card-validator,"['size', 'popularity', 'better overall']"
+cld,['reliability']
+cordova-plugin-tts,[]
+credit-card,"['quality', 'popularity']"
+creditcard.js,['quality']
+csf-convert,['popularity']
+d3-shape,['popularity']
+d3-thermometer,['size']
+dom-util,['usability']
+dom101,['quality']
+draco3d,['popularity']
+elo-ranking,['popularity']
+email-existence,['issues']
+format-object,[]
+franc,"['available languages', 'performance']"
+gamma,['downloads']
+google-play-scraper,[]
+google-tts,"['popularity', 'usability']"
+grooveshark-downloader,[]
+guesslanguage.js,"['available languages', 'bureaucracy']"
+hashtranslate,[]
+hot-ranking,"['quality', 'popularity']"
+ionic,"['maintenance', 'popularity', 'resources']"
+isemail,['popularity']
+jots,['size']
+jquery-scanner-detection,['dependencies']
+jquery.payment,"['dependencies', 'popularity']"
+js-sorting-algorithms,['quality']
+js_quiksort,['maintenance']
+lambdas either,"['maintenance', 'maintenance']"
+languagedetect,['downloads']
+leven,"['issues', 'downloads']"
+mathjs,[]
+mespeak,"['issues', 'usability']"
+metrics-grafics,['size']
+mojule/dom-utils,['maintenance']
+nativescript-barcodescanner,"['full documentation', 'usability']"
+ndarray,['popularity']
+ng-ocr,['performance']
+node-sentiment,"['community', 'performance']"
+node-tesseract,['reliability']
+nude,"['issues', 'downloads']"
+nudity-filter,['functionality']
+oauth-rest-atlassian,[]
+ocr,"['community', 'popularity']"
+ocr-by-image-url,['bureaucracy']
+okrabyte,[]
+onsen ui,['quality']
+open-graph-scraper,['downloads']
+passport,['popularity']
+passport-gumroad,['issues']
+pcm-convert,['quality']
+poker-ranking,['maintenance']
+provide-user,['popularity']
+qsort,"['downloads', 'functionality']"
+quaggajs,"['popularity', 'functionality']"
+ranked,"['popularity', 'simplicity']"
+ranking,"['quality', 'usability', 'better overall']"
+react-captcha,"['downloads', 'functionality']"
+react-google-recaptcha,"['functionality', 'full documentation', 'community']"
+react-intl,"['popularity', 'size']"
+react-native-send-intent,['popularity']
+react-native-sms,['maintenance']
+realdom,"['performance', 'size']"
+retext-sentiment,"['reliability', 'performance']"
+scraper,"['quality', 'functionality', 'full documentation', 'maintenance']"
+sdf-query,"['usability', 'simplicity']"
+send-sms,['quality']
+sending sms,['me']
+sentiment,"['popularity', 'activity', 'reliability', 'usability']"
+sentimental,"['reliability', 'bureaucracy', 'functionality']"
+similarity,"['dependencies', 'usability']"
+simple-card,['dependencies']
+sms,"['practicality', 'dependencies']"
+socketio-auth,['popularity']
+sort-algorithms-js,['me']
+string-similarity,"['full documentation', 'usability']"
+svg-captcha,"['community', 'functionality', 'full documentation']"
+swiper,"['modern', 'popularity']"
+symlar,[]
+testdata-valid-email,['maintenance']
+textmagic sms,[]
+thf-mobile-cli,[]
+tika,"['reliability', 'performance']"
+torrent-discovery,[]
+torrent-tracker-health,"['quality', 'popularity']"
+torrent-tracker-health-ce,['popularity']
+township-auth,['issues']
+translate,['dependencies']
+translate.js,"['dependencies', 'downloads']"
+troll,[]
+valid-email,['downloads']
+validate.io,['quality']
+webcodecamjs,['popularity']
+website-scraper,"['functionality', 'full documentation', 'community']"
+webtorrent-health,"['quality', 'better overall']"
+write-yaml,[]
+zview-mobile,[]

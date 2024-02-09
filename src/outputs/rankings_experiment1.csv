@@ -1,0 +1,120 @@
+package_name,description,url,year_of_release,justification,pros,cons,query,who
+grooveshark-streaming,Log usage of deprecated methods,null,null,,[],[],download free music,humans
+eat-daily-jam,"React and redux based, lightweight and elm-style framework.",null,null,,[],[],download free music,humans
+grooveshark-downloader,The [Calypso](https://github.com/Automattic/wp-calypso/) / [WordPress.com](https://wordpress.com) official icon set.,null,null,[],[],[],download free music,humans
+jul11co-webdl,Inlines css into html source,null,null,,[],[],download web videos,humans
+webvd,a video downloader that crawls the web,null,null,,[],[],download web videos,humans
+peardownloader,An open-source standards-friendly JavaScript utility for embedding PDF files into HTML documents,null,null,,[],[],download web videos,humans
+evdh,Checks for valid structure of ethereum web3-secret-storage/presale keyfiles,null,null,,[],[],download web videos,humans
+snape,A web application to search and stream torrents.,null,null,,[],[],download web videos,humans
+isemail,Check if the current session runs XFCE desktop,null,null,['popularity'],[],[],check valid email address,humans
+testdata-valid-email,"A list of valid, frequently ugly email addresses for use in automated testing",null,null,['maintenance'],[],[],check valid email address,humans
+validate.io,Validation utilities.,null,null,['quality'],[],[],check valid email address,humans
+email-existence,Detect when an element is ready in the DOM,null,null,['issues'],[],[],check valid email address,humans
+valid-email,Test the validity of an email address,null,null,['downloads'],[],[],check valid email address,humans
+react-native-send-intent,The native search bar for react native.,null,null,['popularity'],[],[],send sms,humans
+sending sms,sending sms,null,null,[],[],[],send sms,humans
+react-native-sms,A minimalistic wrapper around React Native's AsyncStorage.,null,null,['maintenance'],[],[],send sms,humans
+send-sms,Better streaming static file server with Range and conditional-GET support,null,null,['quality'],[],[],send sms,humans
+sms,Send and receive SMS from a connected device with 3G modem.,null,null,"['practicality', 'dependencies']",[],[],send sms,humans
+textmagic sms,textmagic sms,null,null,[],[],[],send sms,humans
+js-sorting-algorithms,Generates UML sequence diagrams from simple text,null,null,['quality'],[],[],quick sort algorithm,humans
+ndarray,Download nhaccuatui,null,null,['popularity'],[],[],quick sort algorithm,humans
+sort-algorithms-js,production-ready sort algorithms implementation in javascript.,null,null,['me'],[],[],quick sort algorithm,humans
+qsort,"A querystring parser that supports nesting and arrays, with a depth limit",null,null,"['downloads', 'functionality']",[],[],quick sort algorithm,humans
+js_quiksort,js_quiksort,null,null,[],[],[],quick sort algorithm,humans
+nudity-filter,High performance nudity detection,null,null,['functionality'],[],[],filter adult content images,humans
+nude,Nuclide's binary dependencies prebuilt for various platforms,null,null,"['issues', 'downloads']",[],[],filter adult content images,humans
+passport,Transform into a string of capitalized words without separators,null,null,['popularity'],[],[],user authentication,humans
+accountdown,A noop logger that conforms to the Log4j interface for modules to stub out internal logging,null,null,['dependencies'],[],[],user authentication,humans
+provide-user,Webdriver E2E test wrapper for Angular.,null,null,['popularity'],[],[],user authentication,humans
+accountdown-basic,HTTP Accept-* headers parsing,null,null,['full documentation'],[],[],user authentication,humans
+township-auth,authentication library,null,null,['issues'],[],[],user authentication,humans
+quaggajs,quaggajs,null,null,[],[],[],extract barcode from image,humans
+nativescript-barcodescanner,"Sophisticated, battery-conscious, cross-platform background-geolocation with motion-detection and geofencing",null,null,"['full documentation', 'usability']",[],[],extract barcode from image,humans
+jquery-scanner-detection,Jcrop is the quick and easy way to add image cropping functionality to your web application.,null,null,['dependencies'],[],[],extract barcode from image,humans
+webcodecamjs,bercode qrode decoder,null,null,['popularity'],[],[],extract barcode from image,humans
+barcodereader,barcodereader,null,null,[],[],[],extract barcode from image,humans
+pcm-convert,"Easy salt/password creation for Node.js, extracted from Mosca",null,null,['quality'],[],[],convert data formats,humans
+write-yaml,Write YAML. Converts JSON to YAML writes it to the specified file.,null,null,[],[],[],convert data formats,humans
+format-object,A simple CLI tool for ensuring that a given node script runs continuously (i.e. forever),null,null,[],[],[],convert data formats,humans
+csf-convert,Fast multidimensional filtering for coordinated views.,null,null,['popularity'],[],[],convert data formats,humans
+lambdas either,lambdas either,null,null,[],[],[],convert data formats,humans
+node-tesseract,,null,null,['reliability'],[],[],convert typewritten image to text,humans
+ocr,Convert an Observable to a Promise,null,null,"['community', 'popularity']",[],[],convert typewritten image to text,humans
+ng-ocr,Infinite scrolling for AngularJS,null,null,['performance'],[],[],convert typewritten image to text,humans
+okrabyte,flexible retry for JavaScript promises,null,null,[],[],[],convert typewritten image to text,humans
+ocr-by-image-url,Accusoft OCR Xpress,null,null,['bureaucracy'],[],[],convert typewritten image to text,humans
+sentiment,Seneca transport,null,null,"['popularity', 'activity', 'reliability', 'usability']",[],[],sentiment analysis,humans
+retext-sentiment,a through stream that starts paused and resumes on the next tick,null,null,"['reliability', 'performance']",[],[],sentiment analysis,humans
+node-sentiment,A cron-like and not-cron-like job scheduler for Node.,null,null,"['community', 'performance']",[],[],sentiment analysis,humans
+troll,Language sentiment analysis and neural networks... for trolls.,null,null,[],[],[],sentiment analysis,humans
+sentimental,Sentiment analysis module using AFINN-111,null,null,"['reliability', 'bureaucracy', 'functionality']",[],[],sentiment analysis,humans
+oauth-rest-atlassian,A Nxus module for sending emails.,null,null,[],[],[],third party authentication,humans
+angular-visor,A translation module for AngularJS,null,null,[],[],[],third party authentication,humans
+socketio-auth,Authentication for socket.io,null,null,['popularity'],[],[],third party authentication,humans
+passport-gumroad,Google (OAuth 2.0) authentication strategy for Passport.,null,null,['issues'],[],[],third party authentication,humans
+aurelia-auth,Atom's UI library,null,null,"['dependencies', 'downloads']",[],[],third party authentication,humans
+mespeak,"Markdown-ish syntax for generating flowcharts, sequence diagrams, class diagrams, gantt charts and git graphs.",null,null,"['issues', 'usability']",[],[],convert text to speech,humans
+cordova-plugin-tts,High throughput template dir writes,null,null,[],[],[],convert text to speech,humans
+google-tts,scrapes app data from google play store,null,null,"['popularity', 'usability']",[],[],convert text to speech,humans
+string-similarity,"Finds degree of similarity between strings, based on Dice's Coefficient, which is mostly better than Levenshtein distance.",null,null,"['full documentation', 'usability']",[],[],calculate word similarity,humans
+similarity,How similar are these two strings?,null,null,"['dependencies', 'usability']",[],[],calculate word similarity,humans
+symlar,compute and verify string similarity,null,null,[],[],[],calculate word similarity,humans
+jots,Object schema validation,null,null,['size'],[],[],calculate word similarity,humans
+leven,A low-level Node.js LevelDB binding,null,null,"['issues', 'downloads']",[],[],calculate word similarity,humans
+translate,Translate text to different languages on node.js and the browser,null,null,['dependencies'],[],[],translate english to spanish,humans
+angular-translate,AngularJS router module,null,null,"['popularity', 'usability']",[],[],translate english to spanish,humans
+translate.js,Javascript micro library for translations (i18n) with support for placeholders and multiple plural forms.,null,null,"['dependencies', 'downloads']",[],[],translate english to spanish,humans
+react-intl,React component for inputting numeric values within a range,null,null,"['popularity', 'size']",[],[],translate english to spanish,humans
+hashtranslate,Blazing fast unique hash generator,null,null,[],[],[],translate english to spanish,humans
+card-validator,Lightweight logger with a simple pass-through configuration for use with fancier logging libraries,null,null,"['size', 'popularity', 'better overall']",[],[],credit card validation,humans
+creditcard.js,Polyfill for the proposed React context API,null,null,['quality'],[],[],credit card validation,humans
+simple-card,A simple plug and play credit card validation library that uses the luhn algorithm,null,null,['dependencies'],[],[],credit card validation,humans
+jquery.payment,"A curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library.",null,null,"['dependencies', 'popularity']",[],[],credit card validation,humans
+credit-card,node style hmacs in the browser,null,null,"['quality', 'popularity']",[],[],credit card validation,humans
+webtorrent-health,Get health info about a webtorrent file or magnet link,null,null,"['quality', 'better overall']",[],[],health tracker,humans
+bittorrent-tracker,Strict DER signature encoding/decoding.,null,null,['maintenance'],[],[],health tracker,humans
+torrent-tracker-health,Get health info about a torrent file or magnet link,null,null,"['quality', 'popularity']",[],[],health tracker,humans
+torrent-tracker-health-ce,Get health info about a torrent file or magnet link,null,null,['popularity'],[],[],health tracker,humans
+torrent-discovery,Discover BitTorrent and WebTorrent peers,null,null,[],[],[],health tracker,humans
+react-captcha,An off-canvas sidebar component with a collection of effects and styles using CSS transitions and SVG path animations,null,null,"['downloads', 'functionality']",[],[],captcha authentication,humans
+react-google-recaptcha,Add a Github banner to your project page. A React version of: https://github.com/tholman/github-corners,null,null,"['functionality', 'full documentation', 'community']",[],[],captcha authentication,humans
+svg-captcha,generate svg captcha in node.js or express.js,null,null,"['community', 'functionality', 'full documentation']",[],[],captcha authentication,humans
+captchagen,a canonical json implementation,null,null,['full documentation'],[],[],captcha authentication,humans
+captcha,"A smaller version of caniuse-db, with only the essentials!",null,null,['full documentation'],[],[],captcha authentication,humans
+franc,A rational number library,null,null,"['available languages', 'performance']",[],[],detect text language,humans
+cld,regular expression for matching CJK text,null,null,['reliability'],[],[],detect text language,humans
+tika,Apache Tika Python library,null,null,"['reliability', 'performance']",[],[],detect text language,humans
+languagedetect,Either data type for lambdash,null,null,['downloads'],[],[],detect text language,humans
+guesslanguage.js,guesslanguage.js,null,null,[],[],[],detect text language,humans
+ranking,Strategies for assigning ranks,null,null,"['quality', 'usability', 'better overall']",[],[],rank aggregation algorithms,humans
+elo-ranking,HTML5 HTMLElement.dataset ponyfill,null,null,['popularity'],[],[],rank aggregation algorithms,humans
+hot-ranking,simpler and more effective captcha: human cognition beats visual perception,null,null,"['quality', 'popularity']",[],[],rank aggregation algorithms,humans
+ranked,Rank objects by a key,null,null,"['popularity', 'simplicity']",[],[],rank aggregation algorithms,humans
+poker-ranking,Universal client and server router.,null,null,['maintenance'],[],[],rank aggregation algorithms,humans
+onsen ui,onsen ui,null,null,[],[],[],mobile app framework,humans
+zview-mobile,"Mobile UI Components, based on Vue.js and ionic CSS.",null,null,[],[],[],mobile app framework,humans
+thf-mobile-cli,A tool for creating and developing THF mobile apps.,null,null,[],[],[],mobile app framework,humans
+swiper,Most modern mobile touch slider and framework with hardware accelerated transitions,null,null,"['modern', 'popularity']",[],[],mobile app framework,humans
+ionic,A small selection of shared styles used in the inuitcss framework,null,null,"['maintenance', 'popularity', 'resources']",[],[],mobile app framework,humans
+dom101,render domhandler DOM nodes to a string,null,null,['quality'],[],[],DOM manipulation utils,humans
+realdom,mixin to add one-time ready event callback handler,null,null,"['performance', 'size']",[],[],DOM manipulation utils,humans
+sdf-query,The scrypt crypto library for NodeJS,null,null,"['usability', 'simplicity']",[],[],DOM manipulation utils,humans
+mojule/dom-utils,mojule/dom-utils,null,null,[],[],[],DOM manipulation utils,humans
+dom-util,scroll dom node into view automatically,null,null,['usability'],[],[],DOM manipulation utils,humans
+metrics-grafics,metrics-grafics,null,null,[],[],[],lightweight 3D graphic library,humans
+axis3d,"AWS signing. Originally pulled from LearnBoost/knox, maintained as vendor in request, now a standalone module.",null,null,['size'],[],[],lightweight 3D graphic library,humans
+d3-thermometer,A convenient alternative to XMLHttpRequest.,null,null,['size'],[],[],lightweight 3D graphic library,humans
+d3-shape,Generate random numbers from various distributions.,null,null,['popularity'],[],[],lightweight 3D graphic library,humans
+draco3d,Expand environment variables using dotenv,null,null,['popularity'],[],[],lightweight 3D graphic library,humans
+mathjs,API's for calling MathJax from node.js,null,null,[],[],[],mathematical functions,humans
+gamma,"small, standalone fuzzy search / fuzzy filter. browser or node",null,null,['downloads'],[],[],mathematical functions,humans
+nearest-periodic-value,Add singleton dimensions to an ndarray,null,null,,[],[],mathematical functions,humans
+contained-periodic-values,Emulate console for all the browsers,null,null,,[],[],mathematical functions,humans
+gamma,"small, standalone fuzzy search / fuzzy filter. browser or node",null,null,['downloads'],[],[],mathematical functions,humans
+cheerio,Simple HTML5 charts using the canvas element.,null,null,,[],[],scraper,humans
+google-play-scraper,Google Maps Geolocation API for Node.js (unofficial),null,null,[],[],[],scraper,humans
+open-graph-scraper,Open files in your editor at a specific line and column,null,null,['downloads'],[],[],scraper,humans
+website-scraper,"Download website to a local directory (including all css, images, js, etc.)",null,null,"['functionality', 'full documentation', 'community']",[],[],scraper,humans
+scraper,A Node.js scraper for humans.,null,null,"['quality', 'functionality', 'full documentation', 'maintenance']",[],[],scraper,humans

@@ -1,0 +1,415 @@
+query,metric,value,who
+DOM manipulation utils,map@3,0.0,ollama-llama2:7b-chat
+DOM manipulation utils,mrr@3,0.0,ollama-llama2:7b-chat
+DOM manipulation utils,ndcg@3,0.0,ollama-llama2:7b-chat
+DOM manipulation utils,precision@3,0.0,ollama-llama2:7b-chat
+DOM manipulation utils,recall@3,0.0,ollama-llama2:7b-chat
+DOM manipulation utils,f1@3,0.0,ollama-llama2:7b-chat
+DOM manipulation utils,map@5,0.0,ollama-llama2:7b-chat
+DOM manipulation utils,mrr@5,0.0,ollama-llama2:7b-chat
+DOM manipulation utils,ndcg@5,0.0,ollama-llama2:7b-chat
+DOM manipulation utils,precision@5,0.0,ollama-llama2:7b-chat
+DOM manipulation utils,recall@5,0.0,ollama-llama2:7b-chat
+DOM manipulation utils,f1@5,0.0,ollama-llama2:7b-chat
+DOM manipulation utils,map@7,0.0,ollama-llama2:7b-chat
+DOM manipulation utils,mrr@7,0.0,ollama-llama2:7b-chat
+DOM manipulation utils,ndcg@7,0.0,ollama-llama2:7b-chat
+DOM manipulation utils,precision@7,0.0,ollama-llama2:7b-chat
+DOM manipulation utils,recall@7,0.0,ollama-llama2:7b-chat
+DOM manipulation utils,f1@7,0.0,ollama-llama2:7b-chat
+calculate word similarity,map@3,0.0,ollama-llama2:7b-chat
+calculate word similarity,mrr@3,0.0,ollama-llama2:7b-chat
+calculate word similarity,ndcg@3,0.0,ollama-llama2:7b-chat
+calculate word similarity,precision@3,0.0,ollama-llama2:7b-chat
+calculate word similarity,recall@3,0.0,ollama-llama2:7b-chat
+calculate word similarity,f1@3,0.0,ollama-llama2:7b-chat
+calculate word similarity,map@5,0.0,ollama-llama2:7b-chat
+calculate word similarity,mrr@5,0.0,ollama-llama2:7b-chat
+calculate word similarity,ndcg@5,0.0,ollama-llama2:7b-chat
+calculate word similarity,precision@5,0.0,ollama-llama2:7b-chat
+calculate word similarity,recall@5,0.0,ollama-llama2:7b-chat
+calculate word similarity,f1@5,0.0,ollama-llama2:7b-chat
+calculate word similarity,map@7,0.0,ollama-llama2:7b-chat
+calculate word similarity,mrr@7,0.0,ollama-llama2:7b-chat
+calculate word similarity,ndcg@7,0.0,ollama-llama2:7b-chat
+calculate word similarity,precision@7,0.0,ollama-llama2:7b-chat
+calculate word similarity,recall@7,0.0,ollama-llama2:7b-chat
+calculate word similarity,f1@7,0.0,ollama-llama2:7b-chat
+captcha authentication,map@3,0.0,ollama-llama2:7b-chat
+captcha authentication,mrr@3,0.0,ollama-llama2:7b-chat
+captcha authentication,ndcg@3,0.0,ollama-llama2:7b-chat
+captcha authentication,precision@3,0.0,ollama-llama2:7b-chat
+captcha authentication,recall@3,0.0,ollama-llama2:7b-chat
+captcha authentication,f1@3,0.0,ollama-llama2:7b-chat
+captcha authentication,map@5,0.0,ollama-llama2:7b-chat
+captcha authentication,mrr@5,0.0,ollama-llama2:7b-chat
+captcha authentication,ndcg@5,0.0,ollama-llama2:7b-chat
+captcha authentication,precision@5,0.0,ollama-llama2:7b-chat
+captcha authentication,recall@5,0.0,ollama-llama2:7b-chat
+captcha authentication,f1@5,0.0,ollama-llama2:7b-chat
+captcha authentication,map@7,0.0,ollama-llama2:7b-chat
+captcha authentication,mrr@7,0.0,ollama-llama2:7b-chat
+captcha authentication,ndcg@7,0.0,ollama-llama2:7b-chat
+captcha authentication,precision@7,0.0,ollama-llama2:7b-chat
+captcha authentication,recall@7,0.0,ollama-llama2:7b-chat
+captcha authentication,f1@7,0.0,ollama-llama2:7b-chat
+check valid email address,map@3,0.01818181818181818,ollama-llama2:7b-chat
+check valid email address,mrr@3,1.0,ollama-llama2:7b-chat
+check valid email address,ndcg@3,0.46927872602275644,ollama-llama2:7b-chat
+check valid email address,precision@3,0.3333333333333333,ollama-llama2:7b-chat
+check valid email address,recall@3,0.01818181818181818,ollama-llama2:7b-chat
+check valid email address,f1@3,0.034482758620689655,ollama-llama2:7b-chat
+check valid email address,map@5,0.01818181818181818,ollama-llama2:7b-chat
+check valid email address,mrr@5,1.0,ollama-llama2:7b-chat
+check valid email address,ndcg@5,0.3391602052736161,ollama-llama2:7b-chat
+check valid email address,precision@5,0.2,ollama-llama2:7b-chat
+check valid email address,recall@5,0.01818181818181818,ollama-llama2:7b-chat
+check valid email address,f1@5,0.03333333333333333,ollama-llama2:7b-chat
+check valid email address,map@7,0.01818181818181818,ollama-llama2:7b-chat
+check valid email address,mrr@7,1.0,ollama-llama2:7b-chat
+check valid email address,ndcg@7,0.27487633291429087,ollama-llama2:7b-chat
+check valid email address,precision@7,0.14285714285714285,ollama-llama2:7b-chat
+check valid email address,recall@7,0.01818181818181818,ollama-llama2:7b-chat
+check valid email address,f1@7,0.032258064516129024,ollama-llama2:7b-chat
+convert data formats,map@3,0.0,ollama-llama2:7b-chat
+convert data formats,mrr@3,0.0,ollama-llama2:7b-chat
+convert data formats,ndcg@3,0.0,ollama-llama2:7b-chat
+convert data formats,precision@3,0.0,ollama-llama2:7b-chat
+convert data formats,recall@3,0.0,ollama-llama2:7b-chat
+convert data formats,f1@3,0.0,ollama-llama2:7b-chat
+convert data formats,map@5,0.0,ollama-llama2:7b-chat
+convert data formats,mrr@5,0.0,ollama-llama2:7b-chat
+convert data formats,ndcg@5,0.0,ollama-llama2:7b-chat
+convert data formats,precision@5,0.0,ollama-llama2:7b-chat
+convert data formats,recall@5,0.0,ollama-llama2:7b-chat
+convert data formats,f1@5,0.0,ollama-llama2:7b-chat
+convert data formats,map@7,0.0,ollama-llama2:7b-chat
+convert data formats,mrr@7,0.0,ollama-llama2:7b-chat
+convert data formats,ndcg@7,0.0,ollama-llama2:7b-chat
+convert data formats,precision@7,0.0,ollama-llama2:7b-chat
+convert data formats,recall@7,0.0,ollama-llama2:7b-chat
+convert data formats,f1@7,0.0,ollama-llama2:7b-chat
+convert text to speech,map@3,0.0,ollama-llama2:7b-chat
+convert text to speech,mrr@3,0.0,ollama-llama2:7b-chat
+convert text to speech,ndcg@3,0.0,ollama-llama2:7b-chat
+convert text to speech,precision@3,0.0,ollama-llama2:7b-chat
+convert text to speech,recall@3,0.0,ollama-llama2:7b-chat
+convert text to speech,f1@3,0.0,ollama-llama2:7b-chat
+convert text to speech,map@5,0.0,ollama-llama2:7b-chat
+convert text to speech,mrr@5,0.0,ollama-llama2:7b-chat
+convert text to speech,ndcg@5,0.0,ollama-llama2:7b-chat
+convert text to speech,precision@5,0.0,ollama-llama2:7b-chat
+convert text to speech,recall@5,0.0,ollama-llama2:7b-chat
+convert text to speech,f1@5,0.0,ollama-llama2:7b-chat
+convert text to speech,map@7,0.0,ollama-llama2:7b-chat
+convert text to speech,mrr@7,0.0,ollama-llama2:7b-chat
+convert text to speech,ndcg@7,0.0,ollama-llama2:7b-chat
+convert text to speech,precision@7,0.0,ollama-llama2:7b-chat
+convert text to speech,recall@7,0.0,ollama-llama2:7b-chat
+convert text to speech,f1@7,0.0,ollama-llama2:7b-chat
+convert typewritten image to text,map@3,0.0,ollama-llama2:7b-chat
+convert typewritten image to text,mrr@3,0.0,ollama-llama2:7b-chat
+convert typewritten image to text,ndcg@3,0.0,ollama-llama2:7b-chat
+convert typewritten image to text,precision@3,0.0,ollama-llama2:7b-chat
+convert typewritten image to text,recall@3,0.0,ollama-llama2:7b-chat
+convert typewritten image to text,f1@3,0.0,ollama-llama2:7b-chat
+convert typewritten image to text,map@5,0.0,ollama-llama2:7b-chat
+convert typewritten image to text,mrr@5,0.0,ollama-llama2:7b-chat
+convert typewritten image to text,ndcg@5,0.0,ollama-llama2:7b-chat
+convert typewritten image to text,precision@5,0.0,ollama-llama2:7b-chat
+convert typewritten image to text,recall@5,0.0,ollama-llama2:7b-chat
+convert typewritten image to text,f1@5,0.0,ollama-llama2:7b-chat
+convert typewritten image to text,map@7,0.0,ollama-llama2:7b-chat
+convert typewritten image to text,mrr@7,0.0,ollama-llama2:7b-chat
+convert typewritten image to text,ndcg@7,0.0,ollama-llama2:7b-chat
+convert typewritten image to text,precision@7,0.0,ollama-llama2:7b-chat
+convert typewritten image to text,recall@7,0.0,ollama-llama2:7b-chat
+convert typewritten image to text,f1@7,0.0,ollama-llama2:7b-chat
+credit card validation,map@3,0.0,ollama-llama2:7b-chat
+credit card validation,mrr@3,0.0,ollama-llama2:7b-chat
+credit card validation,ndcg@3,0.0,ollama-llama2:7b-chat
+credit card validation,precision@3,0.0,ollama-llama2:7b-chat
+credit card validation,recall@3,0.0,ollama-llama2:7b-chat
+credit card validation,f1@3,0.0,ollama-llama2:7b-chat
+credit card validation,map@5,0.0,ollama-llama2:7b-chat
+credit card validation,mrr@5,0.0,ollama-llama2:7b-chat
+credit card validation,ndcg@5,0.0,ollama-llama2:7b-chat
+credit card validation,precision@5,0.0,ollama-llama2:7b-chat
+credit card validation,recall@5,0.0,ollama-llama2:7b-chat
+credit card validation,f1@5,0.0,ollama-llama2:7b-chat
+credit card validation,map@7,0.0,ollama-llama2:7b-chat
+credit card validation,mrr@7,0.0,ollama-llama2:7b-chat
+credit card validation,ndcg@7,0.0,ollama-llama2:7b-chat
+credit card validation,precision@7,0.0,ollama-llama2:7b-chat
+credit card validation,recall@7,0.0,ollama-llama2:7b-chat
+credit card validation,f1@7,0.0,ollama-llama2:7b-chat
+detect text language,map@3,0.0,ollama-llama2:7b-chat
+detect text language,mrr@3,0.0,ollama-llama2:7b-chat
+detect text language,ndcg@3,0.0,ollama-llama2:7b-chat
+detect text language,precision@3,0.0,ollama-llama2:7b-chat
+detect text language,recall@3,0.0,ollama-llama2:7b-chat
+detect text language,f1@3,0.0,ollama-llama2:7b-chat
+detect text language,map@5,0.0,ollama-llama2:7b-chat
+detect text language,mrr@5,0.0,ollama-llama2:7b-chat
+detect text language,ndcg@5,0.0,ollama-llama2:7b-chat
+detect text language,precision@5,0.0,ollama-llama2:7b-chat
+detect text language,recall@5,0.0,ollama-llama2:7b-chat
+detect text language,f1@5,0.0,ollama-llama2:7b-chat
+detect text language,map@7,0.0,ollama-llama2:7b-chat
+detect text language,mrr@7,0.0,ollama-llama2:7b-chat
+detect text language,ndcg@7,0.0,ollama-llama2:7b-chat
+detect text language,precision@7,0.0,ollama-llama2:7b-chat
+detect text language,recall@7,0.0,ollama-llama2:7b-chat
+detect text language,f1@7,0.0,ollama-llama2:7b-chat
+download free music,map@3,0.0,ollama-llama2:7b-chat
+download free music,mrr@3,0.0,ollama-llama2:7b-chat
+download free music,ndcg@3,0.0,ollama-llama2:7b-chat
+download free music,precision@3,0.0,ollama-llama2:7b-chat
+download free music,recall@3,0.0,ollama-llama2:7b-chat
+download free music,f1@3,0.0,ollama-llama2:7b-chat
+download free music,map@5,0.0,ollama-llama2:7b-chat
+download free music,mrr@5,0.0,ollama-llama2:7b-chat
+download free music,ndcg@5,0.0,ollama-llama2:7b-chat
+download free music,precision@5,0.0,ollama-llama2:7b-chat
+download free music,recall@5,0.0,ollama-llama2:7b-chat
+download free music,f1@5,0.0,ollama-llama2:7b-chat
+download free music,map@7,0.0,ollama-llama2:7b-chat
+download free music,mrr@7,0.0,ollama-llama2:7b-chat
+download free music,ndcg@7,0.0,ollama-llama2:7b-chat
+download free music,precision@7,0.0,ollama-llama2:7b-chat
+download free music,recall@7,0.0,ollama-llama2:7b-chat
+download free music,f1@7,0.0,ollama-llama2:7b-chat
+download web videos,map@3,0.0,ollama-llama2:7b-chat
+download web videos,mrr@3,0.0,ollama-llama2:7b-chat
+download web videos,ndcg@3,0.0,ollama-llama2:7b-chat
+download web videos,precision@3,0.0,ollama-llama2:7b-chat
+download web videos,recall@3,0.0,ollama-llama2:7b-chat
+download web videos,f1@3,0.0,ollama-llama2:7b-chat
+download web videos,map@5,0.0,ollama-llama2:7b-chat
+download web videos,mrr@5,0.0,ollama-llama2:7b-chat
+download web videos,ndcg@5,0.0,ollama-llama2:7b-chat
+download web videos,precision@5,0.0,ollama-llama2:7b-chat
+download web videos,recall@5,0.0,ollama-llama2:7b-chat
+download web videos,f1@5,0.0,ollama-llama2:7b-chat
+download web videos,map@7,0.0,ollama-llama2:7b-chat
+download web videos,mrr@7,0.0,ollama-llama2:7b-chat
+download web videos,ndcg@7,0.0,ollama-llama2:7b-chat
+download web videos,precision@7,0.0,ollama-llama2:7b-chat
+download web videos,recall@7,0.0,ollama-llama2:7b-chat
+download web videos,f1@7,0.0,ollama-llama2:7b-chat
+extract barcode from image,map@3,0.07291666666666666,ollama-llama2:7b-chat
+extract barcode from image,mrr@3,0.5,ollama-llama2:7b-chat
+extract barcode from image,ndcg@3,0.5307212739772434,ollama-llama2:7b-chat
+extract barcode from image,precision@3,0.6666666666666666,ollama-llama2:7b-chat
+extract barcode from image,recall@3,0.125,ollama-llama2:7b-chat
+extract barcode from image,f1@3,0.21052631578947367,ollama-llama2:7b-chat
+extract barcode from image,map@5,0.07291666666666666,ollama-llama2:7b-chat
+extract barcode from image,mrr@5,0.5,ollama-llama2:7b-chat
+extract barcode from image,ndcg@5,0.38356636737133565,ollama-llama2:7b-chat
+extract barcode from image,precision@5,0.4,ollama-llama2:7b-chat
+extract barcode from image,recall@5,0.125,ollama-llama2:7b-chat
+extract barcode from image,f1@5,0.19047619047619047,ollama-llama2:7b-chat
+extract barcode from image,map@7,0.07291666666666666,ollama-llama2:7b-chat
+extract barcode from image,mrr@7,0.5,ollama-llama2:7b-chat
+extract barcode from image,ndcg@7,0.3108658234453849,ollama-llama2:7b-chat
+extract barcode from image,precision@7,0.2857142857142857,ollama-llama2:7b-chat
+extract barcode from image,recall@7,0.125,ollama-llama2:7b-chat
+extract barcode from image,f1@7,0.17391304347826086,ollama-llama2:7b-chat
+filter adult content images,map@3,0.0,ollama-llama2:7b-chat
+filter adult content images,mrr@3,0.0,ollama-llama2:7b-chat
+filter adult content images,ndcg@3,0.0,ollama-llama2:7b-chat
+filter adult content images,precision@3,0.0,ollama-llama2:7b-chat
+filter adult content images,recall@3,0.0,ollama-llama2:7b-chat
+filter adult content images,f1@3,0.0,ollama-llama2:7b-chat
+filter adult content images,map@5,0.0,ollama-llama2:7b-chat
+filter adult content images,mrr@5,0.0,ollama-llama2:7b-chat
+filter adult content images,ndcg@5,0.0,ollama-llama2:7b-chat
+filter adult content images,precision@5,0.0,ollama-llama2:7b-chat
+filter adult content images,recall@5,0.0,ollama-llama2:7b-chat
+filter adult content images,f1@5,0.0,ollama-llama2:7b-chat
+filter adult content images,map@7,0.0,ollama-llama2:7b-chat
+filter adult content images,mrr@7,0.0,ollama-llama2:7b-chat
+filter adult content images,ndcg@7,0.0,ollama-llama2:7b-chat
+filter adult content images,precision@7,0.0,ollama-llama2:7b-chat
+filter adult content images,recall@7,0.0,ollama-llama2:7b-chat
+filter adult content images,f1@7,0.0,ollama-llama2:7b-chat
+health tracker,map@3,0.0,ollama-llama2:7b-chat
+health tracker,mrr@3,0.0,ollama-llama2:7b-chat
+health tracker,ndcg@3,0.0,ollama-llama2:7b-chat
+health tracker,precision@3,0.0,ollama-llama2:7b-chat
+health tracker,recall@3,0.0,ollama-llama2:7b-chat
+health tracker,f1@3,0.0,ollama-llama2:7b-chat
+health tracker,map@5,0.0,ollama-llama2:7b-chat
+health tracker,mrr@5,0.0,ollama-llama2:7b-chat
+health tracker,ndcg@5,0.0,ollama-llama2:7b-chat
+health tracker,precision@5,0.0,ollama-llama2:7b-chat
+health tracker,recall@5,0.0,ollama-llama2:7b-chat
+health tracker,f1@5,0.0,ollama-llama2:7b-chat
+health tracker,map@7,0.0,ollama-llama2:7b-chat
+health tracker,mrr@7,0.0,ollama-llama2:7b-chat
+health tracker,ndcg@7,0.0,ollama-llama2:7b-chat
+health tracker,precision@7,0.0,ollama-llama2:7b-chat
+health tracker,recall@7,0.0,ollama-llama2:7b-chat
+health tracker,f1@7,0.0,ollama-llama2:7b-chat
+lightweight 3D graphic library,map@3,0.0,ollama-llama2:7b-chat
+lightweight 3D graphic library,mrr@3,0.0,ollama-llama2:7b-chat
+lightweight 3D graphic library,ndcg@3,0.0,ollama-llama2:7b-chat
+lightweight 3D graphic library,precision@3,0.0,ollama-llama2:7b-chat
+lightweight 3D graphic library,recall@3,0.0,ollama-llama2:7b-chat
+lightweight 3D graphic library,f1@3,0.0,ollama-llama2:7b-chat
+lightweight 3D graphic library,map@5,0.0,ollama-llama2:7b-chat
+lightweight 3D graphic library,mrr@5,0.0,ollama-llama2:7b-chat
+lightweight 3D graphic library,ndcg@5,0.0,ollama-llama2:7b-chat
+lightweight 3D graphic library,precision@5,0.0,ollama-llama2:7b-chat
+lightweight 3D graphic library,recall@5,0.0,ollama-llama2:7b-chat
+lightweight 3D graphic library,f1@5,0.0,ollama-llama2:7b-chat
+lightweight 3D graphic library,map@7,0.0,ollama-llama2:7b-chat
+lightweight 3D graphic library,mrr@7,0.0,ollama-llama2:7b-chat
+lightweight 3D graphic library,ndcg@7,0.0,ollama-llama2:7b-chat
+lightweight 3D graphic library,precision@7,0.0,ollama-llama2:7b-chat
+lightweight 3D graphic library,recall@7,0.0,ollama-llama2:7b-chat
+lightweight 3D graphic library,f1@7,0.0,ollama-llama2:7b-chat
+mathematical functions,map@3,0.0,ollama-llama2:7b-chat
+mathematical functions,mrr@3,0.0,ollama-llama2:7b-chat
+mathematical functions,ndcg@3,0.0,ollama-llama2:7b-chat
+mathematical functions,precision@3,0.0,ollama-llama2:7b-chat
+mathematical functions,recall@3,0.0,ollama-llama2:7b-chat
+mathematical functions,f1@3,0.0,ollama-llama2:7b-chat
+mathematical functions,map@5,0.0,ollama-llama2:7b-chat
+mathematical functions,mrr@5,0.0,ollama-llama2:7b-chat
+mathematical functions,ndcg@5,0.0,ollama-llama2:7b-chat
+mathematical functions,precision@5,0.0,ollama-llama2:7b-chat
+mathematical functions,recall@5,0.0,ollama-llama2:7b-chat
+mathematical functions,f1@5,0.0,ollama-llama2:7b-chat
+mathematical functions,map@7,0.0,ollama-llama2:7b-chat
+mathematical functions,mrr@7,0.0,ollama-llama2:7b-chat
+mathematical functions,ndcg@7,0.0,ollama-llama2:7b-chat
+mathematical functions,precision@7,0.0,ollama-llama2:7b-chat
+mathematical functions,recall@7,0.0,ollama-llama2:7b-chat
+mathematical functions,f1@7,0.0,ollama-llama2:7b-chat
+quick sort algorithm,map@3,0.017857142857142856,ollama-llama2:7b-chat
+quick sort algorithm,mrr@3,1.0,ollama-llama2:7b-chat
+quick sort algorithm,ndcg@3,0.46927872602275644,ollama-llama2:7b-chat
+quick sort algorithm,precision@3,0.3333333333333333,ollama-llama2:7b-chat
+quick sort algorithm,recall@3,0.017857142857142856,ollama-llama2:7b-chat
+quick sort algorithm,f1@3,0.03389830508474576,ollama-llama2:7b-chat
+quick sort algorithm,map@5,0.024999999999999998,ollama-llama2:7b-chat
+quick sort algorithm,mrr@5,1.0,ollama-llama2:7b-chat
+quick sort algorithm,ndcg@5,0.4703652827859579,ollama-llama2:7b-chat
+quick sort algorithm,precision@5,0.4,ollama-llama2:7b-chat
+quick sort algorithm,recall@5,0.03571428571428571,ollama-llama2:7b-chat
+quick sort algorithm,f1@5,0.06557377049180328,ollama-llama2:7b-chat
+quick sort algorithm,map@7,0.024999999999999998,ollama-llama2:7b-chat
+quick sort algorithm,mrr@7,1.0,ollama-llama2:7b-chat
+quick sort algorithm,ndcg@7,0.38121301394452073,ollama-llama2:7b-chat
+quick sort algorithm,precision@7,0.2857142857142857,ollama-llama2:7b-chat
+quick sort algorithm,recall@7,0.03571428571428571,ollama-llama2:7b-chat
+quick sort algorithm,f1@7,0.06349206349206349,ollama-llama2:7b-chat
+rank aggregation algorithms,map@3,0.0,ollama-llama2:7b-chat
+rank aggregation algorithms,mrr@3,0.0,ollama-llama2:7b-chat
+rank aggregation algorithms,ndcg@3,0.0,ollama-llama2:7b-chat
+rank aggregation algorithms,precision@3,0.0,ollama-llama2:7b-chat
+rank aggregation algorithms,recall@3,0.0,ollama-llama2:7b-chat
+rank aggregation algorithms,f1@3,0.0,ollama-llama2:7b-chat
+rank aggregation algorithms,map@5,0.0,ollama-llama2:7b-chat
+rank aggregation algorithms,mrr@5,0.0,ollama-llama2:7b-chat
+rank aggregation algorithms,ndcg@5,0.0,ollama-llama2:7b-chat
+rank aggregation algorithms,precision@5,0.0,ollama-llama2:7b-chat
+rank aggregation algorithms,recall@5,0.0,ollama-llama2:7b-chat
+rank aggregation algorithms,f1@5,0.0,ollama-llama2:7b-chat
+rank aggregation algorithms,map@7,0.0,ollama-llama2:7b-chat
+rank aggregation algorithms,mrr@7,0.0,ollama-llama2:7b-chat
+rank aggregation algorithms,ndcg@7,0.0,ollama-llama2:7b-chat
+rank aggregation algorithms,precision@7,0.0,ollama-llama2:7b-chat
+rank aggregation algorithms,recall@7,0.0,ollama-llama2:7b-chat
+rank aggregation algorithms,f1@7,0.0,ollama-llama2:7b-chat
+send sms,map@3,0.008264462809917356,ollama-llama2:7b-chat
+send sms,mrr@3,1.0,ollama-llama2:7b-chat
+send sms,ndcg@3,0.46927872602275644,ollama-llama2:7b-chat
+send sms,precision@3,0.3333333333333333,ollama-llama2:7b-chat
+send sms,recall@3,0.008264462809917356,ollama-llama2:7b-chat
+send sms,f1@3,0.016129032258064516,ollama-llama2:7b-chat
+send sms,map@5,0.008264462809917356,ollama-llama2:7b-chat
+send sms,mrr@5,1.0,ollama-llama2:7b-chat
+send sms,ndcg@5,0.3391602052736161,ollama-llama2:7b-chat
+send sms,precision@5,0.2,ollama-llama2:7b-chat
+send sms,recall@5,0.008264462809917356,ollama-llama2:7b-chat
+send sms,f1@5,0.015873015873015872,ollama-llama2:7b-chat
+send sms,map@7,0.008264462809917356,ollama-llama2:7b-chat
+send sms,mrr@7,1.0,ollama-llama2:7b-chat
+send sms,ndcg@7,0.27487633291429087,ollama-llama2:7b-chat
+send sms,precision@7,0.14285714285714285,ollama-llama2:7b-chat
+send sms,recall@7,0.008264462809917356,ollama-llama2:7b-chat
+send sms,f1@7,0.015625,ollama-llama2:7b-chat
+sentiment analysis,map@3,0.010869565217391304,ollama-llama2:7b-chat
+sentiment analysis,mrr@3,0.5,ollama-llama2:7b-chat
+sentiment analysis,ndcg@3,0.2960819109658652,ollama-llama2:7b-chat
+sentiment analysis,precision@3,0.3333333333333333,ollama-llama2:7b-chat
+sentiment analysis,recall@3,0.021739130434782608,ollama-llama2:7b-chat
+sentiment analysis,f1@3,0.04081632653061224,ollama-llama2:7b-chat
+sentiment analysis,map@5,0.010869565217391304,ollama-llama2:7b-chat
+sentiment analysis,mrr@5,0.5,ollama-llama2:7b-chat
+sentiment analysis,ndcg@5,0.21398626473452756,ollama-llama2:7b-chat
+sentiment analysis,precision@5,0.2,ollama-llama2:7b-chat
+sentiment analysis,recall@5,0.021739130434782608,ollama-llama2:7b-chat
+sentiment analysis,f1@5,0.0392156862745098,ollama-llama2:7b-chat
+sentiment analysis,map@7,0.010869565217391304,ollama-llama2:7b-chat
+sentiment analysis,mrr@7,0.5,ollama-llama2:7b-chat
+sentiment analysis,ndcg@7,0.17342765698823945,ollama-llama2:7b-chat
+sentiment analysis,precision@7,0.14285714285714285,ollama-llama2:7b-chat
+sentiment analysis,recall@7,0.021739130434782608,ollama-llama2:7b-chat
+sentiment analysis,f1@7,0.03773584905660378,ollama-llama2:7b-chat
+third party authentication,map@3,0.0,ollama-llama2:7b-chat
+third party authentication,mrr@3,0.0,ollama-llama2:7b-chat
+third party authentication,ndcg@3,0.0,ollama-llama2:7b-chat
+third party authentication,precision@3,0.0,ollama-llama2:7b-chat
+third party authentication,recall@3,0.0,ollama-llama2:7b-chat
+third party authentication,f1@3,0.0,ollama-llama2:7b-chat
+third party authentication,map@5,0.0,ollama-llama2:7b-chat
+third party authentication,mrr@5,0.0,ollama-llama2:7b-chat
+third party authentication,ndcg@5,0.0,ollama-llama2:7b-chat
+third party authentication,precision@5,0.0,ollama-llama2:7b-chat
+third party authentication,recall@5,0.0,ollama-llama2:7b-chat
+third party authentication,f1@5,0.0,ollama-llama2:7b-chat
+third party authentication,map@7,0.0,ollama-llama2:7b-chat
+third party authentication,mrr@7,0.0,ollama-llama2:7b-chat
+third party authentication,ndcg@7,0.0,ollama-llama2:7b-chat
+third party authentication,precision@7,0.0,ollama-llama2:7b-chat
+third party authentication,recall@7,0.0,ollama-llama2:7b-chat
+third party authentication,f1@7,0.0,ollama-llama2:7b-chat
+translate english to spanish,map@3,0.0,ollama-llama2:7b-chat
+translate english to spanish,mrr@3,0.0,ollama-llama2:7b-chat
+translate english to spanish,ndcg@3,0.0,ollama-llama2:7b-chat
+translate english to spanish,precision@3,0.0,ollama-llama2:7b-chat
+translate english to spanish,recall@3,0.0,ollama-llama2:7b-chat
+translate english to spanish,f1@3,0.0,ollama-llama2:7b-chat
+translate english to spanish,map@5,0.0,ollama-llama2:7b-chat
+translate english to spanish,mrr@5,0.0,ollama-llama2:7b-chat
+translate english to spanish,ndcg@5,0.0,ollama-llama2:7b-chat
+translate english to spanish,precision@5,0.0,ollama-llama2:7b-chat
+translate english to spanish,recall@5,0.0,ollama-llama2:7b-chat
+translate english to spanish,f1@5,0.0,ollama-llama2:7b-chat
+translate english to spanish,map@7,0.0,ollama-llama2:7b-chat
+translate english to spanish,mrr@7,0.0,ollama-llama2:7b-chat
+translate english to spanish,ndcg@7,0.0,ollama-llama2:7b-chat
+translate english to spanish,precision@7,0.0,ollama-llama2:7b-chat
+translate english to spanish,recall@7,0.0,ollama-llama2:7b-chat
+translate english to spanish,f1@7,0.0,ollama-llama2:7b-chat
+user authentication,map@3,0.007142857142857143,ollama-llama2:7b-chat
+user authentication,mrr@3,1.0,ollama-llama2:7b-chat
+user authentication,ndcg@3,0.46927872602275644,ollama-llama2:7b-chat
+user authentication,precision@3,0.3333333333333333,ollama-llama2:7b-chat
+user authentication,recall@3,0.007142857142857143,ollama-llama2:7b-chat
+user authentication,f1@3,0.013986013986013986,ollama-llama2:7b-chat
+user authentication,map@5,0.007142857142857143,ollama-llama2:7b-chat
+user authentication,mrr@5,1.0,ollama-llama2:7b-chat
+user authentication,ndcg@5,0.3391602052736161,ollama-llama2:7b-chat
+user authentication,precision@5,0.2,ollama-llama2:7b-chat
+user authentication,recall@5,0.007142857142857143,ollama-llama2:7b-chat
+user authentication,f1@5,0.013793103448275862,ollama-llama2:7b-chat
+user authentication,map@7,0.007142857142857143,ollama-llama2:7b-chat
+user authentication,mrr@7,1.0,ollama-llama2:7b-chat
+user authentication,ndcg@7,0.27487633291429087,ollama-llama2:7b-chat
+user authentication,precision@7,0.14285714285714285,ollama-llama2:7b-chat
+user authentication,recall@7,0.007142857142857143,ollama-llama2:7b-chat
+user authentication,f1@7,0.013605442176870748,ollama-llama2:7b-chat
