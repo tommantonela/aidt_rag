@@ -1,7 +1,6 @@
 
 import pandas as pd
 from itertools import chain
-import json
 from io import StringIO
 
 from rag import AIDTRag, STRetriever, AIDTEvaluator
@@ -40,7 +39,7 @@ print(len(unique_elements.intersection(all_tecnologies)), "technologies (from ra
 # Ingestion of the technologies as documents for the database
 documents = AIDTRag.load_documents(technologies_df)
 
-# Configuration of a fake retriever with the human rankings
+# Configuration of a custom retriever with the human rankings
 st_retriever = STRetriever.from_documents(documents, rankings_df, col=selector)
 # For the case of humans, add also their justifications for the rankings
 justifications_df = pd.read_csv(JUSTIFICATIONS)
@@ -77,6 +76,7 @@ for index, row in userstories_df.iterrows():
     print()
 print("-"*100)
 print()
+
 results_df = pd.concat(list_dfs, ignore_index=True)
 results_df.to_csv(OUTPUT_RANKINGS, index=False) # Save the rankings for further analysis
 output_rankings_df = results_df.groupby('query')['package_name'].apply(list).reset_index()
@@ -90,7 +90,6 @@ gt_df['hits'] = gt_df['hits'].apply(eval)
 evaluator = AIDTEvaluator(gt_df)
 query_metrics_dict = evaluator.get_metrics(output_rankings_df)
 metrics_dict = AIDTEvaluator.get_metrics_by_type(query_metrics_dict)
-# print(json.dumps(metrics_dict, indent=4))
 metrics_df = AIDTEvaluator.get_metrics_as_dataframe(query_metrics_dict, who=selector)
 print(metrics_df) # This dataframe is useful for generating the boxplots
 metrics_df.to_csv(OUTPUT_METRICS, index=False)
