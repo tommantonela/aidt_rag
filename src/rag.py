@@ -348,7 +348,7 @@ class AIDTRag:
         chain = model_prompt | self.llm | self.output_parser
         response = chain.invoke({"k": self.TOP_K, "environment": self.ENVIRONMENT_CONSTRAINT, "n": self.N_ADJECTIVES, 
                                  "task": task, "year": self.YEAR_CONSTRAINT, "packages": technologies})
-        print("Reponse:", response)
+        print("Response:", response)
         if isinstance(self.llm, FakeListLLM):
             return json.dumps([response])
         else: # It should be a normal LLM (e.g., OpenAI)
