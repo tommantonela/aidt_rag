@@ -45,3 +45,13 @@ print()
 ranking_df = pd.read_json(StringIO(rag_json))
 ranking_df.head()
 ```
+
+If *Llama2* is used, [Ollama](https://ollama.com/) should be first installed and the corresponding model should be downloaded.
+
+Each experiment can be run individually, for example: 
+```console
+python experiment2_tool.py
+```
+After running an experiment, two CSV files with metrics and rankings will be automatically generated. 
+
+All the CSV files collected from the experiments can be analyzed with *Jupyter* notebooks.
