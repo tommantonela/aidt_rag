@@ -10,10 +10,6 @@ For a quick start with the RAG system, simply run:
 import pandas as pd
 from io import StringIO
 from langchain_openai import ChatOpenAI
-import os
-from dotenv import load_dotenv
-from pathlib import Path
-import sys
 from rag import AIDTRag
 
 # Configuring OpenAI (GPT)
